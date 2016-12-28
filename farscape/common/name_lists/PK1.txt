@@ -1,0 +1,206 @@
+﻿### Peacekeeper 1
+PK1 = {
+	alias = "Peacekeepers"
+	### SHIPS
+	ship_names = {
+
+		generic = {
+			Urgion Datarrion Lurrion Nargion Astarion Peragion Selemarion Lysargion Lusmargion Hemberarion Eshnenarion Satharion Sulugarion
+			Antargion Bessemargion Vilargion Ysmargion Ytharion Berekarion Comporgion Cennergion Callustion Hethenion Daforgion Nifargion
+			Cibbanion Evanion Umselanion Usselargion Sukuragion Deterabion Dargion Shanarion Tirindion Kasmalarion Sedrinion Hodronumion
+			Hasarion Pakharion Gatharion Pondoranion Vussagion Diramion Fidraggion Hallamion Bathradurion Janarion Pinatarion Jhunustarion
+			Sacradarion Muntadarion Volmanarion Pedrinamion Oldaragion Kargion Winithion Lakarion Dukrumurion Nastarion Nisorgion Thagarion
+			Kordurion Kadramurion Condarion Cifritharion Rebrinthion Cathradarion Cimbarion Duthrularion Entherabion Redevellion Pentarigion
+			Bantarion Bijinarion Valdanarion Ithisarion Tolarion Chambadarion Faldevarion Nimbadarion Zadarion Beseldur Ganandur Vilkasordur
+			Jamdur Porandur Bakandur Itraldur Varandur Jarmakdur Sandur Kirmandur Tondur Pasdur Livandur Ryndur Hiramdur Ynamdur Camdur
+			Cabandur Jinndur Darasdur Divimdur Avamdur Athirimdur Ascarimdur Ijimdur Wimdur Trandur Evamdur Enildur Ecandur Timdur Packandur
+			Joldur Rangdur Rominadur Pivamdur Maldur Makandur Nakondur Binamdur Kaldur Kondur Uramdur Ubrildur Rebbendur Kramdur Konagdur
+			Etaradur
+		}
+
+		corvette = { 
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = { 
+		}
+		
+		battleship = {
+			Zelbinion
+		}
+		
+		science = {
+		}
+		
+		colonizer = {
+		}
+		
+		constructor = {
+		}
+		
+		
+		mining_station = { }
+		research_station = { }
+		wormhole_station = { }
+		#terraform_station = { }
+		observation_station = { }
+		outpost_station = {
+			#random_names = { }
+			#sequential_name = "%O% Frontier Outpost"
+		}
+
+		military_station_small = {}
+		military_station_medium = {}
+		military_station_large = {}	
+	}
+
+	ship_class_names = {
+		corvette = { 
+			Marauder
+		}
+		cruiser = { 
+			"Pantak Vigilante"
+		}
+		
+		battleship = {
+			"Command Carrier"
+		}		
+	}	
+	
+	fleet_names = {
+		random_names = {
+			"Krotash Regiment" "Medinnus Regiment" "Plesiar Regiment" "Ustar Regiment" "Icarion Company" "Kernil Company" 
+		}
+		sequential_name = "%O% Regiment"
+	}
+	
+	army_names = {
+		defense_army = {
+			sequential_name = "%O% Garrison"
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Assault Corps"
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Conscript Corps"
+		}
+		
+		clone_army = { 
+			sequential_name = "%O% Clone Corps"
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Droid Corps"
+		}
+		
+		android_army = {
+			sequential_name = "%O% Android Corps"
+		}
+		
+		psionic_army = { 
+			sequential_name = "%O% Disruptor Corps"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Xenomorph Corps"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "%O% Augmented Corps"
+		}
+	}
+		
+
+	### PLANETS
+
+	planet_names = {
+
+		generic = {
+			names = {
+				Gandara Yaldira Mirida Bekonda Pildara Eldetha Arganira Athisa Bondoga Oldara Birga Jallida Terdaga Tirimba Dantariga
+				Umara Ferdera Nagrama Nidira Molgarima Varba Lappra Ligira Tentramoda Tavkaleba Paragima Firintarogga Kampira 	
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				Denea
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+				"New Heather" Mekkar "Terran Raa" Gammak
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+					Sykar
+			}
+		}
+		
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			# A complete name
+			full_names = {
+			
+			}
+			
+			# Always combined with a second name
+			first_names = {
+				Maryk Vosler "Mele-On" Garyza Tav Tollona Bialar Miklo Molayne Selto Larraq Gilina Tarn Xhalax Aeryn Yal Jedman 
+				Karanda Korbin Plint Dacon Teeg Velorek Larell Reljik Heskon Jatos Orn Hassan Melkor Kyona Rhed Jenavian Gribwel 
+				Macton "Lo'Laan" Lechna Tam Heska Rinic Rylani Jeema Ghebb Talyn Novia Clavor Katralla Elkar 
+			}
+			
+			# Always combined with a first name
+			second_names = {
+				Josbek Javio Crais Braca Durka Renaez Sun Henta Charto Tal Velorek "Fe'Tor" Pralanoth Dellos Lyczac Tyno
+			}
+			
+			regnal_first_names = {
+				Maryk Vosler "Mele-On" Garyza Tav Tollona Bialar Miklo Molayne Selto Larraq Gilina Tarn Xhalax Aeryn Yal Jedman 
+				Karanda Korbin Plint Dacon Teeg Velorek Larell Reljik Heskon Jatos Orn Hassan Melkor Kyona Rhed Jenavian Gribwel 
+				Macton "Lo'Laan" Lechna Tam Heska Rinic Rylani Jeema Ghebb Talyn Novia Clavor Katralla Elkar 
+	 		}
+			
+			regnal_second_names = {
+				Josbek Javio Crais Braca Durka Renaez Sun Henta Charto Tal Velorek "Fe'Tor" Pralanoth Dellos Lyczac Tyno
+			}
+		}
+	}
+}
