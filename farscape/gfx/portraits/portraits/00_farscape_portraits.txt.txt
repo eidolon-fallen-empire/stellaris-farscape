@@ -1,0 +1,5 @@
+portraits = {
+   scarran1 = {
+       texturefile = "gfx/interface/portraits/scarran.dds"
+   }
+}
