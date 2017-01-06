@@ -455,6 +455,16 @@ mekkar_neighbor = {
 					ethos = owner
 				}		
 
+	
+					
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_malsonic_labor_stockade"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
 				create_species = {
 					name = Sebacean
 					class = "HUM"
@@ -469,7 +479,15 @@ mekkar_neighbor = {
 							trait="trait_deviants"	
 							trait="trait_nomadic"
 							}
-					}	
+					}					
+				create_pop = {
+					species = last_created
+					ethos = { ethic = ethic_individualist ethic = ethic_fanatic_pacifist }
+				}		
+                last_created_pop = {
+                        enslave_pop = yes
+                }					
+				}
 					
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -479,15 +497,6 @@ mekkar_neighbor = {
 						amount = 1
 						replace = yes
 					}
-				create_pop = {
-					species = last_created
-					ethos = ethic_fanatic_pacifist
-				}		
-                last_created_pop = {
-                        enslave_pop = yes
-                }					
-				}
-				
 				create_species = {
 					name = Delvian
 					class = "HUM"
@@ -497,21 +506,13 @@ mekkar_neighbor = {
 					traits = {
 						ideal_planet_class = "pc_jungle"
 							trait="trait_venerable"
+							trait="trait_agrarian"
 							trait="trait_nonadaptive"
 							}
-					}	
-					
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_malsonic_labor_stockade"
-					add_resource = {
-						resource = food
-						amount = 1
-						replace = yes
-					}
+					}						
 				create_pop = {
 					species = last_created
-					ethos = ethic_fanatic_spiritualist
+					ethos = { ethic = ethic_fanatic_spiritualist ethic = ethic_pacifist }
 				}	
                 last_created_pop = {
                         enslave_pop = yes
@@ -558,6 +559,15 @@ mekkar_neighbor = {
 				}									
 			}
 			
+					
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_malsonic_labor_stockade"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
 				create_species = {
 					name = Banik
 					class = "HUM"
@@ -569,25 +579,25 @@ mekkar_neighbor = {
 							trait="trait_communal"
 							trait="trait_presentient_proles"
 							}
-					}
-					
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_malsonic_labor_stockade"
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
+					}				
 				create_pop = {
 					species = last_created
-					ethos = ethic_collectivist
+					ethos = { ethic = ethic_spiritualist ethic = ethic_pacifist ethic = ethic_collectivist } 
 				}	
                 last_created_pop = {
                         enslave_pop = yes
                 }				
 			}
 			
+		
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_malsonic_labor_stockade"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}
 				create_species = {
 					name = Luxan
 					class = "HUM"
@@ -599,7 +609,18 @@ mekkar_neighbor = {
 							trait="trait_resilient"
 							trait="trait_strong"
 							}
-					}			
+					}					
+				create_pop = {
+					species = last_created
+					ethos = { ethic = ethic_spiritualist ethic = ethic_militarist ethic = ethic_xenophile }
+				}	
+                last_created_pop = {
+                        enslave_pop = yes
+                }				
+			}
+			
+		
+					
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_building = "building_malsonic_labor_stockade"
@@ -608,15 +629,7 @@ mekkar_neighbor = {
 					amount = 1
 					replace = yes
 				}
-				create_pop = {
-					species = last_created
-					ethos = militarist
-				}	
-                last_created_pop = {
-                        enslave_pop = yes
-                }				
-			}
-			
+				
 				create_species = {
 					name = Ilanic
 					class = "HUM"
@@ -628,19 +641,11 @@ mekkar_neighbor = {
 						trait="trait_quick_learners"
 						trait="trait_natural_engineers"
 							}
-					}		
+					}
 					
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_malsonic_labor_stockade"
-				add_resource = {
-					resource = minerals
-					amount = 1
-					replace = yes
-				}
 				create_pop = {
 					species = last_created
-					ethos = ethic_individualist
+					ethos = { ethic = ethic_individualist ethic = ethic_spiritualist ethic = ethic_xenophile }
 				}
                 last_created_pop = {
                         enslave_pop = yes
