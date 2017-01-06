@@ -1,0 +1,78 @@
+namespace = farscape_start
+
+#Set Starting Communications
+event = {
+	id = farscape_start.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = { country_event = { id = farscape_start.10 days = 1 } }
+
+	}
+}
+
+country_event = {
+	id = farscape_start.10
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		random_country = {
+			limit = { has_country_flag = breakaway_cplonies }
+			save_event_target_as = breakaway_colonies
+		}
+		random_country = {
+			limit = { has_country_flag = peacekeepers }
+			save_event_target_as = peacekeepers
+		}
+		random_country = {
+			limit = { has_country_flag = nebari_establishment }
+			save_event_target_as = nebari_establishment
+		}
+		random_country = {
+			limit = { has_country_flag = scarran_imperium }
+			save_event_target_as = scarran_imperium
+		}
+		
+		random_country = {
+			limit = { has_country_flag = hynerian_empire }
+			save_event_target_as = hynerian_empire
+		}		
+		
+		event_target: peacekeepers = { establish_communications_no_message = event_target: scarran_imperium }
+		event_target: peacekeepers = { establish_communications_no_message = event_target: hynerian_empire }
+		event_target: peacekeepers = { establish_communications_no_message = event_target: nebari_establishment }
+		event_target: peacekeepers = { establish_communications_no_message = event_target: pilots_council }
+		event_target: breakaway_colonies = { establish_communications_no_message = event_target: peacekeepers }
+		event_target: breakaway_colonies = { establish_communications_no_message = event_target: scarran_imperium }
+		event_target: breakaway_colonies = { establish_communications_no_message = event_target: hynerian_empire }
+		
+	}
+}
+
+#Set Starting System Surveyed
+event = {
+	id = farscape_start.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = { country_event = { id = farscape_start.20 } }
+	}
+}
+
+country_event = {
+	id = farscape_start.20
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_planet = {
+			solar_system = {
+				every_system_planet = {
+					surveyed = {
+						set_surveyed = yes
+						surveyor = ROOT
+					}
+				}
+			}
+		}
+	}
+}

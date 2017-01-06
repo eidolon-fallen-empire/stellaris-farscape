@@ -1,0 +1,26 @@
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = peacekeepers
+			# NOT = { is_country_type = rebel }
+		}
+	}
+	format = "Peacekeepers"
+	noun = "Peacekeepers"
+	prefix_format = "PK"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = hynerian_empire
+			# NOT = { is_country_type = rebel }
+		}
+	}
+	format = "Hynerian Empire:
+	noun = "Hynerian Empire"
+	prefix_format = "HYN"
+}

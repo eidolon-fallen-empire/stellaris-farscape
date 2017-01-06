@@ -1,0 +1,10 @@
+sys_567_init = {
+    name = "Char"
+    class = random
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+}

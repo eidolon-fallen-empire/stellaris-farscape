@@ -1,0 +1,10 @@
+sys_558_init = {
+    name = "Ilania"
+    class = random
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+}

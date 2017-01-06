@@ -1,0 +1,1266 @@
+static_galaxy_scenario = {
+	name = "Sketch"
+	colonizable_planet_odds = 1.0
+	priority = 0
+    default = no
+    num_empires = { min = 1 max = 40 }
+    num_empire_default = 40
+	advanced_empire_default = 0
+	fallen_empire_default = 0
+	fallen_empire_max = 0
+	core_radius = 0
+	random_hyperlanes = yes
+system = { id = "0" name = "Peacekeepers Strategic Command" position = { x = { min = -184 max = -152 } y =  { min = 408 max = 416 } }  initializer = peacekeepers_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = peacekeepers } } }
+system = { id = "1" name = "Selnia" position = { x = { min = -178 max = -174 } y =  { min = 15 max = 35 } }  initializer = sck_b }
+system = { id = "2" name = "Nakan" position = { x = { min = -194 max = -190 } y =  { min = -15 max = 11 } }  initializer = scm_b }
+system = { id = "3" name = "Norcadia" position = { x = { min = -208 max = -202 } y =  { min = -43 max = -23 } }  initializer = NorcadianHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = norcadian_harmony } } }
+system = { id = "4" name = "" position = { x = { min = -214 max = -208 } y =  { min = -67 max = -45 } }  }
+system = { id = "5" name = "Vaadwaur" position = { x = { min = -217 max = -211 } y =  { min = -91 max = -69 } }  initializer = vaadwaur_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = vaadwaur_supremacy } } }
+system = { id = "6" name = "" position = { x = { min = -217 max = -211 } y =  { min = -118 max = -94 } }  }
+system = { id = "7" name = "" position = { x = { min = -215 max = -209 } y =  { min = -144 max = -120 } }  }
+system = { id = "8" name = "Torat" position = { x = { min = -208 max = -204 } y =  { min = -170 max = -150 } }  initializer = scg_b }
+system = { id = "9" name = "" position = { x = { min = -202 max = -198 } y =  { min = -189 max = -171 } }  }
+system = { id = "10" name = "" position = { x = { min = -195 max = -189 } y =  { min = -211 max = -191 } }  }
+system = { id = "11" name = "" position = { x = { min = -184 max = -180 } y =  { min = -230 max = -212 } }  }
+system = { id = "12" name = "" position = { x = { min = -172 max = -168 } y =  { min = -250 max = -232 } }  }
+system = { id = "13" name = "" position = { x = { min = -158 max = -154 } y =  { min = -270 max = -252 } }  }
+system = { id = "14" name = "" position = { x = { min = -140 max = -138 } y =  { min = -289 max = -271 } }  }
+system = { id = "15" name = "" position = { x = { min = -130 max = -114 } y =  { min = -302 max = -294 } }  }
+system = { id = "16" name = "" position = { x = { min = -111 max = -93 } y =  { min = -320 max = -310 } }  }
+system = { id = "17" name = "" position = { x = { min = -90 max = -70 } y =  { min = -335 max = -325 } }  }
+system = { id = "18" name = "" position = { x = { min = -67 max = -45 } y =  { min = -350 max = -340 } }  }
+system = { id = "19" name = "" position = { x = { min = -43 max = -19 } y =  { min = -362 max = -352 } }  }
+system = { id = "20" name = "" position = { x = { min = -17 max = 7 } y =  { min = -373 max = -363 } }  }
+system = { id = "21" name = "" position = { x = { min = 10 max = 38 } y =  { min = -383 max = -371 } }  }
+system = { id = "22" name = "" position = { x = { min = 39 max = 67 } y =  { min = -390 max = -378 } }  }
+system = { id = "23" name = "" position = { x = { min = 69 max = 99 } y =  { min = -394 max = -382 } }  }
+system = { id = "24" name = "" position = { x = { min = 100 max = 130 } y =  { min = -396 max = -384 } }  }
+system = { id = "25" name = "" position = { x = { min = 132 max = 164 } y =  { min = -396 max = -384 } }  }
+system = { id = "26" name = "" position = { x = { min = 165 max = 197 } y =  { min = -393 max = -381 } }  }
+system = { id = "27" name = "" position = { x = { min = 198 max = 230 } y =  { min = -387 max = -375 } }  }
+system = { id = "28" name = "Founder's System" position = { x = { min = 232 max = 264 } y =  { min = -377 max = -367 } }  initializer = founders_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = the_dominion } } }
+system = { id = "29" name = "" position = { x = { min = 265 max = 297 } y =  { min = -366 max = -356 } }  }
+system = { id = "30" name = "" position = { x = { min = 299 max = 331 } y =  { min = -351 max = -341 } }  }
+system = { id = "31" name = "" position = { x = { min = 332 max = 362 } y =  { min = -334 max = -324 } }  }
+system = { id = "32" name = "Hoek" position = { x = { min = 364 max = 394 } y =  { min = -314 max = -304 } }  }
+system = { id = "33" name = "" position = { x = { min = 395 max = 425 } y =  { min = -289 max = -281 } }  }
+system = { id = "34" name = "" position = { x = { min = 425 max = 453 } y =  { min = -262 max = -256 } }  }
+system = { id = "35" name = "Toranius" position = { x = { min = -202 max = -196 } y =  { min = -15 max = 11 } }  initializer = scg_b }
+system = { id = "36" name = "Vensiddia" position = { x = { min = -215 max = -209 } y =  { min = -44 max = -24 } }  initializer = scb_b }
+system = { id = "37" name = "" position = { x = { min = -221 max = -215 } y =  { min = -69 max = -47 } }  }
+system = { id = "38" name = "Orendal" position = { x = { min = -224 max = -218 } y =  { min = -95 max = -71 } }  initializer = scm_b }
+system = { id = "39" name = "" position = { x = { min = -224 max = -218 } y =  { min = -121 max = -97 } }  }
+system = { id = "40" name = "" position = { x = { min = -222 max = -216 } y =  { min = -150 max = -124 } }  }
+system = { id = "41" name = "Devore" position = { x = { min = -215 max = -211 } y =  { min = -175 max = -155 } }  initializer = devorian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = devorian_solidarity } } }
+system = { id = "42" name = "" position = { x = { min = -209 max = -205 } y =  { min = -196 max = -176 } }  }
+system = { id = "43" name = "" position = { x = { min = -200 max = -196 } y =  { min = -218 max = -198 } }  }
+system = { id = "44" name = "" position = { x = { min = -190 max = -186 } y =  { min = -239 max = -219 } }  }
+system = { id = "45" name = "" position = { x = { min = -177 max = -173 } y =  { min = -258 max = -240 } }  }
+system = { id = "46" name = "" position = { x = { min = -163 max = -159 } y =  { min = -280 max = -260 } }  }
+system = { id = "47" name = "" position = { x = { min = -146 max = -142 } y =  { min = -298 max = -280 } }  }
+system = { id = "48" name = "" position = { x = { min = -127 max = -125 } y =  { min = -317 max = -299 } }  }
+system = { id = "49" name = "" position = { x = { min = -115 max = -95 } y =  { min = -329 max = -321 } }  }
+system = { id = "50" name = "" position = { x = { min = -93 max = -73 } y =  { min = -346 max = -336 } }  }
+system = { id = "51" name = "" position = { x = { min = -70 max = -46 } y =  { min = -361 max = -351 } }  }
+system = { id = "52" name = "" position = { x = { min = -44 max = -20 } y =  { min = -374 max = -364 } }  }
+system = { id = "53" name = "" position = { x = { min = -18 max = 8 } y =  { min = -385 max = -375 } }  }
+system = { id = "54" name = "" position = { x = { min = 10 max = 38 } y =  { min = -394 max = -384 } }  }
+system = { id = "55" name = "Utopia" position = { x = { min = 40 max = 70 } y =  { min = -401 max = -391 } }  }
+system = { id = "56" name = "" position = { x = { min = 72 max = 102 } y =  { min = -407 max = -395 } }  }
+system = { id = "57" name = "Torga" position = { x = { min = 104 max = 134 } y =  { min = -409 max = -397 } }  }
+system = { id = "58" name = "" position = { x = { min = 137 max = 169 } y =  { min = -409 max = -397 } }  }
+system = { id = "59" name = "" position = { x = { min = 171 max = 203 } y =  { min = -404 max = -394 } }  }
+system = { id = "60" name = "" position = { x = { min = 205 max = 237 } y =  { min = -398 max = -388 } }  }
+system = { id = "61" name = "" position = { x = { min = 239 max = 273 } y =  { min = -391 max = -379 } }  }
+system = { id = "62" name = "" position = { x = { min = 274 max = 308 } y =  { min = -378 max = -368 } }  }
+system = { id = "63" name = "" position = { x = { min = 309 max = 341 } y =  { min = -363 max = -353 } }  }
+system = { id = "64" name = "Sampalo" position = { x = { min = 343 max = 375 } y =  { min = -345 max = -335 } }  }
+system = { id = "65" name = "" position = { x = { min = 376 max = 408 } y =  { min = -323 max = -315 } }  }
+system = { id = "66" name = "" position = { x = { min = -97 max = -79 } y =  { min = 80 max = 82 } }  }
+system = { id = "67" name = "" position = { x = { min = -120 max = -100 } y =  { min = 73 max = 75 } }  }
+system = { id = "68" name = "" position = { x = { min = -141 max = -121 } y =  { min = 62 max = 62 } }  }
+system = { id = "69" name = "" position = { x = { min = -162 max = -142 } y =  { min = 45 max = 45 } }  }
+system = { id = "70" name = "Wyanti" position = { x = { min = -172 max = -168 } y =  { min = 14 max = 34 } }  initializer = scg_b }
+system = { id = "71" name = "Kelsid" position = { x = { min = -188 max = -184 } y =  { min = -14 max = 10 } }  initializer = sck_b }
+system = { id = "72" name = "Pendari" position = { x = { min = -201 max = -195 } y =  { min = -42 max = -22 } }  initializer = scg_b }
+system = { id = "73" name = "Kasat" position = { x = { min = -207 max = -201 } y =  { min = -64 max = -44 } }  initializer = scf_b }
+system = { id = "74" name = "Murphinia" position = { x = { min = -210 max = -204 } y =  { min = -88 max = -66 } }  initializer = scb_b }
+system = { id = "75" name = "Selinia" position = { x = { min = -210 max = -204 } y =  { min = -114 max = -90 } }  initializer = scg_b }
+system = { id = "76" name = "Rivos" position = { x = { min = -208 max = -202 } y =  { min = -140 max = -116 } }  initializer = scg_b }
+system = { id = "77" name = "Tehara" position = { x = { min = -201 max = -197 } y =  { min = -163 max = -145 } }  initializer = scf_b }
+system = { id = "78" name = "" position = { x = { min = -195 max = -191 } y =  { min = -183 max = -165 } }  }
+system = { id = "79" name = "" position = { x = { min = -187 max = -183 } y =  { min = -203 max = -185 } }  }
+system = { id = "80" name = "" position = { x = { min = -178 max = -174 } y =  { min = -223 max = -205 } }  }
+system = { id = "81" name = "" position = { x = { min = -166 max = -162 } y =  { min = -242 max = -224 } }  }
+system = { id = "82" name = "" position = { x = { min = -152 max = -148 } y =  { min = -261 max = -243 } }  }
+system = { id = "83" name = "" position = { x = { min = -137 max = -133 } y =  { min = -280 max = -262 } }  }
+system = { id = "84" name = "" position = { x = { min = -125 max = -109 } y =  { min = -292 max = -284 } }  }
+system = { id = "85" name = "" position = { x = { min = -107 max = -89 } y =  { min = -308 max = -300 } }  }
+system = { id = "86" name = "" position = { x = { min = -87 max = -67 } y =  { min = -324 max = -314 } }  }
+system = { id = "87" name = "" position = { x = { min = -65 max = -45 } y =  { min = -338 max = -328 } }  }
+system = { id = "88" name = "" position = { x = { min = -42 max = -18 } y =  { min = -350 max = -340 } }  }
+system = { id = "89" name = "" position = { x = { min = -16 max = 8 } y =  { min = -362 max = -350 } }  }
+system = { id = "90" name = "" position = { x = { min = 10 max = 36 } y =  { min = -369 max = -359 } }  }
+system = { id = "91" name = "" position = { x = { min = 38 max = 64 } y =  { min = -377 max = -365 } }  }
+system = { id = "92" name = "" position = { x = { min = 67 max = 95 } y =  { min = -381 max = -369 } }  }
+system = { id = "93" name = "" position = { x = { min = 97 max = 127 } y =  { min = -383 max = -371 } }  }
+system = { id = "94" name = "Gavara" position = { x = { min = 128 max = 158 } y =  { min = -383 max = -371 } }  initializer = scg_b }
+system = { id = "95" name = "Kendi" position = { x = { min = 160 max = 190 } y =  { min = -380 max = -368 } }  initializer = scm_b }
+system = { id = "96" name = "" position = { x = { min = 192 max = 222 } y =  { min = -374 max = -362 } }  }
+system = { id = "97" name = "" position = { x = { min = 224 max = 256 } y =  { min = -366 max = -354 } }  }
+system = { id = "98" name = "" position = { x = { min = 257 max = 287 } y =  { min = -354 max = -344 } }  }
+system = { id = "99" name = "" position = { x = { min = 289 max = 319 } y =  { min = -340 max = -330 } }  }
+system = { id = "100" name = "" position = { x = { min = 321 max = 351 } y =  { min = -323 max = -313 } }  }
+system = { id = "101" name = "Vandros" position = { x = { min = 352 max = 382 } y =  { min = -302 max = -294 } }  initializer = scm_b }
+system = { id = "102" name = "" position = { x = { min = 382 max = 410 } y =  { min = -280 max = -272 } }  }
+system = { id = "103" name = "" position = { x = { min = 411 max = 439 } y =  { min = -255 max = -247 } }  }
+system = { id = "104" name = "" position = { x = { min = 445 max = 459 } y =  { min = -236 max = -210 } }  }
+system = { id = "105" name = "Tarkania" position = { x = { min = -222 max = -216 } y =  { min = -46 max = -24 } }  initializer = scg_b }
+system = { id = "106" name = "Harkonia" position = { x = { min = -228 max = -222 } y =  { min = -70 max = -48 } }  initializer = scm_b }
+system = { id = "107" name = "Markonia" position = { x = { min = -231 max = -225 } y =  { min = -97 max = -73 } }  initializer = scg_b }
+system = { id = "108" name = "" position = { x = { min = -232 max = -226 } y =  { min = -126 max = -100 } }  }
+system = { id = "109" name = "" position = { x = { min = -229 max = -223 } y =  { min = -154 max = -128 } }  }
+system = { id = "110" name = "Monea" position = { x = { min = -222 max = -218 } y =  { min = -180 max = -160 } }  initializer = sca_b }
+system = { id = "111" name = "" position = { x = { min = -215 max = -211 } y =  { min = -202 max = -182 } }  }
+system = { id = "112" name = "" position = { x = { min = -208 max = -202 } y =  { min = -224 max = -204 } }  }
+system = { id = "113" name = "" position = { x = { min = -196 max = -192 } y =  { min = -246 max = -226 } }  }
+system = { id = "114" name = "" position = { x = { min = -183 max = -179 } y =  { min = -267 max = -247 } }  }
+system = { id = "115" name = "" position = { x = { min = -168 max = -164 } y =  { min = -288 max = -268 } }  }
+system = { id = "116" name = "" position = { x = { min = -151 max = -147 } y =  { min = -309 max = -289 } }  }
+system = { id = "117" name = "" position = { x = { min = -139 max = -121 } y =  { min = -322 max = -314 } }  }
+system = { id = "118" name = "" position = { x = { min = -118 max = -98 } y =  { min = -341 max = -331 } }  }
+system = { id = "119" name = "" position = { x = { min = -96 max = -74 } y =  { min = -357 max = -347 } }  }
+system = { id = "120" name = "" position = { x = { min = -72 max = -48 } y =  { min = -373 max = -363 } }  }
+system = { id = "121" name = "" position = { x = { min = -46 max = -20 } y =  { min = -386 max = -376 } }  }
+system = { id = "122" name = "" position = { x = { min = -18 max = 8 } y =  { min = -399 max = -387 } }  }
+system = { id = "123" name = "" position = { x = { min = 11 max = 39 } y =  { min = -408 max = -396 } }  }
+system = { id = "124" name = "" position = { x = { min = 42 max = 72 } y =  { min = -415 max = -403 } }  }
+system = { id = "125" name = "" position = { x = { min = 74 max = 104 } y =  { min = -420 max = -408 } }  }
+system = { id = "126" name = "Tautine" position = { x = { min = 107 max = 139 } y =  { min = -422 max = -410 } }  initializer = scg_b }
+system = { id = "127" name = "Errikang" position = { x = { min = 141 max = 175 } y =  { min = -422 max = -410 } }  initializer = scb_b }
+system = { id = "128" name = "Erabus" position = { x = { min = 176 max = 210 } y =  { min = -418 max = -406 } }  initializer = scg_b }
+system = { id = "129" name = "Sigma Epsilon" position = { x = { min = 212 max = 246 } y =  { min = -412 max = -400 } }  initializer = sca_b }
+system = { id = "130" name = "Brax" position = { x = { min = 247 max = 281 } y =  { min = -402 max = -392 } }  initializer = scg_b }
+system = { id = "131" name = "" position = { x = { min = 283 max = 317 } y =  { min = -390 max = -380 } }  }
+system = { id = "132" name = "" position = { x = { min = 319 max = 353 } y =  { min = -374 max = -364 } }  }
+system = { id = "133" name = "" position = { x = { min = -94 max = -76 } y =  { min = 77 max = 79 } }  }
+system = { id = "134" name = "" position = { x = { min = -116 max = -96 } y =  { min = 71 max = 71 } }  }
+system = { id = "135" name = "" position = { x = { min = -137 max = -117 } y =  { min = 60 max = 60 } }  }
+system = { id = "136" name = "Kraylor" position = { x = { min = -155 max = -137 } y =  { min = 44 max = 44 } }  initializer = kraylor_b }
+system = { id = "137" name = "" position = { x = { min = -166 max = -162 } y =  { min = 13 max = 33 } }  }
+system = { id = "138" name = "Brunali" position = { x = { min = -183 max = -177 } y =  { min = -14 max = 10 } }  initializer = BrunaliHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = brunali_empire } } }
+system = { id = "139" name = "Pensarka" position = { x = { min = -194 max = -188 } y =  { min = -40 max = -22 } }  initializer = sck_b }
+system = { id = "140" name = "Dalmine" position = { x = { min = -200 max = -194 } y =  { min = -62 max = -42 } }  initializer = scm_b }
+system = { id = "141" name = "Shivolia" position = { x = { min = -203 max = -197 } y =  { min = -86 max = -64 } }  initializer = sck_b }
+system = { id = "142" name = "FGC-529006" position = { x = { min = -203 max = -197 } y =  { min = -110 max = -88 } }  initializer = scf_b }
+system = { id = "143" name = "Hazari" position = { x = { min = -201 max = -195 } y =  { min = -136 max = -112 } }  initializer = sck_b }
+system = { id = "144" name = "Natori" position = { x = { min = -194 max = -192 } y =  { min = -158 max = -140 } }  initializer = scg_b }
+system = { id = "145" name = "" position = { x = { min = -189 max = -185 } y =  { min = -177 max = -159 } }  }
+system = { id = "146" name = "" position = { x = { min = -181 max = -177 } y =  { min = -196 max = -178 } }  }
+system = { id = "147" name = "" position = { x = { min = -172 max = -168 } y =  { min = -216 max = -198 } }  }
+system = { id = "148" name = "" position = { x = { min = -160 max = -156 } y =  { min = -233 max = -217 } }  }
+system = { id = "149" name = "" position = { x = { min = -147 max = -143 } y =  { min = -253 max = -235 } }  }
+system = { id = "150" name = "" position = { x = { min = -131 max = -129 } y =  { min = -269 max = -253 } }  }
+system = { id = "151" name = "" position = { x = { min = -121 max = -105 } y =  { min = -282 max = -274 } }  }
+system = { id = "152" name = "" position = { x = { min = -103 max = -87 } y =  { min = -299 max = -289 } }  }
+system = { id = "153" name = "" position = { x = { min = -84 max = -66 } y =  { min = -313 max = -303 } }  }
+system = { id = "154" name = "" position = { x = { min = -63 max = -43 } y =  { min = -327 max = -317 } }  }
+system = { id = "155" name = "" position = { x = { min = -40 max = -18 } y =  { min = -338 max = -328 } }  }
+system = { id = "156" name = "" position = { x = { min = -16 max = 8 } y =  { min = -348 max = -338 } }  }
+system = { id = "157" name = "" position = { x = { min = 10 max = 34 } y =  { min = -358 max = -346 } }  }
+system = { id = "158" name = "" position = { x = { min = 37 max = 63 } y =  { min = -364 max = -352 } }  }
+system = { id = "159" name = "" position = { x = { min = 65 max = 91 } y =  { min = -368 max = -356 } }  }
+system = { id = "160" name = "" position = { x = { min = 94 max = 122 } y =  { min = -370 max = -358 } }  }
+system = { id = "161" name = "" position = { x = { min = 124 max = 152 } y =  { min = -370 max = -358 } }  }
+system = { id = "162" name = "Teplan" position = { x = { min = 154 max = 184 } y =  { min = -367 max = -355 } }  initializer = sca_b }
+system = { id = "163" name = "" position = { x = { min = 185 max = 215 } y =  { min = -360 max = -350 } }  }
+system = { id = "164" name = "" position = { x = { min = 216 max = 246 } y =  { min = -352 max = -342 } }  }
+system = { id = "165" name = "" position = { x = { min = 248 max = 278 } y =  { min = -342 max = -332 } }  }
+system = { id = "166" name = "Callinon" position = { x = { min = 279 max = 309 } y =  { min = -328 max = -318 } }  initializer = scm_b }
+system = { id = "167" name = "" position = { x = { min = 310 max = 338 } y =  { min = -312 max = -302 } }  }
+system = { id = "168" name = "" position = { x = { min = 340 max = 368 } y =  { min = -292 max = -284 } }  }
+system = { id = "169" name = "" position = { x = { min = 369 max = 397 } y =  { min = -270 max = -262 } }  }
+system = { id = "170" name = "" position = { x = { min = 397 max = 423 } y =  { min = -246 max = -238 } }  }
+system = { id = "171" name = "" position = { x = { min = 429 max = 443 } y =  { min = -228 max = -202 } }  }
+system = { id = "172" name = "" position = { x = { min = 453 max = 469 } y =  { min = -200 max = -172 } }  }
+system = { id = "173" name = "" position = { x = { min = -91 max = -73 } y =  { min = 75 max = 75 } }  }
+system = { id = "174" name = "" position = { x = { min = -111 max = -93 } y =  { min = 68 max = 70 } }  }
+system = { id = "175" name = "" position = { x = { min = -131 max = -113 } y =  { min = 58 max = 58 } }  }
+system = { id = "176" name = "" position = { x = { min = -150 max = -132 } y =  { min = 42 max = 42 } }  }
+system = { id = "177" name = "" position = { x = { min = -160 max = -156 } y =  { min = 14 max = 32 } }  }
+system = { id = "178" name = "" position = { x = { min = -175 max = -171 } y =  { min = -12 max = 10 } }  }
+system = { id = "179" name = "Qomar" position = { x = { min = -186 max = -182 } y =  { min = -38 max = -20 } }  initializer = qomar_b }
+system = { id = "180" name = "Kartella" position = { x = { min = -193 max = -187 } y =  { min = -60 max = -40 } }  initializer = sck_b }
+system = { id = "181" name = "" position = { x = { min = -195 max = -189 } y =  { min = -82 max = -62 } }  }
+system = { id = "182" name = "Druoda" position = { x = { min = -196 max = -190 } y =  { min = -106 max = -84 } }  initializer = sck_b }
+system = { id = "183" name = "Lyridia" position = { x = { min = -194 max = -188 } y =  { min = -130 max = -108 } }  initializer = LyridianHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = lyridian_diaspora } } }
+system = { id = "184" name = "Noss" position = { x = { min = -187 max = -185 } y =  { min = -153 max = -135 } }  initializer = scg_b }
+system = { id = "185" name = "" position = { x = { min = -182 max = -178 } y =  { min = -170 max = -154 } }  }
+system = { id = "186" name = "" position = { x = { min = -176 max = -170 } y =  { min = -190 max = -172 } }  }
+system = { id = "187" name = "" position = { x = { min = -167 max = -161 } y =  { min = -207 max = -191 } }  }
+system = { id = "188" name = "" position = { x = { min = -155 max = -151 } y =  { min = -225 max = -209 } }  }
+system = { id = "189" name = "" position = { x = { min = -142 max = -138 } y =  { min = -243 max = -227 } }  }
+system = { id = "190" name = "" position = { x = { min = -128 max = -124 } y =  { min = -260 max = -244 } }  }
+system = { id = "191" name = "" position = { x = { min = -117 max = -101 } y =  { min = -272 max = -264 } }  }
+system = { id = "192" name = "" position = { x = { min = -99 max = -83 } y =  { min = -287 max = -279 } }  }
+system = { id = "193" name = "" position = { x = { min = -81 max = -63 } y =  { min = -302 max = -292 } }  }
+system = { id = "194" name = "" position = { x = { min = -61 max = -41 } y =  { min = -315 max = -305 } }  }
+system = { id = "195" name = "" position = { x = { min = -39 max = -17 } y =  { min = -327 max = -317 } }  }
+system = { id = "196" name = "" position = { x = { min = -15 max = 7 } y =  { min = -336 max = -326 } }  }
+system = { id = "197" name = "" position = { x = { min = 9 max = 33 } y =  { min = -344 max = -334 } }  }
+system = { id = "198" name = "" position = { x = { min = 35 max = 61 } y =  { min = -351 max = -339 } }  }
+system = { id = "199" name = "" position = { x = { min = 62 max = 88 } y =  { min = -355 max = -343 } }  }
+system = { id = "200" name = "" position = { x = { min = 90 max = 118 } y =  { min = -357 max = -345 } }  }
+system = { id = "201" name = "" position = { x = { min = 119 max = 147 } y =  { min = -357 max = -345 } }  }
+system = { id = "202" name = "" position = { x = { min = 149 max = 177 } y =  { min = -354 max = -342 } }  }
+system = { id = "203" name = "" position = { x = { min = 179 max = 207 } y =  { min = -349 max = -337 } }  }
+system = { id = "204" name = "" position = { x = { min = 209 max = 237 } y =  { min = -340 max = -330 } }  }
+system = { id = "205" name = "" position = { x = { min = 239 max = 267 } y =  { min = -330 max = -320 } }  }
+system = { id = "206" name = "Karemma" position = { x = { min = 269 max = 297 } y =  { min = -317 max = -307 } }  initializer = karemma_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = karemman_foundation } } }
+system = { id = "207" name = "" position = { x = { min = 299 max = 327 } y =  { min = -301 max = -291 } }  }
+system = { id = "208" name = "T'Rogoran" position = { x = { min = 328 max = 354 } y =  { min = -283 max = -273 } }  initializer = TRogoranHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = trogoran_empire } } }
+system = { id = "209" name = "" position = { x = { min = 356 max = 382 } y =  { min = -261 max = -253 } }  }
+system = { id = "210" name = "" position = { x = { min = 389 max = 401 } y =  { min = -244 max = -222 } }  }
+system = { id = "211" name = "" position = { x = { min = 414 max = 428 } y =  { min = -219 max = -195 } }  }
+system = { id = "212" name = "" position = { x = { min = 437 max = 451 } y =  { min = -192 max = -166 } }  }
+system = { id = "213" name = "" position = { x = { min = 458 max = 474 } y =  { min = -163 max = -133 } }  }
+system = { id = "214" name = "" position = { x = { min = 34 max = 58 } y =  { min = -337 max = -327 } }  }
+system = { id = "215" name = "" position = { x = { min = 60 max = 86 } y =  { min = -342 max = -330 } }  }
+system = { id = "216" name = "" position = { x = { min = 87 max = 113 } y =  { min = -344 max = -332 } }  }
+system = { id = "217" name = "Kylata" position = { x = { min = 115 max = 141 } y =  { min = -344 max = -332 } }  initializer = sca_b }
+system = { id = "218" name = "Trialus" position = { x = { min = 143 max = 171 } y =  { min = -341 max = -329 } }  initializer = scf_b }
+system = { id = "219" name = "Varala" position = { x = { min = 172 max = 200 } y =  { min = -336 max = -324 } }  initializer = scg_b }
+system = { id = "220" name = "" position = { x = { min = 201 max = 229 } y =  { min = -329 max = -317 } }  }
+system = { id = "221" name = "" position = { x = { min = 230 max = 258 } y =  { min = -318 max = -308 } }  }
+system = { id = "222" name = "Dosarus" position = { x = { min = 259 max = 287 } y =  { min = -305 max = -295 } }  initializer = dosi_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = dosi_confederacy } } }
+system = { id = "223" name = "Wadi" position = { x = { min = 288 max = 314 } y =  { min = -290 max = -280 } }  initializer = WadiHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = wadi_emirates } } }
+system = { id = "224" name = "" position = { x = { min = 316 max = 342 } y =  { min = -271 max = -263 } }  }
+system = { id = "225" name = "" position = { x = { min = 343 max = 367 } y =  { min = -251 max = -243 } }  }
+system = { id = "226" name = "" position = { x = { min = 369 max = 393 } y =  { min = -229 max = -221 } }  }
+system = { id = "227" name = "Verath" position = { x = { min = 398 max = 412 } y =  { min = -212 max = -188 } }  }
+system = { id = "228" name = "" position = { x = { min = 420 max = 436 } y =  { min = -185 max = -159 } }  }
+system = { id = "229" name = "" position = { x = { min = 440 max = 456 } y =  { min = -157 max = -129 } }  }
+system = { id = "230" name = "" position = { x = { min = 58 max = 82 } y =  { min = -329 max = -317 } }  }
+system = { id = "231" name = "" position = { x = { min = 84 max = 108 } y =  { min = -331 max = -319 } }  }
+system = { id = "232" name = "" position = { x = { min = 110 max = 136 } y =  { min = -331 max = -319 } }  }
+system = { id = "233" name = "Bopak" position = { x = { min = 138 max = 164 } y =  { min = -328 max = -316 } }  initializer = scm_b }
+system = { id = "234" name = "Yadera" position = { x = { min = 166 max = 192 } y =  { min = -322 max = -312 } }  initializer = scg_b }
+system = { id = "235" name = "Kar-Telos" position = { x = { min = 194 max = 220 } y =  { min = -315 max = -305 } }  initializer = scb_b }
+system = { id = "236" name = "Stakoron" position = { x = { min = 222 max = 248 } y =  { min = -306 max = -296 } }  initializer = scf_b }
+system = { id = "237" name = "Idran" position = { x = { min = 249 max = 275 } y =  { min = -294 max = -284 } }  initializer = idran_b }
+system = { id = "238" name = "" position = { x = { min = 276 max = 302 } y =  { min = -279 max = -269 } }  }
+system = { id = "239" name = "" position = { x = { min = 303 max = 329 } y =  { min = -261 max = -253 } }  }
+system = { id = "240" name = "Argrath" position = { x = { min = 330 max = 354 } y =  { min = -242 max = -234 } }  initializer = ArgrathianHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = argrathian_commonwealth } } }
+system = { id = "241" name = "" position = { x = { min = 355 max = 377 } y =  { min = -220 max = -212 } }  }
+system = { id = "242" name = "" position = { x = { min = 382 max = 396 } y =  { min = -203 max = -181 } }  }
+system = { id = "243" name = "" position = { x = { min = 404 max = 418 } y =  { min = -178 max = -154 } }  }
+system = { id = "244" name = "" position = { x = { min = 423 max = 439 } y =  { min = -151 max = -123 } }  }
+system = { id = "245" name = "Hur'Q" position = { x = { min = 56 max = 78 } y =  { min = -315 max = -305 } }  initializer = hurq_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = hurq_stagnancy } } }
+system = { id = "246" name = "" position = { x = { min = 80 max = 104 } y =  { min = -318 max = -306 } }  }
+system = { id = "247" name = "" position = { x = { min = 106 max = 130 } y =  { min = -318 max = -306 } }  }
+system = { id = "248" name = "Merik" position = { x = { min = 132 max = 158 } y =  { min = -315 max = -303 } }  initializer = scf_b }
+system = { id = "249" name = "Yadera II" position = { x = { min = 159 max = 183 } y =  { min = -311 max = -299 } }  initializer = sck_b }
+system = { id = "250" name = "" position = { x = { min = 185 max = 211 } y =  { min = -304 max = -292 } }  }
+system = { id = "251" name = "" position = { x = { min = 212 max = 238 } y =  { min = -295 max = -283 } }  }
+system = { id = "252" name = "Torad" position = { x = { min = 239 max = 265 } y =  { min = -282 max = -272 } }  initializer = sck_b }
+system = { id = "253" name = "" position = { x = { min = 266 max = 290 } y =  { min = -268 max = -258 } }  }
+system = { id = "254" name = "" position = { x = { min = 291 max = 315 } y =  { min = -251 max = -243 } }  }
+system = { id = "255" name = "" position = { x = { min = 316 max = 340 } y =  { min = -232 max = -224 } }  }
+system = { id = "256" name = "" position = { x = { min = 345 max = 359 } y =  { min = -217 max = -197 } }  }
+system = { id = "257" name = "" position = { x = { min = 367 max = 381 } y =  { min = -195 max = -173 } }  }
+system = { id = "258" name = "" position = { x = { min = 387 max = 403 } y =  { min = -171 max = -147 } }  }
+system = { id = "259" name = "" position = { x = { min = 406 max = 422 } y =  { min = -145 max = -119 } }  }
+system = { id = "260" name = "" position = { x = { min = 89 max = 89 } y =  { min = 84 max = 100 } }  }
+system = { id = "261" name = "" position = { x = { min = 86 max = 86 } y =  { min = 101 max = 117 } }  }
+system = { id = "262" name = "" position = { x = { min = 81 max = 81 } y =  { min = 118 max = 134 } }  }
+system = { id = "263" name = "Sheliak" position = { x = { min = 73 max = 73 } y =  { min = 135 max = 151 } }  initializer = sheliak_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = sheliak_corporate } } }
+system = { id = "264" name = "" position = { x = { min = 62 max = 62 } y =  { min = 152 max = 168 } }  }
+system = { id = "265" name = "" position = { x = { min = 49 max = 49 } y =  { min = 169 max = 183 } }  }
+system = { id = "266" name = "Eta Serpentis" position = { x = { min = 26 max = 40 } y =  { min = 189 max = 193 } }  initializer = sck_b }
+system = { id = "267" name = "Delta Sculptoris" position = { x = { min = 7 max = 23 } y =  { min = 202 max = 206 } }  initializer = sca_b }
+system = { id = "268" name = "Sauria" position = { x = { min = -16 max = 4 } y =  { min = 214 max = 218 } }  initializer = scg_b }
+system = { id = "269" name = "Muphrid" position = { x = { min = -40 max = -18 } y =  { min = 222 max = 228 } }  initializer = scg_b }
+system = { id = "270" name = "Mu Arae" position = { x = { min = -66 max = -42 } y =  { min = 229 max = 235 } }  initializer = scg_b }
+system = { id = "271" name = "Zeta Trianguli Australis" position = { x = { min = -92 max = -68 } y =  { min = 233 max = 239 } }  initializer = scf_b }
+system = { id = "272" name = "Terix" position = { x = { min = -121 max = -95 } y =  { min = 233 max = 239 } }  initializer = sca_b }
+system = { id = "273" name = "Eta Crucis" position = { x = { min = -151 max = -123 } y =  { min = 231 max = 237 } }  initializer = scf_b }
+system = { id = "274" name = "Iota Hydri" position = { x = { min = -180 max = -152 } y =  { min = 225 max = 231 } }  initializer = scf_b }
+system = { id = "275" name = "" position = { x = { min = -209 max = -181 } y =  { min = 216 max = 220 } }  }
+system = { id = "276" name = "" position = { x = { min = -238 max = -210 } y =  { min = 203 max = 207 } }  }
+system = { id = "277" name = "" position = { x = { min = -265 max = -239 } y =  { min = 187 max = 191 } }  }
+system = { id = "278" name = "" position = { x = { min = -292 max = -266 } y =  { min = 166 max = 170 } }  }
+system = { id = "279" name = "Saiph" position = { x = { min = -317 max = -293 } y =  { min = 142 max = 146 } }  initializer = saiph_b }
+system = { id = "280" name = "Krzeminskis Star" position = { x = { min = -333 max = -323 } y =  { min = 104 max = 130 } }  initializer = krzeminskis_star_b }
+system = { id = "281" name = "" position = { x = { min = -354 max = -344 } y =  { min = 71 max = 101 } }  }
+system = { id = "282" name = "" position = { x = { min = -371 max = -361 } y =  { min = 36 max = 68 } }  }
+system = { id = "283" name = "" position = { x = { min = -387 max = -375 } y =  { min = -1 max = 33 } }  }
+system = { id = "284" name = "" position = { x = { min = -396 max = -386 } y =  { min = -42 max = -4 } }  }
+system = { id = "285" name = "" position = { x = { min = -404 max = -392 } y =  { min = -84 max = -44 } }  }
+system = { id = "286" name = "" position = { x = { min = -406 max = -394 } y =  { min = -126 max = -86 } }  }
+system = { id = "287" name = "" position = { x = { min = -404 max = -392 } y =  { min = -170 max = -128 } }  }
+system = { id = "288" name = "Nanipia" position = { x = { min = -397 max = -385 } y =  { min = -214 max = -172 } }  initializer = scm_b }
+system = { id = "289" name = "" position = { x = { min = -384 max = -374 } y =  { min = -258 max = -216 } }  }
+system = { id = "290" name = "" position = { x = { min = -367 max = -357 } y =  { min = -301 max = -259 } }  }
+system = { id = "291" name = "Garenor" position = { x = { min = -345 max = -335 } y =  { min = -344 max = -302 } }  initializer = scm_b }
+system = { id = "292" name = "Tarok" position = { x = { min = -319 max = -309 } y =  { min = -382 max = -344 } }  initializer = sck_b }
+system = { id = "293" name = "Ocampa" position = { x = { min = -286 max = -278 } y =  { min = -421 max = -383 } }  initializer = ocampa_b }
+system = { id = "294" name = "Keloda" position = { x = { min = -263 max = -229 } y =  { min = -445 max = -431 } }  initializer = sca_b }
+system = { id = "295" name = "" position = { x = { min = -225 max = -187 } y =  { min = -477 max = -463 } }  }
+system = { id = "296" name = "" position = { x = { min = -183 max = -139 } y =  { min = -507 max = -491 } }  }
+system = { id = "297" name = "" position = { x = { min = 87 max = 87 } y =  { min = 83 max = 97 } }  }
+system = { id = "298" name = "" position = { x = { min = 84 max = 84 } y =  { min = 99 max = 113 } }  }
+system = { id = "299" name = "" position = { x = { min = 79 max = 79 } y =  { min = 115 max = 131 } }  }
+system = { id = "300" name = "" position = { x = { min = 71 max = 71 } y =  { min = 132 max = 148 } }  }
+system = { id = "301" name = "" position = { x = { min = 61 max = 61 } y =  { min = 149 max = 163 } }  }
+system = { id = "302" name = "" position = { x = { min = 48 max = 48 } y =  { min = 164 max = 178 } }  }
+system = { id = "303" name = "Kappa Ophiuchi" position = { x = { min = 25 max = 39 } y =  { min = 184 max = 188 } }  initializer = sck_b }
+system = { id = "304" name = "Tau Piscis Australis" position = { x = { min = 6 max = 22 } y =  { min = 197 max = 201 } }  initializer = scf_b }
+system = { id = "305" name = "Pi Piscis Australis" position = { x = { min = -15 max = 3 } y =  { min = 207 max = 213 } }  initializer = sca_b }
+system = { id = "306" name = "Gamma Coronae Australis" position = { x = { min = -38 max = -18 } y =  { min = 216 max = 220 } }  initializer = scf_b }
+system = { id = "307" name = "Bolarus" position = { x = { min = -63 max = -41 } y =  { min = 222 max = 228 } }  initializer = bolian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = bolian_league } } }
+system = { id = "308" name = "Gamma Tucanae" position = { x = { min = -90 max = -66 } y =  { min = 225 max = 231 } }  initializer = scf_b }
+system = { id = "309" name = "Romii" position = { x = { min = -118 max = -92 } y =  { min = 226 max = 232 } }  initializer = sck_b }
+system = { id = "310" name = "Belak" position = { x = { min = -146 max = -120 } y =  { min = 224 max = 230 } }  initializer = scg_b }
+system = { id = "311" name = "Haakona" position = { x = { min = -174 max = -148 } y =  { min = 218 max = 224 } }  initializer = scg_b }
+system = { id = "312" name = "" position = { x = { min = -202 max = -176 } y =  { min = 209 max = 215 } }  }
+system = { id = "313" name = "" position = { x = { min = -230 max = -204 } y =  { min = 196 max = 202 } }  }
+system = { id = "314" name = "" position = { x = { min = -257 max = -231 } y =  { min = 181 max = 185 } }  }
+system = { id = "315" name = "Centaurus X-3" position = { x = { min = -282 max = -258 } y =  { min = 161 max = 165 } }  initializer = centaurus_x3_b }
+system = { id = "316" name = "" position = { x = { min = -307 max = -283 } y =  { min = 138 max = 140 } }  }
+system = { id = "317" name = "" position = { x = { min = -321 max = -313 } y =  { min = 101 max = 125 } }  }
+system = { id = "318" name = "" position = { x = { min = -342 max = -332 } y =  { min = 69 max = 97 } }  }
+system = { id = "319" name = "" position = { x = { min = -359 max = -349 } y =  { min = 36 max = 66 } }  }
+system = { id = "320" name = "" position = { x = { min = -373 max = -363 } y =  { min = -2 max = 32 } }  }
+system = { id = "321" name = "" position = { x = { min = -385 max = -373 } y =  { min = -40 max = -4 } }  }
+system = { id = "322" name = "" position = { x = { min = -391 max = -379 } y =  { min = -80 max = -42 } }  }
+system = { id = "323" name = "" position = { x = { min = -393 max = -381 } y =  { min = -122 max = -82 } }  }
+system = { id = "324" name = "" position = { x = { min = -391 max = -379 } y =  { min = -164 max = -124 } }  }
+system = { id = "325" name = "Trakia" position = { x = { min = -384 max = -372 } y =  { min = -208 max = -166 } }  initializer = scf_b }
+system = { id = "326" name = "" position = { x = { min = -373 max = -361 } y =  { min = -249 max = -209 } }  }
+system = { id = "327" name = "Nassordin" position = { x = { min = -355 max = -345 } y =  { min = -291 max = -251 } }  initializer = scm_b }
+system = { id = "328" name = "Kyana" position = { x = { min = -334 max = -324 } y =  { min = -332 max = -292 } }  initializer = sck_b }
+system = { id = "329" name = "Pralor" position = { x = { min = -307 max = -299 } y =  { min = -370 max = -332 } }  initializer = scg_b }
+system = { id = "330" name = "Banea" position = { x = { min = -277 max = -269 } y =  { min = -406 max = -370 } }  initializer = banea_b }
+system = { id = "331" name = "Jibalia" position = { x = { min = -255 max = -221 } y =  { min = -430 max = -416 } }  initializer = scf_b }
+system = { id = "332" name = "" position = { x = { min = -218 max = -180 } y =  { min = -461 max = -447 } }  }
+system = { id = "333" name = "" position = { x = { min = -177 max = -135 } y =  { min = -490 max = -474 } }  }
+system = { id = "334" name = "" position = { x = { min = 85 max = 85 } y =  { min = 80 max = 94 } }  }
+system = { id = "335" name = "" position = { x = { min = 82 max = 82 } y =  { min = 96 max = 110 } }  }
+system = { id = "336" name = "" position = { x = { min = 77 max = 77 } y =  { min = 112 max = 126 } }  }
+system = { id = "337" name = "" position = { x = { min = 69 max = 69 } y =  { min = 128 max = 144 } }  }
+system = { id = "338" name = "" position = { x = { min = 59 max = 59 } y =  { min = 144 max = 158 } }  }
+system = { id = "339" name = "" position = { x = { min = 46 max = 46 } y =  { min = 159 max = 173 } }  initializer = arbazan_b }
+system = { id = "340" name = "Arbazan" position = { x = { min = 24 max = 38 } y =  { min = 178 max = 182 } }  initializer = scm_b }
+system = { id = "341" name = "Delta Triciatu" position = { x = { min = 6 max = 22 } y =  { min = 191 max = 195 } }  initializer = scf_b }
+system = { id = "342" name = "Kaus Borealis" position = { x = { min = -15 max = 3 } y =  { min = 201 max = 205 } }  initializer = sck_b }
+system = { id = "343" name = "Tau Bootis" position = { x = { min = -37 max = -17 } y =  { min = 209 max = 215 } }  initializer = scf_b }
+system = { id = "344" name = "Mu Virginis" position = { x = { min = -62 max = -40 } y =  { min = 215 max = 221 } }  initializer = scf_b }
+system = { id = "345" name = "Epsilon Phoenicis" position = { x = { min = -88 max = -64 } y =  { min = 218 max = 224 } }  initializer = sck_b }
+system = { id = "346" name = "Romulus" position = { x = { min = -114 max = -90 } y =  { min = 219 max = 225 } }  initializer = romulan_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = romulan_star_empire } } }
+system = { id = "347" name = "Devolin" position = { x = { min = -140 max = -116 } y =  { min = 216 max = 222 } }  initializer = sca_b }
+system = { id = "348" name = "Gacrux" position = { x = { min = -169 max = -143 } y =  { min = 211 max = 217 } }  initializer = scm_b }
+system = { id = "349" name = "" position = { x = { min = -196 max = -170 } y =  { min = 202 max = 208 } }  }
+system = { id = "350" name = "" position = { x = { min = -223 max = -197 } y =  { min = 190 max = 194 } }  }
+system = { id = "351" name = "" position = { x = { min = -248 max = -224 } y =  { min = 175 max = 179 } }  }
+system = { id = "352" name = "" position = { x = { min = -274 max = -250 } y =  { min = 155 max = 159 } }  }
+system = { id = "353" name = "" position = { x = { min = -296 max = -274 } y =  { min = 133 max = 137 } }  }
+system = { id = "354" name = "" position = { x = { min = -312 max = -302 } y =  { min = 97 max = 121 } }  }
+system = { id = "355" name = "" position = { x = { min = -331 max = -321 } y =  { min = 66 max = 94 } }  }
+system = { id = "356" name = "" position = { x = { min = -348 max = -338 } y =  { min = 34 max = 64 } }  }
+system = { id = "357" name = "" position = { x = { min = -361 max = -351 } y =  { min = -1 max = 31 } }  }
+system = { id = "358" name = "" position = { x = { min = -372 max = -360 } y =  { min = -38 max = -4 } }  }
+system = { id = "359" name = "Hope" position = { x = { min = -378 max = -366 } y =  { min = -77 max = -41 } }  }
+system = { id = "360" name = "" position = { x = { min = -380 max = -368 } y =  { min = -118 max = -80 } }  }
+system = { id = "361" name = "" position = { x = { min = -378 max = -366 } y =  { min = -158 max = -120 } }  }
+system = { id = "362" name = "Entaba" position = { x = { min = -371 max = -359 } y =  { min = -200 max = -160 } }  initializer = scm_b }
+system = { id = "363" name = "" position = { x = { min = -360 max = -348 } y =  { min = -241 max = -201 } }  }
+system = { id = "364" name = "Ram Izad" position = { x = { min = -343 max = -333 } y =  { min = -282 max = -242 } }  initializer = scg_b }
+system = { id = "365" name = "Nihydron" position = { x = { min = -323 max = -313 } y =  { min = -320 max = -282 } }  initializer = sck_b }
+system = { id = "366" name = "Kazon" position = { x = { min = -298 max = -288 } y =  { min = -357 max = -321 } }  initializer = kazon_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = kazon_sects } } }
+system = { id = "367" name = "Numiri" position = { x = { min = -267 max = -259 } y =  { min = -392 max = -358 } }  initializer = scg_b }
+system = { id = "368" name = "Trabal" position = { x = { min = -246 max = -214 } y =  { min = -414 max = -402 } }  initializer = scf_b }
+system = { id = "369" name = "" position = { x = { min = -210 max = -174 } y =  { min = -445 max = -431 } }  }
+system = { id = "370" name = "" position = { x = { min = -170 max = -130 } y =  { min = -473 max = -457 } }  }
+system = { id = "371" name = "" position = { x = { min = -127 max = -83 } y =  { min = -496 max = -480 } }  }
+system = { id = "372" name = "" position = { x = { min = 82 max = 82 } y =  { min = 78 max = 92 } }  }
+system = { id = "373" name = "" position = { x = { min = 80 max = 80 } y =  { min = 93 max = 107 } }  }
+system = { id = "374" name = "" position = { x = { min = 74 max = 76 } y =  { min = 109 max = 123 } }  }
+system = { id = "375" name = "" position = { x = { min = 67 max = 67 } y =  { min = 125 max = 139 } }  }
+system = { id = "376" name = "" position = { x = { min = 57 max = 57 } y =  { min = 140 max = 154 } }  }
+system = { id = "377" name = "" position = { x = { min = 45 max = 45 } y =  { min = 155 max = 167 } }  }
+system = { id = "378" name = "Heathercrist" position = { x = { min = 23 max = 37 } y =  { min = 173 max = 177 } }  initializer = scb_b }
+system = { id = "379" name = "Sigma Serpentis" position = { x = { min = 5 max = 21 } y =  { min = 185 max = 189 } }  initializer = scf_b }
+system = { id = "380" name = "Sabik" position = { x = { min = -15 max = 3 } y =  { min = 194 max = 200 } }  initializer = sca_b }
+system = { id = "381" name = "Xi Ophiuchi" position = { x = { min = -37 max = -17 } y =  { min = 202 max = 208 } }  initializer = scf_b }
+system = { id = "382" name = "Wei" position = { x = { min = -59 max = -39 } y =  { min = 208 max = 214 } }  initializer = sck_b }
+system = { id = "383" name = "Iota Pavonis" position = { x = { min = -84 max = -62 } y =  { min = 211 max = 217 } }  initializer = scg_b }
+system = { id = "384" name = "Glintara" position = { x = { min = -110 max = -86 } y =  { min = 212 max = 218 } }  initializer = scg_b }
+system = { id = "385" name = "Norkan" position = { x = { min = -136 max = -112 } y =  { min = 209 max = 215 } }  initializer = sck_b }
+system = { id = "386" name = "Rho Tucanae" position = { x = { min = -162 max = -138 } y =  { min = 204 max = 210 } }  initializer = scf_b }
+system = { id = "387" name = "Flaxia" position = { x = { min = -190 max = -164 } y =  { min = 195 max = 201 } }  initializer = FlaxianHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = flaxian_hegemony } } }
+system = { id = "388" name = "" position = { x = { min = -215 max = -191 } y =  { min = 183 max = 189 } }  }
+system = { id = "389" name = "" position = { x = { min = -240 max = -216 } y =  { min = 169 max = 173 } }  }
+system = { id = "390" name = "" position = { x = { min = -265 max = -241 } y =  { min = 150 max = 154 } }  }
+system = { id = "391" name = "" position = { x = { min = -279 max = -271 } y =  { min = 120 max = 140 } }  }
+system = { id = "392" name = "Fen Domar" position = { x = { min = -300 max = -292 } y =  { min = 93 max = 117 } }  initializer = FenDomarHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = fen_domar_states } } }
+system = { id = "393" name = "" position = { x = { min = -320 max = -310 } y =  { min = 65 max = 91 } }  }
+system = { id = "394" name = "" position = { x = { min = -336 max = -326 } y =  { min = 32 max = 62 } }  }
+system = { id = "395" name = "" position = { x = { min = -350 max = -338 } y =  { min = -2 max = 30 } }  }
+system = { id = "396" name = "" position = { x = { min = -359 max = -347 } y =  { min = -38 max = -4 } }  }
+system = { id = "397" name = "" position = { x = { min = -365 max = -353 } y =  { min = -74 max = -40 } }  }
+system = { id = "398" name = "" position = { x = { min = -367 max = -355 } y =  { min = -113 max = -77 } }  }
+system = { id = "399" name = "" position = { x = { min = -365 max = -353 } y =  { min = -153 max = -115 } }  }
+system = { id = "400" name = "Benthos" position = { x = { min = -358 max = -346 } y =  { min = -193 max = -155 } }  initializer = sck_b }
+system = { id = "401" name = "Krenim" position = { x = { min = -346 max = -336 } y =  { min = -232 max = -194 } }  initializer = krenim_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = krenim_imperium } } }
+system = { id = "402" name = "FGC-7861340" position = { x = { min = -331 max = -321 } y =  { min = -271 max = -233 } }  initializer = sck_b }
+system = { id = "403" name = "Rilnar" position = { x = { min = -311 max = -301 } y =  { min = -308 max = -272 } }  initializer = scf_b }
+system = { id = "404" name = "Trabe" position = { x = { min = -286 max = -278 } y =  { min = -345 max = -309 } }  initializer = sck_b }
+system = { id = "405" name = "Sikaris" position = { x = { min = -258 max = -250 } y =  { min = -379 max = -345 } }  initializer = sck_b }
+system = { id = "406" name = "Talax" position = { x = { min = -237 max = -205 } y =  { min = -401 max = -387 } }  initializer = talaxian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = talaxian_empire } } }
+system = { id = "407" name = "" position = { x = { min = -202 max = -168 } y =  { min = -430 max = -416 } }  }
+system = { id = "408" name = "" position = { x = { min = -164 max = -126 } y =  { min = -455 max = -441 } }  }
+system = { id = "409" name = "" position = { x = { min = -122 max = -80 } y =  { min = -478 max = -462 } }  }
+system = { id = "410" name = "" position = { x = { min = -77 max = -33 } y =  { min = -497 max = -479 } }  }
+system = { id = "411" name = "" position = { x = { min = 80 max = 80 } y =  { min = 76 max = 90 } }  }
+system = { id = "412" name = "" position = { x = { min = 77 max = 77 } y =  { min = 91 max = 105 } }  }
+system = { id = "413" name = "" position = { x = { min = 72 max = 72 } y =  { min = 106 max = 120 } }  }
+system = { id = "414" name = "" position = { x = { min = 65 max = 65 } y =  { min = 121 max = 135 } }  }
+system = { id = "415" name = "" position = { x = { min = 55 max = 55 } y =  { min = 136 max = 148 } }  }
+system = { id = "416" name = "" position = { x = { min = 43 max = 43 } y =  { min = 150 max = 162 } }  }
+system = { id = "417" name = "Zeta Bootis" position = { x = { min = 23 max = 35 } y =  { min = 167 max = 171 } }  initializer = rl_zeta_bootis }
+system = { id = "418" name = "Yed Posterior" position = { x = { min = 6 max = 20 } y =  { min = 179 max = 183 } }  initializer = scg_b }
+system = { id = "419" name = "Ascella" position = { x = { min = -15 max = 3 } y =  { min = 188 max = 192 } }  initializer = sca_b }
+system = { id = "420" name = "Graffias" position = { x = { min = -35 max = -17 } y =  { min = 195 max = 201 } }  initializer = scf_b }
+system = { id = "421" name = "Al Nair" position = { x = { min = -58 max = -38 } y =  { min = 201 max = 207 } }  initializer = scb_b }
+system = { id = "422" name = "Tarod" position = { x = { min = -82 max = -60 } y =  { min = 204 max = 210 } }  initializer = sck_b }
+system = { id = "423" name = "Nimbus" position = { x = { min = -106 max = -84 } y =  { min = 204 max = 210 } }  initializer = nimbus_b }
+system = { id = "424" name = "Epsilon Pavonis" position = { x = { min = -132 max = -108 } y =  { min = 202 max = 208 } }  initializer = scf_b }
+system = { id = "425" name = "Delta Muscae" position = { x = { min = -157 max = -133 } y =  { min = 197 max = 203 } }  initializer = sck_b }
+system = { id = "426" name = "" position = { x = { min = -183 max = -159 } y =  { min = 188 max = 194 } }  }
+system = { id = "427" name = "" position = { x = { min = -208 max = -184 } y =  { min = 177 max = 181 } }  }
+system = { id = "428" name = "" position = { x = { min = -231 max = -209 } y =  { min = 163 max = 167 } }  }
+system = { id = "429" name = "" position = { x = { min = -255 max = -233 } y =  { min = 145 max = 149 } }  }
+system = { id = "430" name = "" position = { x = { min = -270 max = -262 } y =  { min = 116 max = 136 } }  }
+system = { id = "431" name = "" position = { x = { min = -291 max = -281 } y =  { min = 91 max = 113 } }  }
+system = { id = "432" name = "" position = { x = { min = -309 max = -299 } y =  { min = 62 max = 88 } }  }
+system = { id = "433" name = "" position = { x = { min = -324 max = -314 } y =  { min = 31 max = 59 } }  }
+system = { id = "434" name = "" position = { x = { min = -336 max = -326 } y =  { min = -1 max = 29 } }  }
+system = { id = "435" name = "" position = { x = { min = -346 max = -334 } y =  { min = -36 max = -4 } }  }
+system = { id = "436" name = "" position = { x = { min = -352 max = -340 } y =  { min = -72 max = -38 } }  }
+system = { id = "437" name = "" position = { x = { min = -354 max = -342 } y =  { min = -110 max = -74 } }  }
+system = { id = "438" name = "" position = { x = { min = -352 max = -340 } y =  { min = -147 max = -111 } }  }
+system = { id = "439" name = "Omega" position = { x = { min = -345 max = -333 } y =  { min = -185 max = -149 } }  initializer = sck_b }
+system = { id = "440" name = "Kobali" position = { x = { min = -335 max = -323 } y =  { min = -223 max = -187 } }  initializer = scm_b }
+system = { id = "441" name = "" position = { x = { min = -319 max = -309 } y =  { min = -261 max = -225 } }  initializer = binary_pulsar_b }
+system = { id = "442" name = "Zahl" position = { x = { min = -300 max = -290 } y =  { min = -298 max = -262 } }  initializer = zahl_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = zahl_technocracy } } }
+system = { id = "443" name = "" position = { x = { min = -277 max = -267 } y =  { min = -332 max = -298 } }  initializer = new_earth_b }
+system = { id = "444" name = "Ilidaria" position = { x = { min = -249 max = -241 } y =  { min = -364 max = -332 } }  initializer = scf_b }
+system = { id = "445" name = "Mylea" position = { x = { min = -228 max = -198 } y =  { min = -386 max = -372 } }  initializer = scf_b }
+system = { id = "446" name = "" position = { x = { min = -195 max = -161 } y =  { min = -414 max = -400 } }  }
+system = { id = "447" name = "" position = { x = { min = -158 max = -120 } y =  { min = -440 max = -424 } }  }
+system = { id = "448" name = "" position = { x = { min = -118 max = -78 } y =  { min = -461 max = -445 } }  }
+system = { id = "449" name = "" position = { x = { min = -75 max = -31 } y =  { min = -477 max = -461 } }  }
+system = { id = "450" name = "" position = { x = { min = -29 max = 17 } y =  { min = -491 max = -473 } }  }
+system = { id = "451" name = "Relva" position = { x = { min = -127 max = -105 } y =  { min = 195 max = 201 } }  initializer = sck_b }
+system = { id = "452" name = "Algeron" position = { x = { min = -151 max = -129 } y =  { min = 189 max = 195 } }  initializer = scb_b }
+system = { id = "453" name = "Caldos" position = { x = { min = -177 max = -153 } y =  { min = 181 max = 187 } }  initializer = scb_b }
+system = { id = "454" name = "" position = { x = { min = -200 max = -178 } y =  { min = 170 max = 176 } }  }
+system = { id = "455" name = "Zalkon" position = { x = { min = -223 max = -201 } y =  { min = 157 max = 161 } }  initializer = scg_b }
+system = { id = "456" name = "" position = { x = { min = -246 max = -224 } y =  { min = 139 max = 143 } }  }
+system = { id = "457" name = "" position = { x = { min = -266 max = -246 } y =  { min = 119 max = 123 } }  }
+system = { id = "458" name = "" position = { x = { min = -279 max = -271 } y =  { min = 87 max = 109 } }  }
+system = { id = "459" name = "" position = { x = { min = -297 max = -287 } y =  { min = 60 max = 84 } }  }
+system = { id = "460" name = "" position = { x = { min = -312 max = -302 } y =  { min = 31 max = 57 } }  }
+system = { id = "461" name = "" position = { x = { min = -325 max = -313 } y =  { min = -2 max = 28 } }  }
+system = { id = "462" name = "" position = { x = { min = -332 max = -322 } y =  { min = -34 max = -4 } }  }
+system = { id = "463" name = "" position = { x = { min = -339 max = -327 } y =  { min = -69 max = -37 } }  }
+system = { id = "464" name = "" position = { x = { min = -341 max = -329 } y =  { min = -105 max = -71 } }  }
+system = { id = "465" name = "" position = { x = { min = -338 max = -326 } y =  { min = -143 max = -107 } }  }
+system = { id = "466" name = "Mikah" position = { x = { min = -331 max = -321 } y =  { min = -178 max = -144 } }  initializer = scf_b }
+system = { id = "467" name = "Enthara" position = { x = { min = -321 max = -311 } y =  { min = -216 max = -180 } }  initializer = sck_b }
+system = { id = "468" name = "Mari" position = { x = { min = -307 max = -297 } y =  { min = -251 max = -217 } }  initializer = sca_b }
+system = { id = "469" name = "Mawasi" position = { x = { min = -289 max = -279 } y =  { min = -286 max = -252 } }  initializer = scg_b }
+system = { id = "470" name = "Akritiri" position = { x = { min = -265 max = -257 } y =  { min = -319 max = -287 } }  initializer = akritiri_b }
+system = { id = "471" name = "Voth" position = { x = { min = -239 max = -231 } y =  { min = -350 max = -320 } }  initializer = voth_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = voth_theocracy } } }
+system = { id = "472" name = "Rekarr" position = { x = { min = -219 max = -191 } y =  { min = -370 max = -358 } }  initializer = scg_b }
+system = { id = "473" name = "Gree" position = { x = { min = -187 max = -155 } y =  { min = -398 max = -384 } }  initializer = scg_b }
+system = { id = "474" name = "Garid" position = { x = { min = -122 max = -100 } y =  { min = 187 max = 193 } }  initializer = garidian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = garidian_republic } } }
+system = { id = "475" name = "Gamma Hydrae" position = { x = { min = -146 max = -124 } y =  { min = 182 max = 188 } }  initializer = scg_b }
+system = { id = "476" name = "Polaris Australis" position = { x = { min = -169 max = -147 } y =  { min = 174 max = 180 } }  initializer = polaris_australis_b }
+system = { id = "477" name = "Zakdorn" position = { x = { min = -193 max = -171 } y =  { min = 164 max = 168 } }  initializer = scm_b }
+system = { id = "478" name = "Spica" position = { x = { min = -214 max = -194 } y =  { min = 151 max = 155 } }  initializer = spica_b }
+system = { id = "479" name = "Becrux" position = { x = { min = -236 max = -216 } y =  { min = 134 max = 138 } }  initializer = becrux_b }
+system = { id = "480" name = "" position = { x = { min = -250 max = -242 } y =  { min = 107 max = 125 } }  }
+system = { id = "481" name = "" position = { x = { min = -270 max = -260 } y =  { min = 84 max = 104 } }  }
+system = { id = "482" name = "" position = { x = { min = -286 max = -276 } y =  { min = 57 max = 81 } }  }
+system = { id = "483" name = "" position = { x = { min = -300 max = -290 } y =  { min = 29 max = 55 } }  }
+system = { id = "484" name = "" position = { x = { min = -311 max = -301 } y =  { min = -1 max = 27 } }  }
+system = { id = "485" name = "" position = { x = { min = -321 max = -309 } y =  { min = -33 max = -3 } }  }
+system = { id = "486" name = "" position = { x = { min = -326 max = -314 } y =  { min = -67 max = -35 } }  }
+system = { id = "487" name = "FGC-521407" position = { x = { min = -327 max = -315 } y =  { min = -101 max = -69 } }  initializer = scb_b }
+system = { id = "488" name = "Tekara" position = { x = { min = -325 max = -313 } y =  { min = -137 max = -103 } }  initializer = scf_b }
+system = { id = "489" name = "Vaskan-Kyrian" position = { x = { min = -320 max = -308 } y =  { min = -172 max = -138 } }  initializer = sca_b }
+system = { id = "490" name = "Kendren" position = { x = { min = -310 max = -298 } y =  { min = -207 max = -173 } }  initializer = scg_b }
+system = { id = "491" name = "Tau" position = { x = { min = -295 max = -285 } y =  { min = -240 max = -208 } }  initializer = scf_b }
+system = { id = "492" name = "Malkothia" position = { x = { min = -278 max = -268 } y =  { min = -274 max = -242 } }  initializer = scg_b }
+system = { id = "493" name = "Nyria" position = { x = { min = -255 max = -247 } y =  { min = -307 max = -275 } }  initializer = scm_b }
+system = { id = "494" name = "Briori" position = { x = { min = -230 max = -222 } y =  { min = -335 max = -307 } }  initializer = scg_b }
+system = { id = "495" name = "Rectilia" position = { x = { min = -211 max = -183 } y =  { min = -357 max = -343 } }  initializer = scg_b }
+system = { id = "496" name = "Mithren" position = { x = { min = -180 max = -148 } y =  { min = -382 max = -368 } }  initializer = scm_b }
+system = { id = "497" name = "" position = { x = { min = -146 max = -112 } y =  { min = -406 max = -390 } }  }
+system = { id = "498" name = "" position = { x = { min = -109 max = -71 } y =  { min = -425 max = -409 } }  }
+system = { id = "499" name = "" position = { x = { min = -69 max = -29 } y =  { min = -441 max = -425 } }  }
+system = { id = "500" name = "" position = { x = { min = -27 max = 15 } y =  { min = -453 max = -435 } }  }
+system = { id = "501" name = "" position = { x = { min = 103 max = 103 } y =  { min = 97 max = 115 } }  }
+system = { id = "502" name = "" position = { x = { min = 100 max = 100 } y =  { min = 117 max = 137 } }  }
+system = { id = "503" name = "Kornephoros" position = { x = { min = 94 max = 96 } y =  { min = 138 max = 156 } }  initializer = scg_b }
+system = { id = "504" name = "Nashira" position = { x = { min = 85 max = 87 } y =  { min = 158 max = 178 } }  initializer = sca_b }
+system = { id = "505" name = "Gamma Ophiuchi" position = { x = { min = 73 max = 73 } y =  { min = 179 max = 197 } }  initializer = sca_b }
+system = { id = "506" name = "Ras Alhague" position = { x = { min = 58 max = 58 } y =  { min = 199 max = 217 } }  initializer = sca_b }
+system = { id = "507" name = "Scheddi" position = { x = { min = 30 max = 48 } y =  { min = 223 max = 229 } }  initializer = sca_b }
+system = { id = "508" name = "Gamma Serpentis" position = { x = { min = 7 max = 27 } y =  { min = 239 max = 245 } }  initializer = scf_b }
+system = { id = "509" name = "70 Virginis" position = { x = { min = -18 max = 4 } y =  { min = 253 max = 259 } }  initializer = scg_b }
+system = { id = "510" name = "Teneebia" position = { x = { min = -48 max = -22 } y =  { min = 264 max = 270 } }  initializer = scf_b }
+system = { id = "511" name = "Ankaa" position = { x = { min = -78 max = -50 } y =  { min = 272 max = 280 } }  initializer = sck_b }
+system = { id = "512" name = "Dessica" position = { x = { min = -111 max = -81 } y =  { min = 277 max = 285 } }  initializer = scg_b }
+system = { id = "513" name = "Delta Phoenicis" position = { x = { min = -145 max = -113 } y =  { min = 278 max = 286 } }  initializer = sck_b }
+system = { id = "514" name = "Eta Horologii" position = { x = { min = -179 max = -147 } y =  { min = 275 max = 283 } }  initializer = sca_b }
+system = { id = "515" name = "" position = { x = { min = -215 max = -181 } y =  { min = 269 max = 275 } }  }
+system = { id = "516" name = "" position = { x = { min = -251 max = -217 } y =  { min = 258 max = 264 } }  }
+system = { id = "517" name = "Foramen" position = { x = { min = -284 max = -252 } y =  { min = 243 max = 249 } }  initializer = foramen_b }
+system = { id = "518" name = "LV-426" position = { x = { min = -318 max = -286 } y =  { min = 223 max = 229 } }  initializer = lv_426_b }
+system = { id = "519" name = "" position = { x = { min = -351 max = -319 } y =  { min = 199 max = 205 } }  }
+system = { id = "520" name = "" position = { x = { min = 106 max = 106 } y =  { min = 100 max = 118 } }  }
+system = { id = "521" name = "" position = { x = { min = 102 max = 104 } y =  { min = 120 max = 140 } }  }
+system = { id = "522" name = "Tyberius" position = { x = { min = 97 max = 97 } y =  { min = 141 max = 161 } }  initializer = sck_b }
+system = { id = "523" name = "Epsilon Bootis" position = { x = { min = 88 max = 88 } y =  { min = 163 max = 183 } }  initializer = epsilon_bootis_b }
+system = { id = "524" name = "Cebelrai" position = { x = { min = 75 max = 75 } y =  { min = 184 max = 204 } }  initializer = sck_b }
+system = { id = "525" name = "Gemma" position = { x = { min = 59 max = 59 } y =  { min = 205 max = 223 } }  initializer = sca_b }
+system = { id = "526" name = "Arcturus" position = { x = { min = 31 max = 49 } y =  { min = 230 max = 236 } }  initializer = sck_b }
+system = { id = "527" name = "Fomalhaut" position = { x = { min = 8 max = 28 } y =  { min = 246 max = 252 } }  initializer = sca_b }
+system = { id = "528" name = "AX Microscopii" position = { x = { min = -20 max = 4 } y =  { min = 261 max = 267 } }  initializer = scm_b }
+system = { id = "529" name = "Theta Sculptoris" position = { x = { min = -49 max = -23 } y =  { min = 272 max = 280 } }  initializer = scf_b }
+system = { id = "530" name = "Beta Hydri" position = { x = { min = -80 max = -52 } y =  { min = 281 max = 287 } }  initializer = scg_b }
+system = { id = "531" name = "Alpha Mensae" position = { x = { min = -115 max = -83 } y =  { min = 286 max = 294 } }  initializer = scg_b }
+system = { id = "532" name = "Vendor" position = { x = { min = -149 max = -117 } y =  { min = 287 max = 295 } }  initializer = scf_b }
+system = { id = "533" name = "Devoras" position = { x = { min = -186 max = -152 } y =  { min = 284 max = 292 } }  initializer = scm_b }
+system = { id = "534" name = "Alpha Volantis" position = { x = { min = -222 max = -188 } y =  { min = 277 max = 285 } }  initializer = sck_b }
+system = { id = "535" name = "" position = { x = { min = -258 max = -224 } y =  { min = 266 max = 274 } }  }
+system = { id = "536" name = "" position = { x = { min = -294 max = -260 } y =  { min = 251 max = 257 } }  }
+system = { id = "537" name = "" position = { x = { min = -329 max = -295 } y =  { min = 230 max = 236 } }  }
+system = { id = "538" name = "" position = { x = { min = -362 max = -330 } y =  { min = 206 max = 210 } }  }
+system = { id = "539" name = "" position = { x = { min = 109 max = 109 } y =  { min = 102 max = 122 } }  }
+system = { id = "540" name = "" position = { x = { min = 105 max = 107 } y =  { min = 124 max = 144 } }  }
+system = { id = "541" name = "Berengaria" position = { x = { min = 99 max = 101 } y =  { min = 146 max = 166 } }  }
+system = { id = "542" name = "Sabik" position = { x = { min = 90 max = 90 } y =  { min = 168 max = 188 } }  }
+system = { id = "543" name = "Zaran" position = { x = { min = 77 max = 79 } y =  { min = 189 max = 209 } }  }
+system = { id = "544" name = "Alshain" position = { x = { min = 61 max = 61 } y =  { min = 210 max = 230 } }  initializer = scg_b }
+system = { id = "545" name = "Eta Coronae Borealis" position = { x = { min = 32 max = 50 } y =  { min = 237 max = 241 } }  }
+system = { id = "546" name = "Xi Bootis" position = { x = { min = 7 max = 29 } y =  { min = 254 max = 260 } }  initializer = scg_b }
+system = { id = "547" name = "Lalande 25372" position = { x = { min = -20 max = 4 } y =  { min = 269 max = 275 } }  initializer = scm_b }
+system = { id = "548" name = "Epsilon Indi" position = { x = { min = -51 max = -23 } y =  { min = 281 max = 287 } }  initializer = rl_epsilon_indi }
+system = { id = "549" name = "Porrima" position = { x = { min = -83 max = -53 } y =  { min = 289 max = 297 } }  initializer = scf_b }
+system = { id = "550" name = "Iota Horologii" position = { x = { min = -118 max = -86 } y =  { min = 295 max = 303 } }  initializer = scg_b }
+system = { id = "551" name = "Gamma Crateris" position = { x = { min = -154 max = -120 } y =  { min = 296 max = 304 } }  initializer = sca_b }
+system = { id = "552" name = "Eta Antliae" position = { x = { min = -192 max = -156 } y =  { min = 293 max = 301 } }  initializer = scf_b }
+system = { id = "553" name = "Delta Doradus" position = { x = { min = -229 max = -193 } y =  { min = 286 max = 294 } }  initializer = sca_b }
+system = { id = "554" name = "" position = { x = { min = -267 max = -231 } y =  { min = 275 max = 283 } }  }
+system = { id = "555" name = "" position = { x = { min = -304 max = -268 } y =  { min = 259 max = 265 } }  }
+system = { id = "556" name = "" position = { x = { min = -339 max = -305 } y =  { min = 238 max = 244 } }  }
+system = { id = "557" name = "" position = { x = { min = -374 max = -340 } y =  { min = 212 max = 218 } }  }
+system = { id = "558" name = "" position = { x = { min = 111 max = 111 } y =  { min = 105 max = 125 } }  }
+system = { id = "559" name = "Peacock" position = { x = { min = 109 max = 109 } y =  { min = 127 max = 147 } }  initializer = peacock_b }
+system = { id = "560" name = "Antos" position = { x = { min = 102 max = 104 } y =  { min = 149 max = 171 } }  initializer = scg_b }
+system = { id = "561" name = "Deneb Al Okrab" position = { x = { min = 92 max = 94 } y =  { min = 172 max = 194 } }  initializer = sca_b }
+system = { id = "562" name = "Nusakan" position = { x = { min = 80 max = 80 } y =  { min = 195 max = 215 } }  initializer = sca_b }
+system = { id = "563" name = "Omega Sagitta" position = { x = { min = 63 max = 63 } y =  { min = 216 max = 236 } }  initializer = madena_b }
+system = { id = "564" name = "Beta Coronae Berenices" position = { x = { min = 32 max = 52 } y =  { min = 243 max = 249 } }  initializer = beta_comae_b }
+system = { id = "565" name = "70 Ophiuchi" position = { x = { min = 8 max = 30 } y =  { min = 261 max = 267 } }  initializer = rl_70_ophiuchi }
+system = { id = "566" name = "Ross 154" position = { x = { min = -21 max = 5 } y =  { min = 277 max = 283 } }  initializer = ross_154_b }
+system = { id = "567" name = "Gliese 1" position = { x = { min = -52 max = -24 } y =  { min = 289 max = 297 } }  initializer = gliese_1_b }
+system = { id = "568" name = "Zavijava" position = { x = { min = -85 max = -55 } y =  { min = 298 max = 306 } }  initializer = scf_b }
+system = { id = "569" name = "Gamma Equulei" position = { x = { min = -122 max = -88 } y =  { min = 304 max = 312 } }  initializer = scf_b }
+system = { id = "570" name = "Psi Velorum" position = { x = { min = -158 max = -124 } y =  { min = 305 max = 313 } }  initializer = scf_b }
+system = { id = "571" name = "Chaltok" position = { x = { min = -197 max = -161 } y =  { min = 302 max = 310 } }  }
+system = { id = "572" name = "Dinasia" position = { x = { min = -237 max = -199 } y =  { min = 295 max = 303 } }  }
+system = { id = "573" name = "" position = { x = { min = -276 max = -238 } y =  { min = 284 max = 290 } }  }
+system = { id = "574" name = "Sergane" position = { x = { min = -313 max = -277 } y =  { min = 267 max = 273 } }  initializer = MoraliHomeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = morali_states } } }
+system = { id = "575" name = "" position = { x = { min = -350 max = -314 } y =  { min = 245 max = 251 } }  }
+system = { id = "576" name = "" position = { x = { min = -385 max = -351 } y =  { min = 219 max = 225 } }  }
+system = { id = "577" name = "Rotanev" position = { x = { min = 105 max = 105 } y =  { min = 153 max = 175 } }  initializer = scf_b }
+system = { id = "578" name = "Tau Coronae Borealis" position = { x = { min = 95 max = 95 } y =  { min = 177 max = 199 } }  initializer = sck_b }
+system = { id = "579" name = "Balosnee" position = { x = { min = 82 max = 82 } y =  { min = 200 max = 222 } }  initializer = scg_b }
+system = { id = "580" name = "Rho Coronae Borealis" position = { x = { min = 65 max = 65 } y =  { min = 223 max = 243 } }  initializer = scg_b }
+system = { id = "581" name = "Zeta Herculis" position = { x = { min = 34 max = 54 } y =  { min = 250 max = 256 } }  initializer = scf_b }
+system = { id = "582" name = "Altair" position = { x = { min = 7 max = 31 } y =  { min = 269 max = 275 } }  initializer = rl_altair }
+system = { id = "583" name = "Dopteria" position = { x = { min = 97 max = 99 } y =  { min = 181 max = 205 } }  initializer = sck_b }
+system = { id = "584" name = "Rymus" position = { x = { min = 84 max = 84 } y =  { min = 205 max = 227 } }  initializer = sck_b }
+system = { id = "585" name = "Xendi Sabu" position = { x = { min = 66 max = 66 } y =  { min = 228 max = 250 } }  initializer = scm_b }
+system = { id = "586" name = "Vega" position = { x = { min = 35 max = 55 } y =  { min = 257 max = 263 } }  initializer = rl_vega }
+system = { id = "587" name = "EZ Aquari" position = { x = { min = 8 max = 32 } y =  { min = 276 max = 282 } }  initializer = ez_aquarii_b }
+system = { id = "588" name = "Kohlan" position = { x = { min = 86 max = 86 } y =  { min = 210 max = 234 } }  initializer = scf_b }
+system = { id = "589" name = "Maxia Zeta" position = { x = { min = 68 max = 68 } y =  { min = 234 max = 256 } }  initializer = sck_b }
+system = { id = "590" name = "Iota Bootis" position = { x = { min = 36 max = 56 } y =  { min = 264 max = 270 } }  initializer = denobula_triaxa_b }
+system = { id = "591" name = "Struve 2398" position = { x = { min = 9 max = 33 } y =  { min = 291 max = 297 } }  initializer = struve_2398_b }
+system = { id = "592" name = "" position = { x = { min = -89 max = -89 } y =  { min = -100 max = -84 } }  }
+system = { id = "593" name = "" position = { x = { min = -87 max = -85 } y =  { min = -117 max = -101 } }  }
+system = { id = "594" name = "" position = { x = { min = -81 max = -81 } y =  { min = -134 max = -118 } }  }
+system = { id = "595" name = "" position = { x = { min = -73 max = -73 } y =  { min = -151 max = -135 } }  }
+system = { id = "596" name = "" position = { x = { min = -62 max = -62 } y =  { min = -168 max = -152 } }  }
+system = { id = "597" name = "" position = { x = { min = -49 max = -49 } y =  { min = -183 max = -169 } }  }
+system = { id = "598" name = "" position = { x = { min = -40 max = -26 } y =  { min = -193 max = -189 } }  }
+system = { id = "599" name = "" position = { x = { min = -23 max = -7 } y =  { min = -206 max = -202 } }  }
+system = { id = "600" name = "" position = { x = { min = -4 max = 16 } y =  { min = -218 max = -214 } }  }
+system = { id = "601" name = "" position = { x = { min = 18 max = 40 } y =  { min = -228 max = -222 } }  }
+system = { id = "602" name = "" position = { x = { min = 42 max = 66 } y =  { min = -235 max = -229 } }  }
+system = { id = "603" name = "" position = { x = { min = 68 max = 92 } y =  { min = -239 max = -233 } }  }
+system = { id = "604" name = "" position = { x = { min = 95 max = 121 } y =  { min = -239 max = -233 } }  }
+system = { id = "605" name = "" position = { x = { min = 123 max = 151 } y =  { min = -237 max = -231 } }  }
+system = { id = "606" name = "" position = { x = { min = 152 max = 180 } y =  { min = -231 max = -225 } }  }
+system = { id = "607" name = "" position = { x = { min = 181 max = 209 } y =  { min = -221 max = -215 } }  }
+system = { id = "608" name = "" position = { x = { min = 210 max = 238 } y =  { min = -208 max = -202 } }  }
+system = { id = "609" name = "" position = { x = { min = 239 max = 265 } y =  { min = -191 max = -187 } }  }
+system = { id = "610" name = "" position = { x = { min = 266 max = 292 } y =  { min = -170 max = -166 } }  }
+system = { id = "611" name = "" position = { x = { min = 293 max = 317 } y =  { min = -146 max = -142 } }  }
+system = { id = "612" name = "" position = { x = { min = 324 max = 332 } y =  { min = -130 max = -104 } }  }
+system = { id = "613" name = "" position = { x = { min = 344 max = 354 } y =  { min = -101 max = -71 } }  }
+system = { id = "614" name = "" position = { x = { min = 361 max = 371 } y =  { min = -68 max = -36 } }  }
+system = { id = "615" name = "" position = { x = { min = 376 max = 386 } y =  { min = -33 max = 1 } }  }
+system = { id = "616" name = "" position = { x = { min = 385 max = 397 } y =  { min = 4 max = 42 } }  }
+system = { id = "617" name = "" position = { x = { min = 392 max = 404 } y =  { min = 44 max = 84 } }  }
+system = { id = "618" name = "" position = { x = { min = 394 max = 406 } y =  { min = 86 max = 126 } }  }
+system = { id = "619" name = "" position = { x = { min = 392 max = 404 } y =  { min = 128 max = 170 } }  }
+system = { id = "620" name = "" position = { x = { min = 385 max = 397 } y =  { min = 172 max = 214 } }  }
+system = { id = "621" name = "" position = { x = { min = 373 max = 385 } y =  { min = 216 max = 258 } }  }
+system = { id = "622" name = "" position = { x = { min = 357 max = 367 } y =  { min = 259 max = 301 } }  }
+system = { id = "623" name = "" position = { x = { min = 335 max = 345 } y =  { min = 302 max = 344 } }  }
+system = { id = "624" name = "" position = { x = { min = 310 max = 318 } y =  { min = 344 max = 382 } }  }
+system = { id = "625" name = "" position = { x = { min = 278 max = 286 } y =  { min = 383 max = 421 } }  }
+system = { id = "626" name = "" position = { x = { min = 229 max = 263 } y =  { min = 432 max = 444 } }  }
+system = { id = "627" name = "" position = { x = { min = 187 max = 225 } y =  { min = 463 max = 477 } }  }
+system = { id = "628" name = "" position = { x = { min = 139 max = 183 } y =  { min = 492 max = 506 } }  }
+system = { id = "629" name = "" position = { x = { min = -87 max = -87 } y =  { min = -97 max = -83 } }  }
+system = { id = "630" name = "" position = { x = { min = -84 max = -84 } y =  { min = -113 max = -99 } }  }
+system = { id = "631" name = "" position = { x = { min = -79 max = -79 } y =  { min = -131 max = -115 } }  }
+system = { id = "632" name = "" position = { x = { min = -71 max = -71 } y =  { min = -148 max = -132 } }  }
+system = { id = "633" name = "" position = { x = { min = -61 max = -61 } y =  { min = -163 max = -149 } }  }
+system = { id = "634" name = "" position = { x = { min = -48 max = -48 } y =  { min = -178 max = -164 } }  }
+system = { id = "635" name = "" position = { x = { min = -39 max = -25 } y =  { min = -188 max = -184 } }  }
+system = { id = "636" name = "" position = { x = { min = -22 max = -6 } y =  { min = -201 max = -197 } }  }
+system = { id = "637" name = "" position = { x = { min = -3 max = 15 } y =  { min = -212 max = -208 } }  }
+system = { id = "638" name = "" position = { x = { min = 18 max = 38 } y =  { min = -221 max = -215 } }  }
+system = { id = "639" name = "" position = { x = { min = 41 max = 63 } y =  { min = -228 max = -222 } }  }
+system = { id = "640" name = "" position = { x = { min = 66 max = 90 } y =  { min = -231 max = -225 } }  }
+system = { id = "641" name = "" position = { x = { min = 92 max = 118 } y =  { min = -232 max = -226 } }  }
+system = { id = "642" name = "" position = { x = { min = 120 max = 146 } y =  { min = -230 max = -224 } }  }
+system = { id = "643" name = "" position = { x = { min = 148 max = 174 } y =  { min = -224 max = -218 } }  }
+system = { id = "644" name = "" position = { x = { min = 176 max = 202 } y =  { min = -214 max = -210 } }  }
+system = { id = "645" name = "" position = { x = { min = 204 max = 230 } y =  { min = -201 max = -197 } }  }
+system = { id = "646" name = "" position = { x = { min = 231 max = 257 } y =  { min = -185 max = -181 } }  }
+system = { id = "647" name = "" position = { x = { min = 258 max = 282 } y =  { min = -165 max = -161 } }  }
+system = { id = "648" name = "" position = { x = { min = 283 max = 307 } y =  { min = -141 max = -137 } }  }
+system = { id = "649" name = "" position = { x = { min = 312 max = 322 } y =  { min = -125 max = -101 } }  }
+system = { id = "650" name = "" position = { x = { min = 332 max = 342 } y =  { min = -97 max = -69 } }  }
+system = { id = "651" name = "" position = { x = { min = 349 max = 359 } y =  { min = -66 max = -36 } }  }
+system = { id = "652" name = "Kerbol" position = { x = { min = 362 max = 374 } y =  { min = -32 max = 2 } }  initializer = kerbol_b }
+system = { id = "653" name = "" position = { x = { min = 374 max = 384 } y =  { min = 4 max = 40 } }  }
+system = { id = "654" name = "" position = { x = { min = 379 max = 391 } y =  { min = 42 max = 80 } }  }
+system = { id = "655" name = "" position = { x = { min = 381 max = 393 } y =  { min = 82 max = 122 } }  }
+system = { id = "656" name = "" position = { x = { min = 379 max = 391 } y =  { min = 124 max = 164 } }  }
+system = { id = "657" name = "" position = { x = { min = 372 max = 384 } y =  { min = 166 max = 208 } }  }
+system = { id = "658" name = "" position = { x = { min = 362 max = 372 } y =  { min = 209 max = 249 } }  }
+system = { id = "659" name = "" position = { x = { min = 345 max = 355 } y =  { min = 251 max = 291 } }  }
+system = { id = "660" name = "Cygnus X-3" position = { x = { min = 324 max = 334 } y =  { min = 292 max = 332 } }  initializer = cygnus_x3_b }
+system = { id = "661" name = "" position = { x = { min = 298 max = 308 } y =  { min = 332 max = 370 } }  }
+system = { id = "662" name = "" position = { x = { min = 269 max = 277 } y =  { min = 370 max = 406 } }  }
+system = { id = "663" name = "Tholia" position = { x = { min = 221 max = 255 } y =  { min = 416 max = 430 } }  initializer = tholian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = tholian_assembly  } } }
+system = { id = "664" name = "" position = { x = { min = 180 max = 218 } y =  { min = 447 max = 461 } }  }
+system = { id = "665" name = "S Persei" position = { x = { min = 135 max = 177 } y =  { min = 474 max = 490 } }  initializer = s_persei_b }
+system = { id = "666" name = "" position = { x = { min = -85 max = -85 } y =  { min = -94 max = -80 } }  }
+system = { id = "667" name = "" position = { x = { min = -82 max = -82 } y =  { min = -110 max = -96 } }  }
+system = { id = "668" name = "" position = { x = { min = -77 max = -77 } y =  { min = -126 max = -112 } }  }
+system = { id = "669" name = "" position = { x = { min = -69 max = -69 } y =  { min = -144 max = -128 } }  }
+system = { id = "670" name = "" position = { x = { min = -59 max = -59 } y =  { min = -158 max = -144 } }  }
+system = { id = "671" name = "" position = { x = { min = -46 max = -46 } y =  { min = -173 max = -159 } }  }
+system = { id = "672" name = "" position = { x = { min = -38 max = -24 } y =  { min = -182 max = -178 } }  }
+system = { id = "673" name = "" position = { x = { min = -22 max = -6 } y =  { min = -195 max = -191 } }  }
+system = { id = "674" name = "" position = { x = { min = -3 max = 15 } y =  { min = -206 max = -200 } }  }
+system = { id = "675" name = "" position = { x = { min = 17 max = 37 } y =  { min = -214 max = -210 } }  }
+system = { id = "676" name = "" position = { x = { min = 40 max = 62 } y =  { min = -221 max = -215 } }  }
+system = { id = "677" name = "" position = { x = { min = 64 max = 88 } y =  { min = -224 max = -218 } }  }
+system = { id = "678" name = "" position = { x = { min = 90 max = 114 } y =  { min = -225 max = -219 } }  }
+system = { id = "679" name = "" position = { x = { min = 116 max = 140 } y =  { min = -222 max = -216 } }  }
+system = { id = "680" name = "" position = { x = { min = 143 max = 169 } y =  { min = -217 max = -211 } }  }
+system = { id = "681" name = "" position = { x = { min = 170 max = 196 } y =  { min = -208 max = -202 } }  }
+system = { id = "682" name = "" position = { x = { min = 197 max = 223 } y =  { min = -195 max = -189 } }  }
+system = { id = "683" name = "" position = { x = { min = 224 max = 248 } y =  { min = -179 max = -175 } }  }
+system = { id = "684" name = "" position = { x = { min = 250 max = 274 } y =  { min = -159 max = -155 } }  }
+system = { id = "685" name = "" position = { x = { min = 274 max = 296 } y =  { min = -136 max = -134 } }  }
+system = { id = "686" name = "" position = { x = { min = 303 max = 311 } y =  { min = -121 max = -97 } }  }
+system = { id = "687" name = "" position = { x = { min = 321 max = 331 } y =  { min = -94 max = -66 } }  }
+system = { id = "688" name = "" position = { x = { min = 338 max = 348 } y =  { min = -64 max = -34 } }  }
+system = { id = "689" name = "" position = { x = { min = 351 max = 361 } y =  { min = -31 max = 1 } }  }
+system = { id = "690" name = "" position = { x = { min = 360 max = 372 } y =  { min = 4 max = 38 } }  }
+system = { id = "691" name = "" position = { x = { min = 366 max = 378 } y =  { min = 41 max = 77 } }  }
+system = { id = "692" name = "Nyberon" position = { x = { min = 368 max = 380 } y =  { min = 80 max = 118 } }  initializer = nyberrite_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = nyberrite_alliance } } }
+system = { id = "693" name = "" position = { x = { min = 366 max = 378 } y =  { min = 120 max = 158 } }  }
+system = { id = "694" name = "" position = { x = { min = 359 max = 371 } y =  { min = 160 max = 200 } }  }
+system = { id = "695" name = "" position = { x = { min = 348 max = 360 } y =  { min = 201 max = 241 } }  }
+system = { id = "696" name = "" position = { x = { min = 333 max = 343 } y =  { min = 242 max = 282 } }  }
+system = { id = "697" name = "" position = { x = { min = 313 max = 323 } y =  { min = 282 max = 320 } }  }
+system = { id = "698" name = "" position = { x = { min = 289 max = 297 } y =  { min = 321 max = 357 } }  }
+system = { id = "699" name = "" position = { x = { min = 259 max = 267 } y =  { min = 358 max = 392 } }  }
+system = { id = "700" name = "" position = { x = { min = 214 max = 246 } y =  { min = 401 max = 415 } }  }
+system = { id = "701" name = "" position = { x = { min = 174 max = 210 } y =  { min = 431 max = 445 } }  }
+system = { id = "702" name = "" position = { x = { min = 130 max = 170 } y =  { min = 457 max = 473 } }  }
+system = { id = "703" name = "Cayrel's Star" position = { x = { min = 83 max = 127 } y =  { min = 480 max = 496 } }  initializer = cayrels_star_b }
+system = { id = "704" name = "" position = { x = { min = -82 max = -82 } y =  { min = -92 max = -78 } }  }
+system = { id = "705" name = "" position = { x = { min = -80 max = -80 } y =  { min = -107 max = -93 } }  }
+system = { id = "706" name = "" position = { x = { min = -75 max = -75 } y =  { min = -123 max = -109 } }  }
+system = { id = "707" name = "" position = { x = { min = -67 max = -67 } y =  { min = -139 max = -125 } }  }
+system = { id = "708" name = "" position = { x = { min = -57 max = -57 } y =  { min = -154 max = -140 } }  }
+system = { id = "709" name = "" position = { x = { min = -45 max = -45 } y =  { min = -167 max = -155 } }  }
+system = { id = "710" name = "" position = { x = { min = -37 max = -23 } y =  { min = -177 max = -173 } }  }
+system = { id = "711" name = "" position = { x = { min = -21 max = -5 } y =  { min = -189 max = -185 } }  }
+system = { id = "712" name = "" position = { x = { min = -3 max = 15 } y =  { min = -199 max = -195 } }  }
+system = { id = "713" name = "" position = { x = { min = 17 max = 37 } y =  { min = -208 max = -202 } }  }
+system = { id = "714" name = "" position = { x = { min = 39 max = 59 } y =  { min = -214 max = -208 } }  }
+system = { id = "715" name = "" position = { x = { min = 62 max = 84 } y =  { min = -217 max = -211 } }  }
+system = { id = "716" name = "" position = { x = { min = 86 max = 110 } y =  { min = -218 max = -212 } }  }
+system = { id = "717" name = "" position = { x = { min = 112 max = 136 } y =  { min = -215 max = -209 } }  }
+system = { id = "718" name = "" position = { x = { min = 138 max = 162 } y =  { min = -210 max = -204 } }  }
+system = { id = "719" name = "" position = { x = { min = 164 max = 190 } y =  { min = -201 max = -195 } }  }
+system = { id = "720" name = "" position = { x = { min = 191 max = 215 } y =  { min = -188 max = -184 } }  }
+system = { id = "721" name = "" position = { x = { min = 216 max = 240 } y =  { min = -173 max = -169 } }  }
+system = { id = "722" name = "" position = { x = { min = 241 max = 265 } y =  { min = -154 max = -150 } }  }
+system = { id = "723" name = "" position = { x = { min = 271 max = 279 } y =  { min = -140 max = -120 } }  }
+system = { id = "724" name = "" position = { x = { min = 291 max = 301 } y =  { min = -117 max = -93 } }  }
+system = { id = "725" name = "" position = { x = { min = 310 max = 320 } y =  { min = -91 max = -65 } }  }
+system = { id = "726" name = "" position = { x = { min = 326 max = 336 } y =  { min = -62 max = -32 } }  }
+system = { id = "727" name = "" position = { x = { min = 339 max = 349 } y =  { min = -30 max = 2 } }  }
+system = { id = "728" name = "" position = { x = { min = 347 max = 359 } y =  { min = 4 max = 38 } }  }
+system = { id = "729" name = "" position = { x = { min = 353 max = 365 } y =  { min = 40 max = 74 } }  }
+system = { id = "730" name = "" position = { x = { min = 355 max = 367 } y =  { min = 77 max = 113 } }  }
+system = { id = "731" name = "" position = { x = { min = 353 max = 365 } y =  { min = 115 max = 153 } }  }
+system = { id = "732" name = "" position = { x = { min = 346 max = 358 } y =  { min = 155 max = 193 } }  }
+system = { id = "733" name = "" position = { x = { min = 335 max = 347 } y =  { min = 194 max = 232 } }  }
+system = { id = "734" name = "" position = { x = { min = 321 max = 331 } y =  { min = 233 max = 271 } }  }
+system = { id = "735" name = "" position = { x = { min = 301 max = 311 } y =  { min = 272 max = 308 } }  }
+system = { id = "736" name = "" position = { x = { min = 277 max = 287 } y =  { min = 309 max = 345 } }  }
+system = { id = "737" name = "" position = { x = { min = 250 max = 258 } y =  { min = 345 max = 379 } }  }
+system = { id = "738" name = "" position = { x = { min = 205 max = 237 } y =  { min = 388 max = 400 } }  }
+system = { id = "739" name = "" position = { x = { min = 168 max = 202 } y =  { min = 416 max = 430 } }  }
+system = { id = "740" name = "" position = { x = { min = 126 max = 164 } y =  { min = 440 max = 456 } }  }
+system = { id = "741" name = "" position = { x = { min = 80 max = 122 } y =  { min = 462 max = 478 } }  }
+system = { id = "742" name = "Mira" position = { x = { min = 33 max = 77 } y =  { min = 480 max = 496 } }  initializer = mira_b }
+system = { id = "743" name = "" position = { x = { min = -80 max = -80 } y =  { min = -90 max = -76 } }  }
+system = { id = "744" name = "" position = { x = { min = -78 max = -76 } y =  { min = -105 max = -91 } }  }
+system = { id = "745" name = "" position = { x = { min = -73 max = -71 } y =  { min = -120 max = -106 } }  }
+system = { id = "746" name = "" position = { x = { min = -65 max = -65 } y =  { min = -135 max = -121 } }  }
+system = { id = "747" name = "" position = { x = { min = -55 max = -55 } y =  { min = -148 max = -136 } }  }
+system = { id = "748" name = "" position = { x = { min = -43 max = -43 } y =  { min = -162 max = -150 } }  }
+system = { id = "749" name = "" position = { x = { min = -35 max = -23 } y =  { min = -171 max = -167 } }  }
+system = { id = "750" name = "" position = { x = { min = -20 max = -6 } y =  { min = -183 max = -179 } }  }
+system = { id = "751" name = "" position = { x = { min = -3 max = 15 } y =  { min = -193 max = -187 } }  }
+system = { id = "752" name = "" position = { x = { min = 17 max = 35 } y =  { min = -201 max = -195 } }  }
+system = { id = "753" name = "" position = { x = { min = 38 max = 58 } y =  { min = -207 max = -201 } }  }
+system = { id = "754" name = "" position = { x = { min = 60 max = 82 } y =  { min = -210 max = -204 } }  }
+system = { id = "755" name = "" position = { x = { min = 84 max = 106 } y =  { min = -210 max = -204 } }  }
+system = { id = "756" name = "" position = { x = { min = 108 max = 132 } y =  { min = -208 max = -202 } }  }
+system = { id = "757" name = "" position = { x = { min = 133 max = 157 } y =  { min = -203 max = -197 } }  }
+system = { id = "758" name = "" position = { x = { min = 159 max = 183 } y =  { min = -194 max = -188 } }  }
+system = { id = "759" name = "" position = { x = { min = 184 max = 208 } y =  { min = -182 max = -176 } }  }
+system = { id = "760" name = "" position = { x = { min = 209 max = 231 } y =  { min = -167 max = -163 } }  }
+system = { id = "761" name = "" position = { x = { min = 233 max = 255 } y =  { min = -149 max = -145 } }  }
+system = { id = "762" name = "" position = { x = { min = 262 max = 270 } y =  { min = -136 max = -116 } }  }
+system = { id = "763" name = "" position = { x = { min = 282 max = 290 } y =  { min = -113 max = -91 } }  }
+system = { id = "764" name = "" position = { x = { min = 299 max = 309 } y =  { min = -88 max = -62 } }  }
+system = { id = "765" name = "" position = { x = { min = 314 max = 324 } y =  { min = -59 max = -31 } }  }
+system = { id = "766" name = "" position = { x = { min = 325 max = 337 } y =  { min = -29 max = 1 } }  }
+system = { id = "767" name = "" position = { x = { min = 334 max = 346 } y =  { min = 4 max = 36 } }  }
+system = { id = "768" name = "" position = { x = { min = 340 max = 352 } y =  { min = 38 max = 72 } }  }
+system = { id = "769" name = "" position = { x = { min = 342 max = 354 } y =  { min = 74 max = 110 } }  }
+system = { id = "770" name = "" position = { x = { min = 340 max = 352 } y =  { min = 111 max = 147 } }  }
+system = { id = "771" name = "" position = { x = { min = 333 max = 345 } y =  { min = 149 max = 185 } }  }
+system = { id = "772" name = "" position = { x = { min = 324 max = 334 } y =  { min = 187 max = 223 } }  }
+system = { id = "773" name = "" position = { x = { min = 309 max = 319 } y =  { min = 225 max = 261 } }  }
+system = { id = "774" name = "" position = { x = { min = 291 max = 299 } y =  { min = 262 max = 298 } }  }
+system = { id = "775" name = "" position = { x = { min = 269 max = 275 } y =  { min = 298 max = 332 } }  }
+system = { id = "776" name = "" position = { x = { min = 242 max = 248 } y =  { min = 332 max = 364 } }  }
+system = { id = "777" name = "" position = { x = { min = 198 max = 228 } y =  { min = 374 max = 384 } }  }
+system = { id = "778" name = "Megara" position = { x = { min = 161 max = 195 } y =  { min = 402 max = 412 } }  initializer = scm_b }
+system = { id = "779" name = "" position = { x = { min = 120 max = 158 } y =  { min = 427 max = 437 } }  }
+system = { id = "780" name = "Cait" position = { x = { min = 78 max = 118 } y =  { min = 447 max = 459 } }  initializer = caitian_b }
+system = { id = "781" name = "Pacifica" position = { x = { min = 31 max = 75 } y =  { min = 463 max = 475 } }  initializer = pacifica_b }
+system = { id = "782" name = "Crab Pulsar" position = { x = { min = -17 max = 29 } y =  { min = 476 max = 488 } }  initializer = crab_pulsar_b }
+system = { id = "783" name = "" position = { x = { min = 284 max = 290 } y =  { min = 255 max = 289 } }  }
+system = { id = "784" name = "" position = { x = { min = 261 max = 267 } y =  { min = 290 max = 322 } }  }
+system = { id = "785" name = "" position = { x = { min = 234 max = 240 } y =  { min = 323 max = 353 } }  }
+system = { id = "786" name = "" position = { x = { min = 193 max = 221 } y =  { min = 363 max = 373 } }  }
+system = { id = "787" name = "Talar" position = { x = { min = 157 max = 189 } y =  { min = 390 max = 400 } }  initializer = talar_b }
+system = { id = "788" name = "" position = { x = { min = 117 max = 153 } y =  { min = 413 max = 425 } }  }
+system = { id = "789" name = "" position = { x = { min = 76 max = 114 } y =  { min = 433 max = 445 } }  }
+system = { id = "790" name = "Delphi Ardu" position = { x = { min = 30 max = 72 } y =  { min = 450 max = 462 } }  initializer = scm_b }
+system = { id = "791" name = "Gamma Tauri" position = { x = { min = -16 max = 28 } y =  { min = 462 max = 474 } }  initializer = scg_b }
+system = { id = "792" name = "Kessik" position = { x = { min = -65 max = -19 } y =  { min = 469 max = 481 } }  initializer = scg_b }
+system = { id = "793" name = "" position = { x = { min = -115 max = -67 } y =  { min = 470 max = 484 } }  }
+system = { id = "794" name = "Bellatrix" position = { x = { min = -164 max = -116 } y =  { min = 469 max = 481 } }  initializer = sca_b }
+system = { id = "795" name = "Ceti Alpha" position = { x = { min = -216 max = -166 } y =  { min = 461 max = 473 } }  initializer = ceti_alpha_b }
+system = { id = "796" name = "Deneb" position = { x = { min = 274 max = 282 } y =  { min = 247 max = 281 } }  initializer = deneb_b }
+system = { id = "797" name = "" position = { x = { min = 253 max = 259 } y =  { min = 281 max = 313 } }  }
+system = { id = "798" name = "Cygnus X-1" position = { x = { min = 227 max = 233 } y =  { min = 313 max = 343 } }  initializer = cygnus_x1_b }
+system = { id = "799" name = "Kora" position = { x = { min = 187 max = 215 } y =  { min = 352 max = 362 } }  initializer = sck_b }
+system = { id = "800" name = "Sarpedon" position = { x = { min = 152 max = 184 } y =  { min = 378 max = 388 } }  initializer = scg_b }
+system = { id = "801" name = "Amleth" position = { x = { min = 113 max = 149 } y =  { min = 402 max = 412 } }  initializer = scm_b }
+system = { id = "802" name = "Korma" position = { x = { min = 73 max = 111 } y =  { min = 420 max = 432 } }  initializer = scf_b }
+system = { id = "803" name = "Algol" position = { x = { min = 30 max = 70 } y =  { min = 436 max = 448 } }  initializer = scb_b }
+system = { id = "804" name = "Murasaki 312" position = { x = { min = -15 max = 27 } y =  { min = 448 max = 460 } }  initializer = murasaki_312_b }
+system = { id = "805" name = "Ventax" position = { x = { min = -62 max = -18 } y =  { min = 455 max = 467 } }  initializer = rl_ventax }
+system = { id = "806" name = "Iota Geminorum" position = { x = { min = -111 max = -65 } y =  { min = 457 max = 469 } }  initializer = tribble_b }
+system = { id = "807" name = "Cestus" position = { x = { min = -159 max = -113 } y =  { min = 453 max = 467 } }  initializer = cestus_b }
+system = { id = "808" name = "" position = { x = { min = 76 max = 94 } y =  { min = -78 max = -78 } }  }
+system = { id = "809" name = "" position = { x = { min = 96 max = 116 } y =  { min = -71 max = -71 } }  }
+system = { id = "810" name = "" position = { x = { min = 117 max = 137 } y =  { min = -60 max = -60 } }  }
+system = { id = "811" name = "" position = { x = { min = 137 max = 155 } y =  { min = -44 max = -44 } }  }
+system = { id = "812" name = "" position = { x = { min = 162 max = 166 } y =  { min = -33 max = -13 } }  }
+system = { id = "813" name = "" position = { x = { min = 179 max = 181 } y =  { min = -10 max = 14 } }  }
+system = { id = "814" name = "" position = { x = { min = 189 max = 193 } y =  { min = 17 max = 45 } }  }
+system = { id = "815" name = "" position = { x = { min = 196 max = 200 } y =  { min = 48 max = 78 } }  }
+system = { id = "816" name = "" position = { x = { min = 198 max = 202 } y =  { min = 82 max = 116 } }  }
+system = { id = "817" name = "" position = { x = { min = 194 max = 198 } y =  { min = 118 max = 154 } }  }
+system = { id = "818" name = "" position = { x = { min = 182 max = 186 } y =  { min = 166 max = 184 } }  }
+system = { id = "819" name = "" position = { x = { min = 174 max = 178 } y =  { min = 185 max = 203 } }  }
+system = { id = "820" name = "" position = { x = { min = 165 max = 167 } y =  { min = 204 max = 222 } }  }
+system = { id = "821" name = "" position = { x = { min = 153 max = 155 } y =  { min = 223 max = 239 } }  }
+system = { id = "822" name = "" position = { x = { min = 139 max = 141 } y =  { min = 241 max = 259 } }  }
+system = { id = "823" name = "Theta Cygni" position = { x = { min = 124 max = 126 } y =  { min = 259 max = 275 } }  initializer = scf_b }
+system = { id = "824" name = "" position = { x = { min = 99 max = 115 } y =  { min = 280 max = 286 } }  }
+system = { id = "825" name = "26 Draconis" position = { x = { min = 79 max = 97 } y =  { min = 296 max = 302 } }  initializer = scg_b }
+system = { id = "826" name = "13 Ceti" position = { x = { min = 57 max = 77 } y =  { min = 310 max = 316 } }  initializer = scg_b }
+system = { id = "827" name = "Cor Coroli" position = { x = { min = 35 max = 55 } y =  { min = 323 max = 329 } }  initializer = sca_b }
+system = { id = "828" name = "Eta Cassiopeiae" position = { x = { min = 10 max = 32 } y =  { min = 333 max = 341 } }  initializer = terra_nova_b }
+system = { id = "829" name = "61 Ursae Majoris" position = { x = { min = -16 max = 8 } y =  { min = 342 max = 350 } }  initializer = scg_b }
+system = { id = "830" name = "40 Eridani" position = { x = { min = -31 max = -31 } y =  { min = 354 max = 354 } }  initializer = vulcan_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = vulcan_high_command } } }
+system = { id = "831" name = "Chi Orionis" position = { x = { min = -72 max = -46 } y =  { min = 356 max = 364 } }  initializer = scg_b }
+system = { id = "832" name = "Gamma Leporis" position = { x = { min = -102 max = -74 } y =  { min = 359 max = 367 } }  initializer = gamma_leporis_b }
+system = { id = "833" name = "Miridian" position = { x = { min = -132 max = -104 } y =  { min = 360 max = 368 } }  initializer = sck_b }
+system = { id = "834" name = "Wezn" position = { x = { min = -162 max = -134 } y =  { min = 359 max = 367 } }  initializer = sck_b }
+system = { id = "835" name = "Narendra" position = { x = { min = -194 max = -164 } y =  { min = 355 max = 363 } }  initializer = sck_b }
+system = { id = "836" name = "Amargosa" position = { x = { min = -225 max = -195 } y =  { min = 349 max = 357 } }  initializer = amargosa_b }
+system = { id = "837" name = "" position = { x = { min = -262 max = -222 } y =  { min = 340 max = 348 } }  }
+system = { id = "838" name = "" position = { x = { min = -303 max = -263 } y =  { min = 324 max = 332 } }  }
+system = { id = "839" name = "Veridian" position = { x = { min = -344 max = -304 } y =  { min = 304 max = 310 } }  initializer = veridian_b }
+system = { id = "840" name = "" position = { x = { min = -383 max = -345 } y =  { min = 278 max = 284 } }  }
+system = { id = "841" name = "" position = { x = { min = -419 max = -383 } y =  { min = 247 max = 253 } }  }
+system = { id = "842" name = "" position = { x = { min = 120 max = 140 } y =  { min = -61 max = -61 } }  }
+system = { id = "843" name = "" position = { x = { min = 141 max = 159 } y =  { min = -45 max = -45 } }  }
+system = { id = "844" name = "" position = { x = { min = 168 max = 170 } y =  { min = -34 max = -14 } }  }
+system = { id = "845" name = "" position = { x = { min = 182 max = 186 } y =  { min = -10 max = 14 } }  }
+system = { id = "846" name = "" position = { x = { min = 194 max = 198 } y =  { min = 17 max = 45 } }  }
+system = { id = "847" name = "" position = { x = { min = 202 max = 206 } y =  { min = 49 max = 81 } }  }
+system = { id = "848" name = "" position = { x = { min = 203 max = 207 } y =  { min = 84 max = 118 } }  }
+system = { id = "849" name = "" position = { x = { min = 199 max = 203 } y =  { min = 121 max = 159 } }  }
+system = { id = "850" name = "" position = { x = { min = 187 max = 191 } y =  { min = 170 max = 188 } }  }
+system = { id = "851" name = "" position = { x = { min = 179 max = 183 } y =  { min = 190 max = 208 } }  }
+system = { id = "852" name = "" position = { x = { min = 168 max = 172 } y =  { min = 210 max = 228 } }  }
+system = { id = "853" name = "" position = { x = { min = 157 max = 159 } y =  { min = 229 max = 247 } }  }
+system = { id = "854" name = "" position = { x = { min = 143 max = 145 } y =  { min = 248 max = 264 } }  }
+system = { id = "855" name = "" position = { x = { min = 127 max = 129 } y =  { min = 266 max = 282 } }  }
+system = { id = "856" name = "" position = { x = { min = 102 max = 118 } y =  { min = 288 max = 294 } }  }
+system = { id = "857" name = "Alkaid" position = { x = { min = 82 max = 100 } y =  { min = 304 max = 310 } }  initializer = scb_b }
+system = { id = "858" name = "Mizar" position = { x = { min = 59 max = 79 } y =  { min = 317 max = 325 } }  initializer = sca_b }
+system = { id = "859" name = "Peliar" position = { x = { min = 35 max = 57 } y =  { min = 330 max = 338 } }  initializer = sck_b }
+system = { id = "860" name = "Mu Cassiopeiae" position = { x = { min = 11 max = 33 } y =  { min = 342 max = 350 } }  initializer = scg_b }
+system = { id = "861" name = "47 Ursae Majoris" position = { x = { min = -16 max = 8 } y =  { min = 352 max = 360 } }  initializer = Chalawan_b }
+system = { id = "862" name = "Epsilon Sculptoris" position = { x = { min = -45 max = -19 } y =  { min = 360 max = 368 } }  initializer = scf_b }
+system = { id = "863" name = "Delta Leonis" position = { x = { min = -75 max = -47 } y =  { min = 365 max = 373 } }  initializer = brestant_b }
+system = { id = "864" name = "Alpha Fornacis" position = { x = { min = -104 max = -76 } y =  { min = 369 max = 377 } }  initializer = scf_b }
+system = { id = "865" name = "Alpha Caeli" position = { x = { min = -136 max = -106 } y =  { min = 370 max = 378 } }  initializer = scf_b }
+system = { id = "866" name = "Khitomer" position = { x = { min = -167 max = -137 } y =  { min = 369 max = 377 } }  initializer = khitomer_b }
+system = { id = "867" name = "Archer" position = { x = { min = -199 max = -169 } y =  { min = 365 max = 373 } }  initializer = scm_b }
+system = { id = "868" name = "" position = { x = { min = -231 max = -201 } y =  { min = 358 max = 366 } }  }
+system = { id = "869" name = "" position = { x = { min = -269 max = -227 } y =  { min = 349 max = 357 } }  }
+system = { id = "870" name = "" position = { x = { min = -312 max = -270 } y =  { min = 333 max = 341 } }  }
+system = { id = "871" name = "" position = { x = { min = -353 max = -313 } y =  { min = 312 max = 318 } }  }
+system = { id = "872" name = "" position = { x = { min = -392 max = -354 } y =  { min = 286 max = 292 } }  }
+system = { id = "873" name = "" position = { x = { min = -431 max = -393 } y =  { min = 254 max = 260 } }  }
+system = { id = "874" name = "" position = { x = { min = 74 max = 92 } y =  { min = -76 max = -76 } }  }
+system = { id = "875" name = "" position = { x = { min = 94 max = 112 } y =  { min = -69 max = -69 } }  }
+system = { id = "876" name = "" position = { x = { min = 114 max = 132 } y =  { min = -58 max = -58 } }  }
+system = { id = "877" name = "" position = { x = { min = 133 max = 151 } y =  { min = -43 max = -43 } }  }
+system = { id = "878" name = "" position = { x = { min = 159 max = 161 } y =  { min = -32 max = -14 } }  }
+system = { id = "879" name = "" position = { x = { min = 173 max = 177 } y =  { min = -10 max = 12 } }  }
+system = { id = "880" name = "" position = { x = { min = 184 max = 188 } y =  { min = 16 max = 44 } }  }
+system = { id = "881" name = "" position = { x = { min = 191 max = 195 } y =  { min = 46 max = 76 } }  }
+system = { id = "882" name = "" position = { x = { min = 193 max = 197 } y =  { min = 79 max = 113 } }  }
+system = { id = "883" name = "" position = { x = { min = 188 max = 192 } y =  { min = 115 max = 151 } }  }
+system = { id = "884" name = "" position = { x = { min = 177 max = 181 } y =  { min = 161 max = 179 } }  }
+system = { id = "885" name = "" position = { x = { min = 169 max = 173 } y =  { min = 180 max = 198 } }  }
+system = { id = "886" name = "" position = { x = { min = 161 max = 163 } y =  { min = 199 max = 215 } }  }
+system = { id = "887" name = "" position = { x = { min = 149 max = 151 } y =  { min = 217 max = 233 } }  }
+system = { id = "888" name = "Gienah" position = { x = { min = 136 max = 138 } y =  { min = 235 max = 251 } }  initializer = sck_b }
+system = { id = "889" name = "Gavaria" position = { x = { min = 120 max = 122 } y =  { min = 252 max = 268 } }  initializer = scf_b }
+system = { id = "890" name = "" position = { x = { min = 98 max = 112 } y =  { min = 273 max = 279 } }  }
+system = { id = "891" name = "Xi Pegasi" position = { x = { min = 77 max = 95 } y =  { min = 288 max = 294 } }  initializer = neethia_b }
+system = { id = "892" name = "Chi Draconis" position = { x = { min = 57 max = 75 } y =  { min = 302 max = 308 } }  initializer = scf_b }
+system = { id = "893" name = "Deneb Kaitos" position = { x = { min = 34 max = 54 } y =  { min = 313 max = 321 } }  initializer = rl_deneb_kaitos }
+system = { id = "894" name = "Groombridge 34" position = { x = { min = 9 max = 31 } y =  { min = 324 max = 332 } }  initializer = groombridge_34_b }
+system = { id = "895" name = "Tau Ceti" position = { x = { min = -15 max = 7 } y =  { min = 333 max = 341 } }  initializer = rl_tau_ceti }
+system = { id = "896" name = "Gliese 1061" position = { x = { min = -30 max = -30 } y =  { min = 345 max = 345 } }  initializer = gliese_1061_b }
+system = { id = "897" name = "AD Leonis" position = { x = { min = -70 max = -44 } y =  { min = 346 max = 354 } }  initializer = ad_leonis_b }
+system = { id = "898" name = "Iota Leonis" position = { x = { min = -100 max = -72 } y =  { min = 349 max = 357 } }  initializer = iota_leonis_b }
+system = { id = "899" name = "Beta Pictoris" position = { x = { min = -129 max = -101 } y =  { min = 351 max = 359 } }  initializer = sca_b }
+system = { id = "900" name = "Acamar" position = { x = { min = -158 max = -130 } y =  { min = 349 max = 357 } }  initializer = acamar_b }
+system = { id = "901" name = "Lambda Hydrae" position = { x = { min = -188 max = -160 } y =  { min = 346 max = 354 } }  initializer = sck_b }
+system = { id = "902" name = "" position = { x = { min = -220 max = -190 } y =  { min = 340 max = 348 } }  }
+system = { id = "903" name = "Sigma Iotia" position = { x = { min = -254 max = -216 } y =  { min = 331 max = 339 } }  initializer = sigma_iotia_b }
+system = { id = "904" name = "Canopus" position = { x = { min = -296 max = -256 } y =  { min = 315 max = 323 } }  initializer = canopus_b }
+system = { id = "905" name = "Beta Doradus" position = { x = { min = -334 max = -296 } y =  { min = 296 max = 302 } }  initializer = beta_doradus_b }
+system = { id = "906" name = "" position = { x = { min = -373 max = -335 } y =  { min = 271 max = 277 } }  }
+system = { id = "907" name = "" position = { x = { min = -407 max = -373 } y =  { min = 242 max = 246 } }  }
+system = { id = "908" name = "" position = { x = { min = 72 max = 90 } y =  { min = -74 max = -74 } }  }
+system = { id = "909" name = "" position = { x = { min = 91 max = 109 } y =  { min = -67 max = -67 } }  }
+system = { id = "910" name = "" position = { x = { min = 111 max = 129 } y =  { min = -57 max = -57 } }  }
+system = { id = "911" name = "" position = { x = { min = 130 max = 146 } y =  { min = -42 max = -42 } }  }
+system = { id = "912" name = "" position = { x = { min = 155 max = 157 } y =  { min = -31 max = -13 } }  }
+system = { id = "913" name = "" position = { x = { min = 168 max = 172 } y =  { min = -10 max = 12 } }  }
+system = { id = "914" name = "" position = { x = { min = 179 max = 183 } y =  { min = 16 max = 42 } }  }
+system = { id = "915" name = "" position = { x = { min = 186 max = 190 } y =  { min = 45 max = 75 } }  }
+system = { id = "916" name = "" position = { x = { min = 187 max = 191 } y =  { min = 77 max = 109 } }  }
+system = { id = "917" name = "" position = { x = { min = 183 max = 187 } y =  { min = 112 max = 146 } }  }
+system = { id = "918" name = "" position = { x = { min = 172 max = 176 } y =  { min = 157 max = 173 } }  }
+system = { id = "919" name = "" position = { x = { min = 166 max = 168 } y =  { min = 175 max = 191 } }  }
+system = { id = "920" name = "" position = { x = { min = 155 max = 159 } y =  { min = 193 max = 209 } }  }
+system = { id = "921" name = "Kappa Delphini" position = { x = { min = 145 max = 147 } y =  { min = 211 max = 227 } }  initializer = antos_b }
+system = { id = "922" name = "Clarus" position = { x = { min = 132 max = 134 } y =  { min = 228 max = 244 } }  initializer = sck_b }
+system = { id = "923" name = "Volchok" position = { x = { min = 117 max = 119 } y =  { min = 245 max = 261 } }  initializer = scf_b }
+system = { id = "924" name = "" position = { x = { min = 95 max = 109 } y =  { min = 265 max = 271 } }  }
+system = { id = "925" name = "Gamma Bootis" position = { x = { min = 76 max = 92 } y =  { min = 280 max = 286 } }  initializer = seginus_b }
+system = { id = "926" name = "Iota Piscium" position = { x = { min = 55 max = 73 } y =  { min = 292 max = 300 } }  initializer = scf_b }
+system = { id = "927" name = "Sigma Draconis" position = { x = { min = 33 max = 53 } y =  { min = 304 max = 312 } }  initializer = rl_sigma_draconis }
+system = { id = "928" name = "Van Maanen's Star" position = { x = { min = 9 max = 31 } y =  { min = 315 max = 323 } }  initializer = van_maanen_b }
+system = { id = "929" name = "Epsilon Eridani" position = { x = { min = -15 max = 7 } y =  { min = 324 max = 332 } }  initializer = rl_epsilon_eridani }
+system = { id = "930" name = "DX Cancri" position = { x = { min = -41 max = -17 } y =  { min = 331 max = 339 } }  initializer = dx_cancri_b }
+system = { id = "931" name = "Kapteyn's Star" position = { x = { min = -69 max = -43 } y =  { min = 336 max = 344 } }  initializer = kapteyn_star_b }
+system = { id = "932" name = "Qualor" position = { x = { min = -96 max = -70 } y =  { min = 340 max = 348 } }  initializer = sck_b }
+system = { id = "933" name = "Gamma Doradus" position = { x = { min = -124 max = -98 } y =  { min = 341 max = 349 } }  initializer = scf_b }
+system = { id = "934" name = "Jouret" position = { x = { min = -154 max = -126 } y =  { min = 340 max = 348 } }  initializer = jouret_b }
+system = { id = "935" name = "Nequencia" position = { x = { min = -184 max = -156 } y =  { min = 336 max = 344 } }  initializer = scm_b }
+system = { id = "936" name = "" position = { x = { min = 144 max = 164 } y =  { min = -46 max = -46 } }  }
+system = { id = "937" name = "" position = { x = { min = 171 max = 175 } y =  { min = -35 max = -15 } }  }
+system = { id = "938" name = "" position = { x = { min = 187 max = 191 } y =  { min = -11 max = 15 } }  }
+system = { id = "939" name = "" position = { x = { min = 200 max = 204 } y =  { min = 18 max = 46 } }  }
+system = { id = "940" name = "" position = { x = { min = 207 max = 211 } y =  { min = 50 max = 84 } }  }
+system = { id = "941" name = "" position = { x = { min = 209 max = 213 } y =  { min = 86 max = 122 } }  }
+system = { id = "942" name = "" position = { x = { min = 204 max = 208 } y =  { min = 124 max = 162 } }  }
+system = { id = "943" name = "" position = { x = { min = 192 max = 196 } y =  { min = 171 max = 197 } }  }
+system = { id = "944" name = "" position = { x = { min = 185 max = 187 } y =  { min = 195 max = 213 } }  }
+system = { id = "945" name = "" position = { x = { min = 174 max = 176 } y =  { min = 215 max = 233 } }  }
+system = { id = "946" name = "" position = { x = { min = 161 max = 163 } y =  { min = 235 max = 253 } }  }
+system = { id = "947" name = "" position = { x = { min = 147 max = 149 } y =  { min = 254 max = 272 } }  }
+system = { id = "948" name = "" position = { x = { min = 123 max = 139 } y =  { min = 278 max = 284 } }  }
+system = { id = "949" name = "" position = { x = { min = 105 max = 121 } y =  { min = 296 max = 302 } }  }
+system = { id = "950" name = "Tzenketh" position = { x = { min = 84 max = 102 } y =  { min = 312 max = 318 } }  initializer = scm_b }
+system = { id = "951" name = "Alioth" position = { x = { min = 61 max = 81 } y =  { min = 327 max = 333 } }  initializer = sca_b }
+system = { id = "952" name = "Caldik" position = { x = { min = 36 max = 58 } y =  { min = 339 max = 347 } }  initializer = scb_b }
+system = { id = "953" name = "MAB-BU" position = { x = { min = 10 max = 34 } y =  { min = 351 max = 359 } }  initializer = mab_bu_b }
+system = { id = "954" name = "Coridan" position = { x = { min = -18 max = 8 } y =  { min = 361 max = 369 } }  initializer = rl_coridan }
+system = { id = "955" name = "Tai 1 Eridani" position = { x = { min = -46 max = -20 } y =  { min = 369 max = 377 } }  initializer = scg_b }
+system = { id = "956" name = "Akaali" position = { x = { min = -76 max = -48 } y =  { min = 375 max = 383 } }  initializer = akaali_b }
+system = { id = "957" name = "Eta Leporis" position = { x = { min = -108 max = -78 } y =  { min = 379 max = 387 } }  initializer = scf_b }
+system = { id = "958" name = "Tau Hydrae" position = { x = { min = -139 max = -109 } y =  { min = 380 max = 388 } }  initializer = scf_b }
+system = { id = "959" name = "Beta Penthe" position = { x = { min = -171 max = -141 } y =  { min = 378 max = 386 } }  initializer = rura_penthe_b }
+system = { id = "960" name = "Beta Thoridor" position = { x = { min = -205 max = -173 } y =  { min = 375 max = 383 } }  initializer = scm_b }
+system = { id = "961" name = "" position = { x = { min = -238 max = -206 } y =  { min = 368 max = 376 } }  }
+system = { id = "962" name = "" position = { x = { min = -276 max = -234 } y =  { min = 358 max = 366 } }  }
+system = { id = "963" name = "" position = { x = { min = -320 max = -278 } y =  { min = 343 max = 349 } }  }
+system = { id = "964" name = "" position = { x = { min = -361 max = -321 } y =  { min = 319 max = 327 } }  }
+system = { id = "965" name = "" position = { x = { min = -403 max = -363 } y =  { min = 293 max = 299 } }  }
+system = { id = "966" name = "" position = { x = { min = -442 max = -404 } y =  { min = 261 max = 267 } }  }
+system = { id = "967" name = "" position = { x = { min = 192 max = 196 } y =  { min = -11 max = 15 } }  }
+system = { id = "968" name = "" position = { x = { min = 205 max = 209 } y =  { min = 18 max = 48 } }  }
+system = { id = "969" name = "" position = { x = { min = 212 max = 216 } y =  { min = 51 max = 85 } }  }
+system = { id = "970" name = "" position = { x = { min = 214 max = 218 } y =  { min = 88 max = 126 } }  }
+system = { id = "971" name = "" position = { x = { min = 209 max = 213 } y =  { min = 128 max = 166 } }  }
+system = { id = "972" name = "" position = { x = { min = 197 max = 201 } y =  { min = 179 max = 199 } }  }
+system = { id = "973" name = "Breen" position = { x = { min = 188 max = 192 } y =  { min = 200 max = 218 } }  initializer = breen_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = breen_confederacy } } }
+system = { id = "974" name = "" position = { x = { min = 177 max = 181 } y =  { min = 220 max = 240 } }  }
+system = { id = "975" name = "" position = { x = { min = 164 max = 168 } y =  { min = 241 max = 259 } }  }
+system = { id = "976" name = "" position = { x = { min = 151 max = 153 } y =  { min = 261 max = 279 } }  }
+system = { id = "977" name = "" position = { x = { min = 127 max = 143 } y =  { min = 285 max = 291 } }  }
+system = { id = "978" name = "Gemulon" position = { x = { min = 107 max = 125 } y =  { min = 303 max = 309 } }  initializer = scg_b }
+system = { id = "979" name = "Lamemda" position = { x = { min = 85 max = 105 } y =  { min = 320 max = 326 } }  initializer = scf_b }
+system = { id = "980" name = "Temecklia" position = { x = { min = 63 max = 83 } y =  { min = 335 max = 341 } }  initializer = sck_b }
+system = { id = "981" name = "Klaestron" position = { x = { min = 38 max = 60 } y =  { min = 348 max = 356 } }  initializer = sck_b }
+system = { id = "982" name = "Theta Ursae Majoris" position = { x = { min = 11 max = 35 } y =  { min = 360 max = 368 } }  initializer = scf_b }
+system = { id = "983" name = "Tesnia" position = { x = { min = -18 max = 8 } y =  { min = 370 max = 378 } }  initializer = scf_b }
+system = { id = "984" name = "Orion" position = { x = { min = -48 max = -20 } y =  { min = 379 max = 387 } }  initializer = scf_b }
+system = { id = "985" name = "Kappa Fornacis" position = { x = { min = -78 max = -50 } y =  { min = 385 max = 393 } }  initializer = kappa_fornacis_b }
+system = { id = "986" name = "Zosma" position = { x = { min = -110 max = -80 } y =  { min = 388 max = 396 } }  initializer = sca_b }
+system = { id = "987" name = "Regulus" position = { x = { min = -142 max = -112 } y =  { min = 390 max = 398 } }  initializer = scb_b }
+system = { id = "988" name = "Korvat" position = { x = { min = -176 max = -144 } y =  { min = 388 max = 396 } }  initializer = korvat_b }
+system = { id = "989" name = "Beta Lankal" position = { x = { min = -210 max = -178 } y =  { min = 384 max = 392 } }  initializer = scf_b }
+system = { id = "990" name = "" position = { x = { min = -243 max = -211 } y =  { min = 377 max = 385 } }  }
+system = { id = "991" name = "" position = { x = { min = -283 max = -239 } y =  { min = 368 max = 376 } }  }
+system = { id = "992" name = "" position = { x = { min = -328 max = -284 } y =  { min = 350 max = 358 } }  }
+system = { id = "993" name = "" position = { x = { min = -371 max = -329 } y =  { min = 329 max = 335 } }  }
+system = { id = "994" name = "" position = { x = { min = -414 max = -372 } y =  { min = 301 max = 307 } }  }
+system = { id = "995" name = "" position = { x = { min = -452 max = -414 } y =  { min = 269 max = 273 } }  }
+system = { id = "996" name = "" position = { x = { min = 218 max = 222 } y =  { min = 53 max = 87 } }  }
+system = { id = "997" name = "" position = { x = { min = 219 max = 223 } y =  { min = 90 max = 128 } }  }
+system = { id = "998" name = "" position = { x = { min = 214 max = 218 } y =  { min = 131 max = 171 } }  }
+system = { id = "999" name = "" position = { x = { min = 202 max = 206 } y =  { min = 183 max = 203 } }  }
+system = { id = "1000" name = "" position = { x = { min = 193 max = 197 } y =  { min = 205 max = 225 } }  }
+system = { id = "1001" name = "" position = { x = { min = 183 max = 185 } y =  { min = 226 max = 246 } }  }
+system = { id = "1002" name = "" position = { x = { min = 170 max = 172 } y =  { min = 247 max = 265 } }  }
+system = { id = "1003" name = "" position = { x = { min = 154 max = 156 } y =  { min = 267 max = 285 } }  }
+system = { id = "1004" name = "" position = { x = { min = 137 max = 139 } y =  { min = 286 max = 304 } }  }
+system = { id = "1005" name = "Kavaria" position = { x = { min = 110 max = 128 } y =  { min = 311 max = 317 } }  initializer = sck_b }
+system = { id = "1006" name = "Quinor" position = { x = { min = 88 max = 108 } y =  { min = 328 max = 334 } }  initializer = scg_b }
+system = { id = "1007" name = "Trill" position = { x = { min = 64 max = 86 } y =  { min = 342 max = 350 } }  initializer = trill_b }
+system = { id = "1008" name = "Iota Persei" position = { x = { min = 38 max = 62 } y =  { min = 358 max = 364 } }  initializer = scg_b }
+system = { id = "1009" name = "Capella" position = { x = { min = 10 max = 36 } y =  { min = 369 max = 377 } }  initializer = rl_capella }
+system = { id = "1010" name = "Sigma Ceti" position = { x = { min = -18 max = 8 } y =  { min = 380 max = 388 } }  initializer = scf_b }
+system = { id = "1011" name = "Valakis" position = { x = { min = -48 max = -20 } y =  { min = 388 max = 396 } }  initializer = valakis_b }
+system = { id = "1012" name = "Gamma 400" position = { x = { min = -80 max = -50 } y =  { min = 394 max = 402 } }  initializer = scm_b }
+system = { id = "1013" name = "Nausicaa" position = { x = { min = -112 max = -82 } y =  { min = 398 max = 406 } }  initializer = nausicaan_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = nausicaan_tribes } } }
+system = { id = "1014" name = "Zeta Leporis" position = { x = { min = -146 max = -114 } y =  { min = 399 max = 407 } }  initializer = xarantine_b }
+system = { id = "1015" name = "Qu'vat" position = { x = { min = -180 max = -148 } y =  { min = 398 max = 406 } }  initializer = sck_b }
+system = { id = "1016" name = "Mempa" position = { x = { min = -214 max = -182 } y =  { min = 394 max = 402 } }  initializer = scg_b }
+system = { id = "1017" name = "" position = { x = { min = -250 max = -216 } y =  { min = 387 max = 395 } }  }
+system = { id = "1018" name = "" position = { x = { min = -291 max = -245 } y =  { min = 377 max = 385 } }  }
+system = { id = "1019" name = "" position = { x = { min = -336 max = -292 } y =  { min = 359 max = 367 } }  }
+system = { id = "1020" name = "" position = { x = { min = -381 max = -337 } y =  { min = 337 max = 343 } }  }
+system = { id = "1021" name = "" position = { x = { min = -424 max = -382 } y =  { min = 308 max = 314 } }  }
+system = { id = "1022" name = "" position = { x = { min = -464 max = -424 } y =  { min = 274 max = 280 } }  }
+system = { id = "1023" name = "" position = { x = { min = 225 max = 229 } y =  { min = 93 max = 131 } }  }
+system = { id = "1024" name = "" position = { x = { min = 220 max = 224 } y =  { min = 134 max = 174 } }  }
+system = { id = "1025" name = "" position = { x = { min = 207 max = 211 } y =  { min = 188 max = 208 } }  }
+system = { id = "1026" name = "" position = { x = { min = 199 max = 201 } y =  { min = 210 max = 230 } }  }
+system = { id = "1027" name = "" position = { x = { min = 186 max = 190 } y =  { min = 231 max = 251 } }  }
+system = { id = "1028" name = "" position = { x = { min = 174 max = 176 } y =  { min = 252 max = 272 } }  }
+system = { id = "1029" name = "" position = { x = { min = 158 max = 160 } y =  { min = 273 max = 293 } }  }
+system = { id = "1030" name = "" position = { x = { min = 141 max = 143 } y =  { min = 294 max = 312 } }  }
+system = { id = "1031" name = "Dreon" position = { x = { min = 113 max = 131 } y =  { min = 318 max = 324 } }  initializer = scf_b }
+system = { id = "1032" name = "Atbar" position = { x = { min = 90 max = 110 } y =  { min = 336 max = 342 } }  initializer = scg_b }
+system = { id = "1033" name = "Fahleena" position = { x = { min = 66 max = 88 } y =  { min = 352 max = 358 } }  initializer = scm_b }
+system = { id = "1034" name = "Merak" position = { x = { min = 39 max = 63 } y =  { min = 365 max = 373 } }  initializer = sca_b }
+system = { id = "1035" name = "Betazed" position = { x = { min = 11 max = 37 } y =  { min = 378 max = 386 } }  initializer = betazed_b }
+system = { id = "1036" name = "Toroth" position = { x = { min = -19 max = 9 } y =  { min = 389 max = 397 } }  initializer = toroth_b }
+system = { id = "1037" name = "Pollux" position = { x = { min = -49 max = -21 } y =  { min = 398 max = 406 } }  initializer = sck_b }
+system = { id = "1038" name = "Beta Rigel" position = { x = { min = -82 max = -52 } y =  { min = 404 max = 412 } }  initializer = beta_rigel_b  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = orion_free_states } } }
+system = { id = "1039" name = "Maluria" position = { x = { min = -116 max = -84 } y =  { min = 408 max = 416 } }  initializer = scg_b }
+system = { id = "1040" name = "Ajilon" position = { x = { min = -150 max = -118 } y =  { min = 409 max = 417 } }  initializer = scm_b }
+system = { id = "1041" name = "Krenim" position = { x = { min = -188 max = -155 } y =  { min = 408 max = 416 } }  initializer = krenim_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = krenim } } }
+system = { id = "1042" name = "Halee" position = { x = { min = -220 max = -186 } y =  { min = 403 max = 411 } }  initializer = sck_b }
+system = { id = "1043" name = "" position = { x = { min = -256 max = -222 } y =  { min = 396 max = 404 } }  }
+system = { id = "1044" name = "" position = { x = { min = -297 max = -251 } y =  { min = 386 max = 394 } }  }
+system = { id = "1045" name = "" position = { x = { min = -344 max = -298 } y =  { min = 368 max = 376 } }  }
+system = { id = "1046" name = "Klendathu" position = { x = { min = -391 max = -345 } y =  { min = 345 max = 351 } }  initializer = klendathu_b }
+system = { id = "1047" name = "" position = { x = { min = -433 max = -391 } y =  { min = 316 max = 322 } }  }
+system = { id = "1048" name = "Horbus 504GJ" position = { x = { min = -476 max = -434 } y =  { min = 281 max = 287 } }  initializer = terminus_b }
+system = { id = "1049" name = "Tarazed" position = { x = { min = 225 max = 229 } y =  { min = 137 max = 179 } }  initializer = tarazed_b }
+system = { id = "1050" name = "" position = { x = { min = 212 max = 216 } y =  { min = 192 max = 214 } }  }
+system = { id = "1051" name = "" position = { x = { min = 202 max = 206 } y =  { min = 215 max = 235 } }  }
+system = { id = "1052" name = "" position = { x = { min = 192 max = 194 } y =  { min = 237 max = 257 } }  }
+system = { id = "1053" name = "" position = { x = { min = 178 max = 180 } y =  { min = 259 max = 279 } }  }
+system = { id = "1054" name = "" position = { x = { min = 162 max = 164 } y =  { min = 280 max = 300 } }  }
+system = { id = "1055" name = "Ultima Thule" position = { x = { min = 144 max = 146 } y =  { min = 301 max = 319 } }  initializer = scb_b }
+system = { id = "1056" name = "Septimus" position = { x = { min = 116 max = 134 } y =  { min = 326 max = 332 } }  initializer = sck_b }
+system = { id = "1057" name = "Pullock" position = { x = { min = 93 max = 113 } y =  { min = 344 max = 350 } }  initializer = scb_b }
+system = { id = "1058" name = "Regulon" position = { x = { min = 66 max = 90 } y =  { min = 359 max = 367 } }  initializer = scm_b }
+system = { id = "1059" name = "Minos Korva" position = { x = { min = 40 max = 64 } y =  { min = 374 max = 382 } }  initializer = scm_b }
+system = { id = "1060" name = "Gamma Ceti" position = { x = { min = 11 max = 37 } y =  { min = 387 max = 395 } }  initializer = sca_b }
+system = { id = "1061" name = "Manzar" position = { x = { min = -19 max = 9 } y =  { min = 398 max = 406 } }  initializer = sck_b }
+system = { id = "1062" name = "Epsilon Ceti" position = { x = { min = -51 max = -21 } y =  { min = 407 max = 415 } }  initializer = rl_epsilon_ceti }
+system = { id = "1063" name = "Tellun" position = { x = { min = -83 max = -53 } y =  { min = 413 max = 421 } }  initializer = rl_tellun }
+system = { id = "1064" name = "Yridia" position = { x = { min = -118 max = -86 } y =  { min = 417 max = 425 } }  initializer = scg_b }
+system = { id = "1065" name = "Ganalda" position = { x = { min = -154 max = -120 } y =  { min = 419 max = 427 } }  initializer = scb_b }
+system = { id = "1066" name = "No'mat" position = { x = { min = -189 max = -155 } y =  { min = 417 max = 425 } }  initializer = scf_b }
+system = { id = "1067" name = "Alpha Monocerotis" position = { x = { min = -225 max = -191 } y =  { min = 413 max = 421 } }  initializer = sck_b }
+system = { id = "1068" name = "" position = { x = { min = -261 max = -227 } y =  { min = 406 max = 414 } }  }
+system = { id = "1069" name = "" position = { x = { min = -305 max = -257 } y =  { min = 395 max = 403 } }  }
+system = { id = "1070" name = "" position = { x = { min = -352 max = -306 } y =  { min = 378 max = 384 } }  }
+system = { id = "1071" name = "" position = { x = { min = 217 max = 221 } y =  { min = 196 max = 218 } }  }
+system = { id = "1072" name = "" position = { x = { min = 207 max = 211 } y =  { min = 219 max = 241 } }  }
+system = { id = "1073" name = "" position = { x = { min = 195 max = 199 } y =  { min = 242 max = 264 } }  }
+system = { id = "1074" name = "La Superba" position = { x = { min = 182 max = 184 } y =  { min = 265 max = 285 } }  initializer = la_superba_b }
+system = { id = "1075" name = "" position = { x = { min = 166 max = 168 } y =  { min = 286 max = 306 } }  }
+system = { id = "1076" name = "Portas" position = { x = { min = 147 max = 149 } y =  { min = 307 max = 327 } }  initializer = scg_b }
+system = { id = "1077" name = "Simperia" position = { x = { min = 119 max = 137 } y =  { min = 333 max = 339 } }  initializer = scm_b }
+system = { id = "1078" name = "Olmerak" position = { x = { min = 94 max = 116 } y =  { min = 352 max = 358 } }  initializer = scg_b }
+system = { id = "1079" name = "Koralis" position = { x = { min = 68 max = 92 } y =  { min = 369 max = 375 } }  initializer = scm_b }
+system = { id = "1080" name = "Mu Ceti" position = { x = { min = 40 max = 66 } y =  { min = 383 max = 391 } }  initializer = mu_ceti_b }
+system = { id = "1081" name = "Beta Aurigae" position = { x = { min = 12 max = 38 } y =  { min = 396 max = 404 } }  initializer = scf_b }
+system = { id = "1082" name = "Castor" position = { x = { min = -19 max = 9 } y =  { min = 407 max = 415 } }  initializer = sca_b }
+system = { id = "1083" name = "37 Geminorum" position = { x = { min = -52 max = -22 } y =  { min = 416 max = 424 } }  initializer = scg_b }
+system = { id = "1084" name = "Tarlac" position = { x = { min = -86 max = -54 } y =  { min = 423 max = 431 } }  initializer = scg_b }
+system = { id = "1085" name = "Alzirr" position = { x = { min = -120 max = -88 } y =  { min = 427 max = 435 } }  initializer = scf_b }
+system = { id = "1086" name = "Gamma Eridon" position = { x = { min = -157 max = -123 } y =  { min = 429 max = 437 } }  initializer = scm_b }
+system = { id = "1087" name = "Gorath" position = { x = { min = -193 max = -159 } y =  { min = 428 max = 434 } }  initializer = sca_b }
+system = { id = "1088" name = "Tiburon" position = { x = { min = -231 max = -195 } y =  { min = 425 max = 429 } }  initializer = sca_b }
+system = { id = "1089" name = "Tau Lacertae" position = { x = { min = -268 max = -232 } y =  { min = 417 max = 421 } }  initializer = gorn_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = gorn_empire } } }
+system = { id = "1090" name = "" position = { x = { min = -311 max = -263 } y =  { min = 407 max = 411 } }  }
+system = { id = "1091" name = "" position = { x = { min = -360 max = -312 } y =  { min = 387 max = 391 } }  }
+system = { id = "1092" name = "Sigma Tama" position = { x = { min = 11 max = 39 } y =  { min = 404 max = 408 } }  initializer = tamarian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = tamarian_unity } } }
+system = { id = "1093" name = "Aldebaran" position = { x = { min = -19 max = 9 } y =  { min = 416 max = 420 } }  initializer = sck_b }
+system = { id = "1094" name = "Ellora" position = { x = { min = -52 max = -22 } y =  { min = 425 max = 429 } }  initializer = sca_b }
+system = { id = "1095" name = "Son'a" position = { x = { min = -87 max = -55 } y =  { min = 432 max = 436 } }  initializer = sona_prime_b }
+system = { id = "1096" name = "Donatu" position = { x = { min = -123 max = -89 } y =  { min = 436 max = 440 } }  initializer = scf_b }
+system = { id = "1097" name = "Dorala" position = { x = { min = -159 max = -125 } y =  { min = 436 max = 442 } }  initializer = scf_b }
+system = { id = "1098" name = "Epsilon Hydrae" position = { x = { min = -197 max = -161 } y =  { min = 436 max = 440 } }  initializer = scg_b }
+system = { id = "1099" name = "Algenubi" position = { x = { min = -234 max = -198 } y =  { min = 430 max = 436 } }  initializer = scg_b }
+system = { id = "1100" name = "" position = { x = { min = -272 max = -236 } y =  { min = 422 max = 428 } }  }
+system = { id = "1101" name = "Betelgeuse" position = { x = { min = -309 max = -273 } y =  { min = 413 max = 417 } }  initializer = betelgeuse_b }
+system = { id = "1102" name = "Rigel" position = { x = { min = -360 max = -324 } y =  { min = 393 max = 397 } }  initializer = rigel_b }
+system = { id = "1103" name = "Camus" position = { x = { min = -20 max = 10 } y =  { min = 422 max = 426 } }  initializer = scm_b }
+system = { id = "1104" name = "Organia" position = { x = { min = -54 max = -22 } y =  { min = 431 max = 435 } }  initializer = organia_b }
+system = { id = "1105" name = "Sherman" position = { x = { min = -88 max = -56 } y =  { min = 438 max = 442 } }  initializer = sherman_b }
+system = { id = "1106" name = "Mu Leonis" position = { x = { min = -125 max = -91 } y =  { min = 441 max = 447 } }  initializer = mu_leonis_b }
+system = { id = "1107" name = "Galdonterre" position = { x = { min = -161 max = -127 } y =  { min = 444 max = 448 } }  initializer = sck_b }
+system = { id = "1108" name = "M'char" position = { x = { min = -199 max = -163 } y =  { min = 441 max = 447 } }  initializer = sck_b }
+system = { id = "1109" name = "" position = { x = { min = -237 max = -201 } y =  { min = 438 max = 442 } }  }
+system = { id = "1110" name = "" position = { x = { min = -275 max = -239 } y =  { min = 430 max = 434 } }  }
+system = { id = "1111" name = "" position = { x = { min = 36 max = 54 } y =  { min = -6 max = 6 } }  initializer = core_star_b }
+system = { id = "1112" name = "" position = { x = { min = 34 max = 52 } y =  { min = 9 max = 19 } }  initializer = core_star_b }
+system = { id = "1113" name = "" position = { x = { min = 28 max = 44 } y =  { min = 22 max = 30 } }  initializer = core_star_b }
+system = { id = "1114" name = "" position = { x = { min = 21 max = 31 } y =  { min = 28 max = 44 } }  initializer = core_star_b }
+system = { id = "1115" name = "Pistol Star" position = { x = { min = 8 max = 20 } y =  { min = 34 max = 52 } }  initializer = pistol_star_b }
+system = { id = "1116" name = "Peony Star" position = { x = { min = -6 max = 6 } y =  { min = 36 max = 54 } }  initializer = peony_star_b }
+system = { id = "1117" name = "S2" position = { x = { min = -19 max = -9 } y =  { min = 34 max = 52 } }  initializer = s2_b }
+system = { id = "1118" name = "" position = { x = { min = -30 max = -22 } y =  { min = 28 max = 44 } }  initializer = core_star_b }
+system = { id = "1119" name = "" position = { x = { min = -44 max = -28 } y =  { min = 21 max = 31 } }  initializer = core_star_b }
+system = { id = "1120" name = "" position = { x = { min = -52 max = -34 } y =  { min = 8 max = 20 } }  initializer = core_star_b }
+system = { id = "1121" name = "" position = { x = { min = -54 max = -36 } y =  { min = -6 max = 6 } }  initializer = core_star_b }
+system = { id = "1122" name = "" position = { x = { min = -52 max = -34 } y =  { min = -19 max = -9 } }  initializer = core_star_b }
+system = { id = "1123" name = "" position = { x = { min = -44 max = -28 } y =  { min = -30 max = -22 } }  initializer = core_star_b }
+system = { id = "1124" name = "" position = { x = { min = -31 max = -21 } y =  { min = -44 max = -28 } }  initializer = core_star_b }
+system = { id = "1125" name = "" position = { x = { min = -20 max = -8 } y =  { min = -52 max = -34 } }  initializer = core_star_b }
+system = { id = "1126" name = "" position = { x = { min = -6 max = 6 } y =  { min = -54 max = -36 } }  initializer = core_star_b }
+system = { id = "1127" name = "" position = { x = { min = 9 max = 19 } y =  { min = -52 max = -34 } }  initializer = core_star_b }
+system = { id = "1128" name = "" position = { x = { min = 22 max = 30 } y =  { min = -44 max = -28 } }  initializer = core_star_b }
+system = { id = "1129" name = "" position = { x = { min = 28 max = 44 } y =  { min = -31 max = -21 } }  initializer = core_star_b }
+system = { id = "1130" name = "" position = { x = { min = 34 max = 52 } y =  { min = -20 max = -8 } }  initializer = core_star_b }
+system = { id = "1131" name = "" position = { x = { min = 56 max = 74 } y =  { min = -9 max = 9 } }  initializer = core_star_b }
+system = { id = "1132" name = "" position = { x = { min = 53 max = 71 } y =  { min = 12 max = 28 } }  initializer = core_star_b }
+system = { id = "1133" name = "" position = { x = { min = 45 max = 61 } y =  { min = 31 max = 45 } }  initializer = core_star_b }
+system = { id = "1134" name = "" position = { x = { min = 30 max = 46 } y =  { min = 45 max = 61 } }  initializer = core_star_b }
+system = { id = "1135" name = "" position = { x = { min = 11 max = 29 } y =  { min = 53 max = 71 } }  initializer = core_star_b }
+system = { id = "1136" name = "" position = { x = { min = -9 max = 9 } y =  { min = 56 max = 74 } }  initializer = core_star_b }
+system = { id = "1137" name = "" position = { x = { min = -28 max = -12 } y =  { min = 53 max = 71 } }  initializer = core_star_b }
+system = { id = "1138" name = "" position = { x = { min = -45 max = -31 } y =  { min = 45 max = 61 } }  initializer = core_star_b }
+system = { id = "1139" name = "" position = { x = { min = -61 max = -45 } y =  { min = 30 max = 46 } }  initializer = core_star_b }
+system = { id = "1140" name = "" position = { x = { min = -71 max = -53 } y =  { min = 11 max = 29 } }  initializer = core_star_b }
+system = { id = "1141" name = "" position = { x = { min = -74 max = -56 } y =  { min = -9 max = 9 } }  initializer = core_star_b }
+system = { id = "1142" name = "" position = { x = { min = -71 max = -53 } y =  { min = -28 max = -12 } }  initializer = core_star_b }
+system = { id = "1143" name = "" position = { x = { min = -61 max = -45 } y =  { min = -45 max = -31 } }  initializer = core_star_b }
+system = { id = "1144" name = "" position = { x = { min = -46 max = -30 } y =  { min = -61 max = -45 } }  initializer = core_star_b }
+system = { id = "1145" name = "" position = { x = { min = -29 max = -11 } y =  { min = -71 max = -53 } }  initializer = core_star_b }
+system = { id = "1146" name = "" position = { x = { min = -9 max = 9 } y =  { min = -74 max = -56 } }  initializer = core_star_b }
+system = { id = "1147" name = "" position = { x = { min = 12 max = 28 } y =  { min = -71 max = -53 } }  initializer = core_star_b }
+system = { id = "1148" name = "" position = { x = { min = 31 max = 45 } y =  { min = -61 max = -45 } }  initializer = core_star_b }
+system = { id = "1149" name = "" position = { x = { min = 45 max = 61 } y =  { min = -46 max = -30 } }  initializer = core_star_b }
+system = { id = "1150" name = "" position = { x = { min = 53 max = 71 } y =  { min = -29 max = -11 } }  initializer = core_star_b }
+system = { id = "1151" name = "" position = { x = { min = 76 max = 94 } y =  { min = -12 max = 12 } }  initializer = core_star_b }
+system = { id = "1152" name = "" position = { x = { min = 72 max = 90 } y =  { min = 15 max = 37 } }  initializer = core_star_b }
+system = { id = "1153" name = "" position = { x = { min = 62 max = 76 } y =  { min = 41 max = 59 } }  initializer = core_star_b }
+system = { id = "1154" name = "" position = { x = { min = 39 max = 61 } y =  { min = 62 max = 76 } }  initializer = core_star_b }
+system = { id = "1155" name = "" position = { x = { min = 14 max = 38 } y =  { min = 72 max = 90 } }  initializer = core_star_b }
+system = { id = "1156" name = "Scorpius X-1" position = { x = { min = -12 max = 12 } y =  { min = 76 max = 94 } }  initializer = scorpius_x1_b }
+system = { id = "1157" name = "" position = { x = { min = -37 max = -15 } y =  { min = 72 max = 90 } }  initializer = core_star_b }
+system = { id = "1158" name = "" position = { x = { min = -59 max = -41 } y =  { min = 62 max = 76 } }  initializer = core_star_b }
+system = { id = "1159" name = "" position = { x = { min = -76 max = -62 } y =  { min = 39 max = 61 } }  initializer = core_star_b }
+system = { id = "1160" name = "" position = { x = { min = -90 max = -72 } y =  { min = 14 max = 38 } }  initializer = core_star_b }
+system = { id = "1161" name = "" position = { x = { min = -94 max = -76 } y =  { min = -12 max = 12 } }  initializer = core_star_b }
+system = { id = "1162" name = "" position = { x = { min = -90 max = -72 } y =  { min = -37 max = -15 } }  initializer = core_star_b }
+system = { id = "1163" name = "" position = { x = { min = -76 max = -62 } y =  { min = -59 max = -41 } }  initializer = core_star_b }
+system = { id = "1164" name = "" position = { x = { min = -61 max = -39 } y =  { min = -76 max = -62 } }  initializer = core_star_b }
+system = { id = "1165" name = "" position = { x = { min = -38 max = -14 } y =  { min = -90 max = -72 } }  initializer = core_star_b }
+system = { id = "1166" name = "" position = { x = { min = -12 max = 12 } y =  { min = -94 max = -76 } }  initializer = core_star_b }
+system = { id = "1167" name = "" position = { x = { min = 15 max = 37 } y =  { min = -90 max = -72 } }  initializer = core_star_b }
+system = { id = "1168" name = "" position = { x = { min = 41 max = 59 } y =  { min = -76 max = -62 } }  initializer = core_star_b }
+system = { id = "1169" name = "" position = { x = { min = 62 max = 76 } y =  { min = -61 max = -39 } }  initializer = core_star_b }
+system = { id = "1170" name = "" position = { x = { min = 72 max = 90 } y =  { min = -38 max = -14 } }  initializer = core_star_b }
+system = { id = "1171" name = "Alpha Centauri" position = { x = { min = -8 max = -8 } y =  { min = 287 max = 287 } }  initializer = rl_alpha_centauri }
+system = { id = "1172" name = "Sirius" position = { x = { min = -13 max = -13 } y =  { min = 307 max = 307 } }  initializer = rl_sirius }
+system = { id = "1173" name = "Barnard's Star" position = { x = { min = 7 max = 7 } y =  { min = 286 max = 286 } }  initializer = barnards_star }
+system = { id = "1174" name = "Sagittarius A*" position = { x = { min = 1 max = 1 } y =  { min = 1 max = 1 } }  initializer = sagittarius_a_b }
+system = { id = "1175" name = "Wolf 359" position = { x = { min = -17 max = -17 } y =  { min = 300 max = 300 } }  initializer = wolf_359 }
+system = { id = "1176" name = "Wolf 424" position = { x = { min = -17 max = -17 } y =  { min = 287 max = 287 } }  initializer = wolf_424_b }
+system = { id = "1177" name = "Unroth" position = { x = { min = -145 max = -145 } y =  { min = 325 max = 325 } }  initializer = scf_b }
+system = { id = "1178" name = "Iconia" position = { x = { min = -199 max = -199 } y =  { min = 320 max = 320 } }  initializer = iconia_b }
+system = { id = "1179" name = "Dewa" position = { x = { min = -191 max = -191 } y =  { min = 325 max = 325 } }  initializer = dewa_b }
+system = { id = "1180" name = "Tranome Sar" position = { x = { min = -179 max = -179 } y =  { min = 330 max = 330 } }  initializer = sck_b }
+system = { id = "1181" name = "Zeta Virginis" position = { x = { min = -85 max = -85 } y =  { min = 251 max = 251 } }  initializer = sca_b }
+system = { id = "1182" name = "Devron" position = { x = { min = -90 max = -90 } y =  { min = 266 max = 266 } }  initializer = sck_b }
+system = { id = "1183" name = "Algorab" position = { x = { min = -115 max = -115 } y =  { min = 251 max = 251 } }  initializer = sca_b }
+system = { id = "1184" name = "Alpha Chamaeleonis" position = { x = { min = -123 max = -123 } y =  { min = 267 max = 267 } }  initializer = scf_b }
+system = { id = "1185" name = "Achernar" position = { x = { min = -146 max = -146 } y =  { min = 249 max = 249 } }  initializer = scb_b }
+system = { id = "1186" name = "Beta Reticuli" position = { x = { min = -154 max = -154 } y =  { min = 264 max = 264 } }  initializer = sck_b }
+system = { id = "1187" name = "Lambda Serpentis" position = { x = { min = 5 max = 5 } y =  { min = 229 max = 229 } }  initializer = lambda_serpentis_b }
+system = { id = "1188" name = "Ophiucus" position = { x = { min = 0 max = 0 } y =  { min = 242 max = 242 } }  initializer = sck_b }
+system = { id = "1189" name = "Gamma Pavonis" position = { x = { min = -61 max = -61 } y =  { min = 262 max = 262 } }  initializer = scf_b }
+system = { id = "1190" name = "P'Jem" position = { x = { min = -34 max = -34 } y =  { min = 351 max = 351 } }  }
+system = { id = "1191" name = "J'Ral Supernova" position = { x = { min = -25 max = -25 } y =  { min = 356 max = 356 } }  initializer = jral_b }
+system = { id = "1192" name = "82 G. Eridani" position = { x = { min = -59 max = -59 } y =  { min = 306 max = 306 } }  initializer = 82g_eridani_b }
+system = { id = "1193" name = "Sol" position = { x = { min = 0 max = 0 } y =  { min = 295 max = 295 } }  initializer = human_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = united_earth } } }
+system = { id = "1194" name = "Delta Pavonis" position = { x = { min = -35 max = -35 } y =  { min = 247 max = 247 } }  initializer = benzarian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = benzarian_commonwealth } } }
+system = { id = "1195" name = "61 Cygni" position = { x = { min = 52 max = 52 } y =  { min = 287 max = 287 } }  initializer = tellarian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = tellarian_technocracy } } }
+system = { id = "1196" name = "Procyon" position = { x = { min = -47 max = -47 } y =  { min = 310 max = 310 } }  initializer = andorian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = andorian_empire } } }
+system = { id = "1197" name = "Beta Leonis" position = { x = { min = -85 max = -75 } y =  { min = 315 max = 325 } }  initializer = beta_leonis_b }
+system = { id = "1198" name = "Bajor" position = { x = { min = 95 max = 95 } y =  { min = 400 max = 400 } }  initializer = bajoran_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = bajoran_republic } } }
+system = { id = "1199" name = "Rakh" position = { x = { min = 266 max = 266 } y =  { min = -235 max = -235 } }  initializer = rakharian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = rakharian_free_states } } }
+system = { id = "1200" name = "Cardassia" position = { x = { min = 121 max = 121 } y =  { min = 370 max = 370 } }  initializer = cardassian_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = cardassian_union } } }
+system = { id = "1201" name = "Goralis" position = { x = { min = 128 max = 128 } y =  { min = 379 max = 379 } }  initializer = scg_b }
+system = { id = "1202" name = "Torros" position = { x = { min = 135 max = 135 } y =  { min = 381 max = 381 } }  initializer = scb_b }
+system = { id = "1203" name = "Regulak" position = { x = { min = 130 max = 130 } y =  { min = 363 max = 363 } }  initializer = scm_b }
+system = { id = "1204" name = "Avenal" position = { x = { min = 140 max = 140 } y =  { min = 366 max = 366 } }  initializer = scb_b }
+system = { id = "1205" name = "Ventarus Indrilon" position = { x = { min = 109 max = 109 } y =  { min = 225 max = 225 } }  initializer = ferengi_homeworld  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ferengi_alliance } } }
+system = { id = "1206" name = "Thalos" position = { x = { min = 102 max = 102 } y =  { min = 218 max = 218 } }  initializer = scm_b }
+system = { id = "1207" name = "Lappa" position = { x = { min = 115 max = 115 } y =  { min = 216 max = 216 } }  initializer = sck_b }
+system = { id = "1208" name = "Balancar" position = { x = { min = 119 max = 119 } y =  { min = 223 max = 223 } }  initializer = scf_b }
+system = { id = "1209" name = "Rog" position = { x = { min = 112 max = 112 } y =  { min = 234 max = 234 } }  initializer = scf_b }
+system = { id = "1210" name = "Irtok" position = { x = { min = 102 max = 102 } y =  { min = 232 max = 232 } }  initializer = scg_b }
+system = { id = "1211" name = "Polaris" position = { x = { min = 153 max = 153 } y =  { min = 405 max = 405 } }  initializer = polaris_b }
+system = { id = "1212" name = "Antares" position = { x = { min = -25 max = -25 } y =  { min = 180 max = 180 } }  initializer = antares_b }
+system = { id = "1213" name = "Unimatix One" position = { x = { min = -225 max = -215 } y =  { min = -265 max = -255 } }  initializer = borg_initializer }
+system = { id = "1214" name = "" position = { x = { min = -222 max = -218 } y =  { min = -277 max = -273 } }  }
+system = { id = "1215" name = "" position = { x = { min = -232 max = -228 } y =  { min = -249 max = -245 } }  }
+system = { id = "1216" name = "" position = { x = { min = -212 max = -208 } y =  { min = -249 max = -245 } }  }
+system = { id = "1217" name = "" position = { x = { min = -235 max = -231 } y =  { min = -273 max = -269 } }  }
+system = { id = "1218" name = "" position = { x = { min = -209 max = -205 } y =  { min = -273 max = -269 } }  }
+system = { id = "1219" name = "" position = { x = { min = -222 max = -218 } y =  { min = -237 max = -233 } }  }
+system = { id = "1220" name = "Kolea" position = { x = { min = 48 max = 48 } y =  { min = 217 max = 217 } }  initializer = kolea }
+nebula = { name = "Arachnid Nebula" position = { x = 35 y = 363 } radius = 12 }
+nebula = { name = "Helaspont Nebula" position = { x = 102 y = 288 } radius = 12 }
+nebula = { name = "Black Cluster" position = { x = 93 y = 183 } radius = 35 }
+nebula = { name = "Tong Beak Nebula" position = { x = 160 y = 380 } radius = 18 }
+nebula = { name = "Briar Patch" position = { x = -70 y = 427 } radius = 12 }
+nebula = { name = "Lembata Cluster" position = { x = -40 y = 460 } radius = 12 }
+nebula = { name = "Paulson Nebula" position = { x = -130 y = 367 } radius = 12 }
+nebula = { name = "Rolor Nebula" position = { x = 140 y = 326 } radius = 20 }
+nebula = { name = "Typhon Expanse" position = { x = -71 y = 185 } radius = 40 }
+nebula = { name = "Mutara Nebula" position = { x = -170 y = 460 } radius = 20 }
+nebula = { name = "Vodrey Nebula" position = { x = -250 y = 450 } radius = 20 }
+nebula = { name = "Zeta Gellis Cluster" position = { x = -182 y = 150 } radius = 25 }
+nebula = { name = "Helix Nebula" position = { x = 109 y = 137 } radius = 25 }
+nebula = { name = "Horsehead Nebula" position = { x = -312 y = 380 } radius = 25 }
+nebula = { name = "Orion Nebula" position = { x = -248 y = 372 } radius = 25 }
+nebula = { name = "Ring Nebula" position = { x = 329 y = 205 } radius = 25 }
+nebula = { name = "Taurus Nebula" position = { x = 13 y = 166 } radius = 25 }
+nebula = { name = "Etnap Nebula" position = { x = -176 y = 431 } radius = 10 }
+nebula = { name = "Carina Nebula" position = { x = -246 y = 116 } radius = 20 }
+nebula = { name = "Omarion Nebula" position = { x = 221 y = -393 } radius = 25 }
+nebula = { name = "Lantar Nebula" position = { x = 379 y = -309 } radius = 20 }
+nebula = { name = "Chamra Vortex" position = { x = 266 y = -260 } radius = 20 }
+nebula = { name = "Jenkata Nebula" position = { x = 163 y = -348 } radius = 15 }
+nebula = { name = "Komar Nebula" position = { x = -221 y = -394 } radius = 15 }
+nebula = { name = "Tenarus Cluster" position = { x = -254 y = -362 } radius = 15 }
+nebula = { name = "Agrat-Mot Nebula" position = { x = -326 y = -252 } radius = 15 }
+nebula = { name = "Swallow Nebula" position = { x = -319 y = -130 } radius = 30 }
+nebula = { name = "Orpisay Nebula" position = { x = -229 y = -35 } radius = 15 }
+nebula = { name = "Orlitus Cluster" position = { x = -180 y = -50 } radius = 15 }
+nebula = { name = "Galactic Core" position = { x = 0 y = 5 } radius = 60 }
+nebula = { name = "Ionization Nebula" position = { x = 6 y = 454 } radius = 20 }
+nebula = { name = "Delphic Expanse" position = { x = 48 y = 220 } radius = 30 }	
+}

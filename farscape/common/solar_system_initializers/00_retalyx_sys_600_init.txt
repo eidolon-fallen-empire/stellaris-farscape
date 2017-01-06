@@ -1,0 +1,10 @@
+sys_600_init = {
+    name = "Interia"
+    class = random
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+}

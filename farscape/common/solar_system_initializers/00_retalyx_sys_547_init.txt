@@ -1,0 +1,10 @@
+sys_547_init = {
+    name = "Trelast"
+    class = random
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+}

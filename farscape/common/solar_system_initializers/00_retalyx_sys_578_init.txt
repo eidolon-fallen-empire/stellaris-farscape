@@ -1,0 +1,10 @@
+sys_578_init = {
+    name = "Trao"
+    class = random
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+}

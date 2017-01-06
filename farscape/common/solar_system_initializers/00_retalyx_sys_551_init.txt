@@ -1,0 +1,10 @@
+sys_551_init = {
+    name = "Peacekeeper Strategic Command"
+    class = random
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+}

@@ -1,0 +1,18 @@
+SEB = {
+	sebacean = {
+		name = "Sebacean"
+		plural = "Sebaceans"
+		home_planet = "Royal"
+		home_system = "Royal"
+		name_list = "BK1"
+	}
+	
+	sebacean_pure = {
+		name = "Sebacean Pure"
+		plural = "Pure Sebaceans"
+		home_planet = "Peacekeeper Strategic Command"
+		home_system = "Peacekeeper Strategic Command"
+		name_list = "PK1"
+	}	
+	
+}

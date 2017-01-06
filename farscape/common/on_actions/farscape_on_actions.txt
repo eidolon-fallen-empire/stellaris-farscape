@@ -1,0 +1,21 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		game_start.1
+		game_start.2
+		game_start.3
+		game_start.4
+		game_start.5
+		reta_start.1	
+		farscape_start.1
+		farscape_start.2
+	}
+}
+
+# No scope, like on_game_start
+on_yearly_pulse = {
+	events = {
+#		farscape_pulse.1
+#		farscape_pulse.2
+	}
+}

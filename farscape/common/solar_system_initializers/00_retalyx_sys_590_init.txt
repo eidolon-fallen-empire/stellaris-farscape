@@ -1,0 +1,10 @@
+sys_590_init = {
+    name = "Liantac"
+    class = random
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        size = 20
+    }
+}
