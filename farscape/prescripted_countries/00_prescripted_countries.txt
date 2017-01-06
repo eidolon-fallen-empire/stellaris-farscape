@@ -1,11 +1,11 @@
-### PURGE!  GENOCIDE PENALTY TO MODDER FOR PURGING ALL DEFAULT RACES ###
+
 ### Peacekeepers ###
 peacekeepers = {
-	key="Peacekeepers"
-	name="Peacekeepers"
+	name="peacekeepers"
+	flags={ peacekeepers }		
 	name_list="PK1"
 	ship_prefix="PK"
-	species_name="Sebacean"
+	species_name="Sebacean Pure"
 	species_plural="Sebaceans"
 	species_class="HUM"
 	species_adjective="Sebacean"
@@ -16,23 +16,24 @@ peacekeepers = {
 	ftl=warp
 	weapon="tech_lasers_1"
 	planet_name="Peacekeeper Strategic Command"
-	planet_class="pc_tundra"
-	system_name="Home"
-	initializer=""
+	planet_class="pc_continental"
+	system_name="Peacekeeper Strategic Command"
+	initializer="peacekeepers_homeworld"
 	graphical_culture="mammalian_01"
 	city_graphical_culture="mammalian_01"
+
 	empire_flag={
 		icon={
-			category="pointy"
-			file="flag_pointy_1.dds"
+			category="farscape_flags"
+			file="pk.dds"
 		}
 		background={
 			category="backgrounds"
-			file="new_dawn.dds"
+			file="00_solid.dds"
 		}
 		colors={
 			"black"
-			"grey"
+			"black"
 			"null"
 			"null"
 		}
@@ -48,16 +49,22 @@ peacekeepers = {
 		ruler_title_female="Grand Chancellor"
 	}
 	spawn_enabled = always
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	ethic="ethic_fanatic_militarist"
-	ethic="ethic_materialist"
-	trait="trait_resilient"
+	trait="trait_heat_intolerance"		
 	trait="trait_enduring"
-	#flags = { peacekeeper_1 custom_start_screen }
+	trait="trait_resilient"	
+	trait="quick_learners"
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_collectivist"
+
 }
-breakaway = {
-	key="Sebacean Breakaway Colonies"
+
+
+breakaway_colonies = {
+	key="breakaway_colonies"
+	flags = { 
+				breakaway_colonies 
+				breakaway
+				}	
 	name_list="BK1"
 	ship_prefix="BK"
 	species_name="Sebacean"
@@ -71,10 +78,10 @@ breakaway = {
 	government="enlightened_monarchy"
 	ftl=warp
 	weapon="tech_lasers_1"
-	planet_name="Royal Planet"
-	planet_class="pc_tundra"
+	planet_name="Royal"
+	planet_class="pc_continental"
 	system_name="Royal"
-	initializer=""
+	initializer="breakaway_homeworld"
 	graphical_culture="mammalian_01"
 	city_graphical_culture="mammalian_01"
 	empire_flag={
@@ -104,17 +111,17 @@ breakaway = {
 	}
 	spawn_as_fallen=no
 	ignore_portrait_duplication=no
-	spawn_enabled = always
-	ethic="ethic_xenophile"
-	ethic="ethic_fanatic_pacifist"
-	trait="trait_deviants"
+	spawn_enabled = always	
 	trait="trait_enduring"
+	trait="trait_resilient"	
+	trait="quick_learners"	
+	trait="trait_deviants"	
 	trait="trait_nomadic"
-	trait="trait_resilient"
-	#flags = { breakaway_1 custom_start_screen }
+	ethic="ethic_xenophile"
+	ethic="ethic_fanatic_pacifist"	
  	}
 
-scarran ={
+scarran_imperium ={
 	key="Scarran Imperium"
 	name_list="REP3"
 	ship_prefix=""
@@ -123,7 +130,7 @@ scarran ={
 	species_class="REP"
 	species_adjective="Scarran"
 	species_bio=""
-	portrait="rep2"
+	portrait="scarran1"
 	name="Scarran Imperium"
 	adjective="Scarran"
 	government="military_dictatorship"
@@ -135,14 +142,17 @@ scarran ={
 	initializer=""
 	graphical_culture="reptilian_01"
 	city_graphical_culture="reptilian_01"
+	flags = { 
+				scarran_imperium 
+			}		
 	empire_flag={
 		icon={
-			category="ornate"
-			file="flag_ornate_1.dds"
+			category="farscape_flags"
+			file="scarran.dds"
 		}
 		background={
 			category="backgrounds"
-			file="v.dds"
+			file="00_solid.dds"
 		}
 		colors={
 			"black"
@@ -154,16 +164,13 @@ scarran ={
 	ruler={
 		gender=male
 		name="Staleek"
-		portrait="rep2"
-		texture=2
-		hair=0
-		clothes=2
+		portrait="scarran1"
 		ruler_title="Emperor"
 		ruler_title_female="Emperor"
 	}
 	spawn_as_fallen=no
 	ignore_portrait_duplication=no
-	spawn_enabled=yes
+	spawn_enabled = always
 	ethic="ethic_collectivist"
 	ethic="ethic_militarist"
 	ethic="ethic_materialist"
@@ -175,8 +182,12 @@ scarran ={
 }
 
 
-hyneria={
+hynerian_empire={
 	key="Hynerian Empire"
+	name="hynerian_empire"	
+	flags = { 
+				hynerian_empire 
+			}	
 	name_list="MOL2"
 	ship_prefix="HYN"
 	species_name="Hynerian"
@@ -185,7 +196,6 @@ hyneria={
 	species_adjective="Hynerian"
 	species_bio=""
 	portrait="rep11"
-	name="Hynerian Empire"
 	adjective="Hynerian"
 	government="plutocratic_oligarchy"
 	ftl=warp
@@ -234,8 +244,9 @@ hyneria={
 	trait="trait_slow_breeders"
 }
 
-nebari = {
-	key="The Establishment of the Nebari"
+nebari_establishment = {
+	key="Nebari Establishment"
+	flags = { nebari_establishment }
 	name_list="HUM4"
 	ship_prefix="NBR"
 	species_name="Nebari"
@@ -244,8 +255,8 @@ nebari = {
 	species_adjective="Nebari"
 	species_bio=""
 	portrait="humanoid_03"
-	name="The Establishment of the Nebari"
-	adjective="Nebari Establishment"
+	name="Nebari Establishment"
+	adjective="Nebari"
 	government="despotic_hegemony"
 	ftl=warp
 	weapon="tech_lasers_1"
@@ -289,10 +300,15 @@ nebari = {
 	trait="trait_conformists"
 	trait="trait_natural_engineers"
 	trait="trait_repugnant"
+
+	flags = { 
+				nebari_establishment
+			}	
 }
 
-pilots={
-	key="Pilots Council"
+pilots_council={
+	key="Pilots Elder Council"
+	flags = { pilots_council }
 	name_list="ART1"
 	ship_prefix=""
 	species_name="Pilot"
@@ -301,7 +317,7 @@ pilots={
 	species_adjective="Pilot"
 	species_bio=""
 	portrait="art15"
-	name="Pilots Council"
+	name="Pilots Elder Council"
 	adjective="Pilot"
 	government="peaceful_bureaucracy"
 	ftl=warp
@@ -309,7 +325,7 @@ pilots={
 	planet_name="Doein"
 	planet_class="pc_alpine"
 	system_name="Doein"
-	initializer=""
+	initializer="pilots_council_homeworld"
 	graphical_culture="molluscoid_01"
 	city_graphical_culture="arthropoid_01"
 	empire_flag={
@@ -338,10 +354,1132 @@ pilots={
 	}
 	spawn_as_fallen=no
 	ignore_portrait_duplication=no
-	spawn_enabled=always
+	spawn_enabled=no
 	ethic="ethic_xenophile"
 	ethic="ethic_fanatic_pacifist"
 	trait="trait_venerable"
 	trait="trait_repugnant"
 	trait="trait_slow_breeders"
+	
+	flags = { 
+				pilots_council
+			}	
 }
+
+luxan_shanska={
+	key="Luxan Shan'ska"
+	name="Luxan Shan'ska"
+	flags = { luxan_shanska }
+	name_list="MAM1"
+	ship_prefix="LXN"
+	species_name="Luxan"
+	species_plural="Luxans"
+	species_class="HUM"
+	species_adjective="Luxan"
+	species_bio=""
+	portrait="humanoid_02"
+	adjective="Luxan"
+	government="military_junta"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Lux"
+	planet_class="pc_continental"
+	system_name="Lux"
+	initializer=""
+	graphical_culture="fungoid_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_8.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Oro J'Khanna"
+		portrait="humanoid_02_male_01"
+		texture=0
+		hair=6
+		clothes=4
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_xenophile"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
+	trait="trait_resilient"
+	trait="trait_strong"
+}
+
+"Ilanic Central Council"
+={
+	key="Ilanic Central Council"
+	name_list="MAM1"
+	ship_prefix="LXN"
+	species_name="Ilanic"
+	species_plural="Ilanics"
+	species_class="HUM"
+	species_adjective="Ilanic"
+	species_bio=""
+	portrait="humanoid_02"
+	name="Ilanic Central Council"
+	adjective="Ilanic"
+	government="indirect_democracy"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Ilan"
+	planet_class="pc_tropical"
+	system_name="Ilan"
+	initializer=""
+	graphical_culture="fungoid_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="pirate"
+			file="flag_pirate_9.dds"
+		}
+		background={
+			category="backgrounds"
+			file="triangle_split.dds"
+		}
+		colors={
+			"dark_brown"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Cal J'Kir"
+		portrait="humanoid_02_female_01"
+		texture=0
+		hair=4
+		clothes=5
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_individualist"
+	ethic="ethic_xenophile"
+	ethic="ethic_spiritualist"
+	trait="trait_quick_learners"
+	trait="trait_natural_engineers"
+}
+
+"Zenetan State"
+={
+	key="Zenetan State"
+	name_list="HUM2"
+	ship_prefix="ZNT"
+	species_name="Zenetan"
+	species_plural="Zenetans"
+	species_class="HUM"
+	species_adjective="Zenetan"
+	species_bio=""
+	portrait="human"
+	name="Zenetan State"
+	adjective="Zenetan"
+	government="despotic_hegemony"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Zenet"
+	planet_class="pc_arid"
+	system_name="Zenet"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_9.dds"
+		}
+		background={
+			category="backgrounds"
+			file="horizontal.dds"
+		}
+		colors={
+			"turquoise"
+			"brown"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Vikal Mikon"
+		portrait="human_male_01"
+		texture=0
+		hair=21
+		clothes=4
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_collectivist"
+	ethic="ethic_pacifist"
+	ethic="ethic_materialist"
+	trait="trait_extremely_adaptive"
+	trait="trait_sedentary"
+	trait="trait_decadent"
+}
+
+"Zenetan Pirates"
+={
+	key="Zenetan Pirates"
+	name_list="HUM2"
+	ship_prefix="ZNT"
+	species_name="Zenetan"
+	species_plural="Zenetans"
+	species_class="HUM"
+	species_adjective="Zenetan"
+	species_bio=""
+	portrait="human"
+	name="Zenetan Pirates"
+	adjective="Zenetan"
+	government="plutocratic_oligarchy"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Mylth's Hope"
+	planet_class="pc_ocean"
+	system_name="Mylth's Hope"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_13.dds"
+		}
+		background={
+			category="backgrounds"
+			file="double_hemispheres.dds"
+		}
+		colors={
+			"black"
+			"grey"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Kira Shalgran"
+		portrait="human_female_01"
+		texture=0
+		hair=0
+		clothes=5
+		ruler_title="Pirate Admiral"
+		ruler_title_female="Boss"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_collectivist"
+	ethic="ethic_militarist"
+	ethic="ethic_materialist"
+	trait="trait_deviants"
+	trait="trait_decadent"
+	trait="trait_extremely_adaptive"
+}
+
+"Sheyang Raiders"
+={
+	key="Sheyang Raiders"
+	name_list="REP1"
+	ship_prefix="SHY"
+	species_name="Sheyang"
+	species_plural="Sheyang"
+	species_class="REP"
+	species_adjective="Sheyang"
+	species_bio=""
+	portrait="rep12"
+	name="Sheyang Raiders"
+	adjective="Sheyang"
+	government="military_junta"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Yanglin"
+	planet_class="pc_tropical"
+	system_name="Yanglin"
+	initializer=""
+	graphical_culture="reptilian_01"
+	city_graphical_culture="reptilian_01"
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_3.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"orange"
+			"red"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name=""
+		portrait="rep12"
+		texture=0
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled = always
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_materialist"
+	trait="trait_repugnant"
+	trait="trait_strong"
+	trait="trait_resilient"
+	trait="trait_quick_learners"
+}
+"Zianxi Hive"
+={
+	key="Zianxi Hive"
+	name_list="ART1"
+	ship_prefix="IGZ"
+	species_name="Ig's'z's'zz'sz"
+	species_plural="Ig's'z's'zz'sz"
+	species_class="ART"
+	species_adjective="Ig's'z's'zz'sz"
+	species_bio=""
+	portrait="art1"
+	name="Zianxi Hive"
+	adjective="Igzian"
+	government="despotic_hegemony"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Ig'z'z'z'z"
+	planet_class="pc_alpine"
+	system_name="Igzia"
+	initializer=""
+	graphical_culture="arthropoid_01"
+	city_graphical_culture="arthropoid_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_19.dds"
+		}
+		background={
+			category="backgrounds"
+			file="new_dawn.dds"
+		}
+		colors={
+			"dark_grey"
+			"grey"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Il-zi Zianxi"
+		portrait="art1"
+		texture=1
+		hair=0
+		clothes=0
+		ruler_title_female="High Matriarch"
+		heir_title_female="Matriarch"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled = always
+	ethic="ethic_collectivist"
+	ethic="ethic_xenophile"
+	ethic="ethic_materialist"
+	trait="trait_natural_engineers"
+	trait="trait_communal"
+}
+"Consortium of Trao"
+={
+	key="Consortium of Trao"
+	name_list="MOL3"
+	ship_prefix="TRAO"
+	species_name="Trao"
+	species_plural="Trao"
+	species_class="MOL"
+	species_adjective="Trao"
+	species_bio=""
+	portrait="mol5"
+	name="Consortium of Trao"
+	adjective="Trao"
+	government="peaceful_bureaucracy"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Trao"
+	planet_class="pc_ocean"
+	system_name="Trao"
+	initializer=""
+	graphical_culture="molluscoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_3.dds"
+		}
+		background={
+			category="backgrounds"
+			file="triangle_split.dds"
+		}
+		colors={
+			"dark_green"
+			"green"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Jotheb"
+		portrait="mol5"
+		texture=7
+		hair=0
+		clothes=3
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled = always
+	ethic="ethic_xenophile"
+	ethic="ethic_pacifist"
+	ethic="ethic_materialist"
+	trait="trait_venerable"
+	trait="trait_repugnant"
+	trait="trait_sedentary"
+}
+"Liantac Consortium"
+={
+	key="Liantac Consortium"
+	name_list="AVI1"
+	ship_prefix="LIAN"
+	species_name="Lian"
+	species_plural="Lians"
+	species_class="AVI"
+	species_adjective="Lian"
+	species_bio=""
+	portrait="avi15"
+	name="Liantac Consortium"
+	adjective="Lian"
+	government="plutocratic_oligarchy"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Liantac"
+	planet_class="pc_desert"
+	system_name="Liantac"
+	initializer=""
+	graphical_culture="avian_01"
+	city_graphical_culture="avian_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_9.dds"
+		}
+		background={
+			category="backgrounds"
+			file="triangle_split.dds"
+		}
+		colors={
+			"orange"
+			"dark_purple"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="L'Krami"
+		portrait="avi15"
+		texture=2
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled = always
+	ethic="ethic_pacifist"
+	ethic="ethic_fanatic_materialist"
+	trait="trait_thrifty"
+}
+"Venek Horde"
+={
+	key="Venek Horde"
+	name_list="MAM3"
+	ship_prefix="VH"
+	species_name="Venek"
+	species_plural="Veneks"
+	species_class="MAM"
+	species_adjective="Venek"
+	species_bio=""
+	portrait="mam14"
+	name="Venek Horde"
+	adjective="Venek"
+	government="military_junta"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Venek"
+	planet_class="pc_savannah"
+	system_name="Venek"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_14.dds"
+		}
+		background={
+			category="backgrounds"
+			file="v.dds"
+		}
+		colors={
+			"orange"
+			"dark_brown"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Colaut had'Ugrit"
+		portrait="mam14"
+		texture=5
+		hair=0
+		clothes=3
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled = always
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_militarist"
+	trait="trait_repugnant"
+	trait="trait_very_strong"
+}
+
+
+"Charrid Autocracy"
+={
+	key="Charrid Autocracy"
+	name_list="MAM2"
+	ship_prefix="CHR"
+	species_name="Charrid"
+	species_plural="Charrids"
+	species_class="HUM"
+	species_adjective="Charrid"
+	species_bio=""
+	portrait="humanoid_02"
+	name="Charrid Autocracy"
+	adjective="Charran"
+	government="military_dictatorship"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Charr"
+	planet_class="pc_tropical"
+	system_name="Charr"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="pointy"
+			file="flag_pointy_15.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"indigo"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name=""
+		portrait="humanoid_02_male_01"
+		texture=0
+		hair=2
+		clothes=2
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_collectivist"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	trait="trait_resilient"
+	trait="trait_repugnant"
+	trait="trait_talented"
+}
+
+"Interion Research Directorate"
+={
+	key="Interion Research Directorate"
+	name_list="HUM2"
+	ship_prefix="INT"
+	species_name="Interion"
+	species_plural="Interions"
+	species_class="HUM"
+	species_adjective="Interion"
+	species_bio=""
+	portrait="human"
+	name="Interion Research Directorate"
+	adjective="Interion"
+	government="science_directorate"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Interia"
+	planet_class="pc_continental"
+	system_name="Interia"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="ornate"
+			file="flag_ornate_6.dds"
+		}
+		background={
+			category="backgrounds"
+			file="diagonal.dds"
+		}
+		colors={
+			"green"
+			"red"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name=""
+		portrait="human_female_04"
+		texture=0
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_fanatic_pacifist"
+	ethic="ethic_materialist"
+	trait="trait_intelligent"
+}
+
+"Colarta Star Combine"
+={
+	key="Colarta Star Combine"
+	name_list="REP2"
+	ship_prefix="ISS"
+	species_name="Colarta"
+	species_plural="Colartas"
+	species_class="REP"
+	species_adjective="Colarta"
+	species_bio=""
+	portrait="rep15"
+	name="Colarta Star Combine"
+	adjective="Colartan"
+	government="despotic_empire"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Colarta"
+	planet_class="pc_continental"
+	system_name="Colarta"
+	initializer=""
+	graphical_culture="reptilian_01"
+	city_graphical_culture="reptilian_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_12.dds"
+		}
+		background={
+			category="backgrounds"
+			file="v.dds"
+		}
+		colors={
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Moz"
+		portrait="rep15"
+		texture=0
+		hair=0
+		clothes=3
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled = always
+	ethic="ethic_fanatic_collectivist"
+	ethic="ethic_militarist"
+	trait="trait_nomadic"
+	trait="trait_resilient"
+}
+"Coreeshi Hegemony"
+={
+	key="Coreeshi Hegemony"
+	name_list="FUN3"
+	ship_prefix="CRS"
+	species_name="Coreeshi"
+	species_plural="Coreeshi"
+	species_class="FUN"
+	species_adjective="Coreeshi"
+	species_bio=""
+	portrait="fun10"
+	name="Coreeshi Hegemony"
+	adjective="Coreeshian"
+	government="despotic_empire"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Coree"
+	planet_class="pc_tropical"
+	system_name="Coree"
+	initializer=""
+	graphical_culture="fungoid_01"
+	city_graphical_culture="fungoid_01"
+	empire_flag={
+		icon={
+			category="ornate"
+			file="flag_ornate_21.dds"
+		}
+		background={
+			category="backgrounds"
+			file="sinus.dds"
+		}
+		colors={
+			"dark_blue"
+			"red"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Xibbavac Qamvs"
+		portrait="fun10"
+		texture=1
+		hair=0
+		clothes=1
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled = always
+	ethic="ethic_collectivist"
+	ethic="ethic_fanatic_militarist"
+	trait="trait_natural_engineers"
+	trait="trait_intelligent"
+	trait="trait_weak"
+}
+"Delvian Liberation Front"
+={
+	key="Delvian Liberation Front"
+	name_list="AVI1"
+	ship_prefix="DLV"
+	species_name="Delvian"
+	species_plural="Delvians"
+	species_class="HUM"
+	species_adjective="Delvian"
+	species_bio=""
+	portrait="humanoid_03"
+	name="Delvian Liberation Front"
+	adjective="Delvian"
+	government="military_republic"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Fazia"
+	planet_class="pc_continental"
+	system_name="Fazia"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="plantoid_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_7.dds"
+		}
+		background={
+			category="backgrounds"
+			file="new_dawn.dds"
+		}
+		colors={
+			"black"
+			"blue"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Cytophane ka Belima"
+		portrait="humanoid_03_male_01"
+		texture=2
+		hair=0
+		clothes=3
+		ruler_title="Commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
+	trait="trait_venerable"
+	trait="trait_nonadaptive"
+}
+
+"Donari Consortium"
+={
+	key="Donari Consortium"
+	name_list="MOL1"
+	ship_prefix="DNR"
+	species_name="Donari"
+	species_plural="Donari"
+	species_class="MOL"
+	species_adjective="Donari"
+	species_bio=""
+	portrait="mol13"
+	name="Donari Consortium"
+	adjective="Donarian"
+	government="science_directorate"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Donar"
+	planet_class="pc_continental"
+	system_name="Donar"
+	initializer=""
+	graphical_culture="molluscoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_11.dds"
+		}
+		background={
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors={
+			"grey"
+			"brown"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name=""
+		portrait="mol13"
+		texture=6
+		hair=0
+		clothes=2
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=yes
+	ethic="ethic_xenophile"
+	ethic="ethic_pacifist"
+	ethic="ethic_materialist"
+	trait="trait_extremely_adaptive"
+	trait="trait_deviants"
+	trait="trait_slow_breeders"
+}
+"Drak Matriarchy"
+={
+	key="Drak Matriarchy"
+	name_list="ART2"
+	ship_prefix="DRK"
+	species_name="Drak"
+	species_plural="Draks"
+	species_class="ART"
+	species_adjective="Drak"
+	species_bio=""
+	portrait="art11"
+	name="Drak Matriarchy"
+	adjective="Drak"
+	government="despotic_empire"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Drak"
+	planet_class="pc_tropical"
+	system_name="Drak"
+	initializer=""
+	graphical_culture="arthropoid_01"
+	city_graphical_culture="arthropoid_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_1.dds"
+		}
+		background={
+			category="backgrounds"
+			file="stripes.dds"
+		}
+		colors={
+			"black"
+			"brown"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Kul-Lern"
+		portrait="art11"
+		texture=1
+		hair=0
+		clothes=0
+		ruler_title_female="Matriarch"
+		heir_title_female="Princess"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=yes
+	ethic="ethic_fanatic_collectivist"
+	ethic="ethic_xenophile"
+	trait="trait_rapid_breeders"
+	trait="trait_communal"
+}
+"Grennij Hierarchy"
+={
+	key="Grennij Hierarchy"
+	name_list="REP3"
+	ship_prefix="GRN"
+	species_name="Grennij"
+	species_plural="Grennij"
+	species_class="REP"
+	species_adjective="Grennij"
+	species_bio=""
+	portrait="rep2"
+	name="Grennij Hierarchy"
+	adjective="Grennij"
+	government="military_dictatorship"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Grenn"
+	planet_class="pc_tropical"
+	system_name="Grenn"
+	initializer=""
+	graphical_culture="reptilian_01"
+	city_graphical_culture="reptilian_01"
+	empire_flag={
+		icon={
+			category="human"
+			file="flag_human_11.dds"
+		}
+		background={
+			category="backgrounds"
+			file="stripe.dds"
+		}
+		colors={
+			"black"
+			"green"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name=""
+		portrait="rep2"
+		texture=4
+		hair=0
+		clothes=1
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=yes
+	ethic="ethic_collectivist"
+	ethic="ethic_fanatic_militarist"
+	trait="trait_resilient"
+	trait="trait_rapid_breeders"
+}
+"Grudek Consortium"
+={
+	key="Grudek Consortium"
+	name_list="BK1"
+	ship_prefix="GRD"
+	species_name="Sebacean Grudek"
+	species_plural="Grudek"
+	species_class="HUM"
+	species_adjective="Grudek"
+	species_bio=""
+	portrait="human"
+	name="Grudek Consortium"
+	adjective="Grudek"
+	government="plutocratic_oligarchy"
+	ftl=warp
+	weapon="tech_missiles_1"
+	planet_name="Grud"
+	planet_class="pc_ocean"
+	system_name="Grud"
+	initializer=""
+	graphical_culture="molluscoid_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_18.dds"
+		}
+		background={
+			category="backgrounds"
+			file="sinus.dds"
+		}
+		colors={
+			"blue"
+			"dark_blue"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name=""
+		portrait="human_male_04"
+		texture=0
+		hair=11
+		clothes=5
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_collectivist"
+	ethic="ethic_militarist"
+	ethic="ethic_materialist"
+	trait="trait_resilient"
+	trait="trait_enduring"
+	trait="trait_deviants"
+	trait="trait_nomadic"
+}
+"Halosian Hierarchy"
+={
+	key="Halosian Hierarchy"
+	name_list="AVI1"
+	ship_prefix="HAL"
+	species_name="Halosian"
+	species_plural="Halosians"
+	species_class="AVI"
+	species_adjective="Halosian"
+	species_bio=""
+	portrait="avi11"
+	name="Halosian Hierarchy"
+	adjective="Halosian"
+	government="military_junta"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Halos"
+	planet_class="pc_arid"
+	system_name="Halos"
+	initializer=""
+	graphical_culture="avian_01"
+	city_graphical_culture="avian_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_10.dds"
+		}
+		background={
+			category="backgrounds"
+			file="horizontal_stripe.dds"
+		}
+		colors={
+			"orange"
+			"dark_grey"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Reebik"
+		portrait="avi11"
+		texture=3
+		hair=0
+		clothes=3
+		ruler_title="High Lord"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_collectivist"
+	ethic="ethic_fanatic_militarist"
+	trait="trait_nomadic"
+	trait="trait_resilient"
+	trait="trait_repugnant"
+	trait="trait_quick_learners"
+}
+"Han-jee Watchers"
+={
+	key="Han-jee Watchers"
+	name_list="HUM1"
+	ship_prefix="ISS"
+	species_name="Han-jee"
+	species_plural="Han-jee"
+	species_class="ART"
+	species_adjective="Han-jee"
+	species_bio=""
+	portrait="art17"
+	name="Han-jee Watchers"
+	adjective="Han-jee"
+	government="peaceful_bureaucracy"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Han"
+	planet_class="pc_tropical"
+	system_name="Han"
+	initializer=""
+	graphical_culture="arthropoid_01"
+	city_graphical_culture="arthropoid_01"
+	empire_flag={
+		icon={
+			category="spherical"
+			file="flag_spherical_4.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"dark_green"
+			"red"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name=""
+		portrait="art17"
+		texture=3
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=yes
+	ethic="ethic_collectivist"
+	ethic="ethic_xenophile"
+	ethic="ethic_pacifist"
+}
+
