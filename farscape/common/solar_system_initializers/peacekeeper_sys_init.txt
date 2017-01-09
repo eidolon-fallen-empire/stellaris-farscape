@@ -19,6 +19,27 @@ peacekeepers_homeworld = {
 		has_ring = no
 	}
 
+	change_orbit = 50
+	planet = {
+		count = { min = 1 max = 3 }
+		class = random_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+	}
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}	
+	
 	planet = {
 		name = "Peacekeepers Strategic Command"
 		class = ideal_planet_class
@@ -330,39 +351,57 @@ peacekeepers_homeworld = {
 					ethos = owner
 				}
 			}
-		}
-
+		}	
 	}
 
-
+	planet = {
+		count = { min = 2 max = 4 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 20
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}	
+	
 	neighbor_system = {
-		distance = { min = 10 max = 100 }
+		distance = { min = 5 max = 10 }
 		initializer = "mekkar_neighbor"
 	}
 	
 	neighbor_system = {
-		distance = { min = 10 max = 100 }
+		distance = { min = 15 max = 20 }
 		initializer = "new_heather_neighbor"
 	}
 	
 	neighbor_system = {
-		distance = { min = 10 max = 100 }
+		distance = { min = 25 max = 30 }
 		initializer = "terran_raa_neighbor"
 	}
 	
 	neighbor_system = {
-		distance = { min = 100 max = 200 }
+		distance = { min = 35 max = 40 }
 		initializer = "banik_neighbor"
 	}
 	
-	neighbor_system = {
-		distance = { min = 100 max = 200 }
-		initializer = "karas_neighbor"
-	}
-	
-	
-}	
-
+}
 
 # Mekkar
 mekkar_neighbor = {
@@ -504,10 +543,10 @@ mekkar_neighbor = {
 					name_list = "AVI1"
 					homeworld = Delvia
 					traits = {
-						ideal_planet_class = "pc_jungle"
-							trait="trait_venerable"
+						ideal_planet_class = "pc_continental"
 							trait="trait_agrarian"
 							trait="trait_nonadaptive"
+							trait="trait_enduring"
 							}
 					}						
 				create_pop = {
@@ -573,7 +612,7 @@ mekkar_neighbor = {
 					class = "HUM"
 					portrait = "human"
 					name_list = "BK1"
-					homeworld = Banik
+					homeworld = "Banik'ra"
 					traits = {
 						ideal_planet_class = "pc_continental"
 							trait="trait_communal"
@@ -706,7 +745,7 @@ mekkar_neighbor = {
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				set_building = "building_pk_maximum_security_prison"
+				set_building = "building_pk_prison"
 				add_resource = {
 					resource = food
 					amount = 1
@@ -774,11 +813,13 @@ mekkar_neighbor = {
 
 # New Heather
 new_heather_neighbor = {
+	name = "New Heather"
 	class = "rl_standard_stars"
 	asteroids_distance = 50
 	usage = empire_init
 	planet = {
 		count = 1
+		name = "New Heather"
 		class = star
 		orbit_distance = 0
 		orbit_angle = 1
@@ -811,6 +852,680 @@ new_heather_neighbor = {
 		orbit_distance = 20
 		home_planet = yes
 		class = "pc_continental"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 22 }
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		init_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = peacekeepers
+				}
+				save_event_target_as = peacekeepers
+			}
+			set_owner = event_target:peacekeepers
+			random_tile = {
+				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+				set_building = "building_capital_1"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}	
+				add_resource = {
+					resource = minerals
+					amount = 1
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}								
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_hydroponics_farm_1"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
+					create_pop = {
+						species = owner_main_species
+						ethos = owner
+					}					
+				}
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_hydroponics_farm_1"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
+					create_pop = {
+						species = owner_main_species
+						ethos = owner
+					}		
+				
+				}
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_power_plant_1"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}
+					create_pop = {
+						species = owner_main_species
+						ethos = owner
+					}										
+				}
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_power_plant_1"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}
+					create_pop = {
+						species = owner_main_species
+						ethos = owner
+					}										
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_power_plant_1"
+				add_resource = {
+					resource = energy
+					amount = 1
+					replace = yes
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}									
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_hydroponics_farm_1"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}		
+				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_mining_network_1"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}		
+ 			
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_mining_network_1"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}				
+
+			}	
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_noxious_swamp"
+				add_resource = {
+					resource = engineering_research
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dangerous_wildlife"
+				add_resource = {
+					resource = society_research
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_active_volcano"
+				add_resource = {
+					resource = physics_research
+					amount = 1
+					replace = yes
+				}	
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_noxious_swamp"
+				add_resource = {
+					resource = energy
+					amount = 1
+					replace = yes
+				}					
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = energy
+					amount = 1
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dense_jungle"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dense_jungle"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}				
+			}
+		}
+	}
+	planet = {
+		count = { min = 2 max = 4 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 20
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+}
+
+# Terran Raa
+terran_raa_neighbor = {
+	name = "Terran Raa"
+	class = "rl_standard_stars"
+	asteroids_distance = 50
+	usage = empire_init
+	planet = {
+		count = 1
+		name = "Terran Raa"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+	change_orbit = 50
+	planet = {
+		count = { min = 1 max = 3 }
+		class = random_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+	}
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	planet = {
+		count = 1
+		name = "Terran Raa Prime"
+		orbit_distance = 20
+		home_planet = yes
+		class = "pc_continental"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 22 }
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		init_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = peacekeepers
+				}
+				save_event_target_as = peacekeepers
+			}
+			set_owner = event_target:peacekeepers
+			
+			random_tile = {
+				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+				set_building = "building_capital_1"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}	
+				add_resource = {
+					resource = minerals
+					amount = 1
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}		
+
+	
+					
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_malsonic_labor_stockade"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
+				create_species = {
+					name = Sebacean
+					class = "HUM"
+					portrait = "human"
+					name_list = "BK1"
+					homeworld = Royal
+					traits = {
+						ideal_planet_class = "pc_continental"
+							trait="trait_enduring"
+							trait="trait_resilient"	
+							trait="quick_learners"	
+							trait="trait_deviants"	
+							trait="trait_nomadic"
+							}
+					}					
+				create_pop = {
+					species = last_created
+					ethos = { ethic = ethic_individualist ethic = ethic_fanatic_pacifist }
+				}		
+                last_created_pop = {
+                        enslave_pop = yes
+                }					
+				}
+					
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_malsonic_labor_stockade"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
+				create_species = {
+					name = Delvian
+					class = "HUM"
+					portrait = "humanoid_03"
+					name_list = "AVI1"
+					homeworld = Delvia
+					traits = {
+						ideal_planet_class = "pc_continental"
+							trait="trait_agrarian"
+							trait="trait_nonadaptive"
+							trait="trait_enduring"
+							}
+					}						
+				create_pop = {
+					species = last_created
+					ethos = { ethic = ethic_fanatic_spiritualist ethic = ethic_pacifist }
+				}	
+                last_created_pop = {
+                        enslave_pop = yes
+                }					
+				}
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_power_plant_1"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}
+					create_pop = {
+						species = owner_main_species
+						ethos = owner
+					}										
+				}
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_power_plant_1"
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = yes
+					}
+					create_pop = {
+						species = owner_main_species
+						ethos = owner
+					}										
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_power_plant_1"
+				add_resource = {
+					resource = energy
+					amount = 1
+					replace = yes
+				}
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}									
+			}
+			
+					
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_malsonic_labor_stockade"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+				create_species = {
+					name = Banik
+					class = "HUM"
+					portrait = "human"
+					name_list = "BK1"
+					homeworld = "Banik'ra"
+					traits = {
+						ideal_planet_class = "pc_continental"
+							trait="trait_communal"
+							trait="trait_presentient_proles"
+							}
+					}				
+				create_pop = {
+					species = last_created
+					ethos = { ethic = ethic_spiritualist ethic = ethic_pacifist ethic = ethic_collectivist } 
+				}	
+                last_created_pop = {
+                        enslave_pop = yes
+                }				
+			}
+			
+		
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_malsonic_labor_stockade"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}
+				create_species = {
+					name = Luxan
+					class = "HUM"
+					portrait = "humanoid_02"
+					name_list = "MAM1"
+					homeworld = Lux
+					traits = {
+						ideal_planet_class = "pc_continental"
+							trait="trait_resilient"
+							trait="trait_strong"
+							}
+					}					
+				create_pop = {
+					species = last_created
+					ethos = { ethic = ethic_spiritualist ethic = ethic_militarist ethic = ethic_xenophile }
+				}	
+                last_created_pop = {
+                        enslave_pop = yes
+                }				
+			}
+			
+		
+					
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_malsonic_labor_stockade"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}
+				
+				create_species = {
+					name = Ilanic
+					class = "HUM"
+					portrait = "humanoid_02"
+					name_list = "MAM1"
+					homeworld = Ilan
+					traits = {
+						ideal_planet_class = "pc_tropical"
+						trait="trait_quick_learners"
+						trait="trait_natural_engineers"
+							}
+					}
+					
+				create_pop = {
+					species = last_created
+					ethos = { ethic = ethic_individualist ethic = ethic_spiritualist ethic = ethic_xenophile }
+				}
+                last_created_pop = {
+                        enslave_pop = yes
+                }				
+			}	
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_failing_infrastructure"
+				add_resource = {
+					resource = engineering_research
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_failing_infrastructure"
+				add_resource = {
+					resource = society_research
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_failing_infrastructure"
+				add_resource = {
+					resource = physics_research
+					amount = 1
+					replace = yes
+				}	
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_failing_infrastructure"
+				add_resource = {
+					resource = energy
+					amount = 1
+					replace = yes
+				}					
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = energy
+					amount = 1
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_failing_infrastructure"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_pk_prison"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}		
+				create_pop = {
+					species = owner_main_species
+					ethos = owner
+				}					
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_decrepit_dwellings"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}				
+			}
+		}
+	}		
+	planet = {
+		count = { min = 2 max = 4 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 20
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+}
+
+# Banik
+banik_neighbor = {
+	name = "Banik"
+	class = "rl_standard_stars"
+	asteroids_distance = 50
+	usage = empire_init
+	planet = {
+		count = 1
+		name = "Banik"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+	change_orbit = 50
+	planet = {
+		count = { min = 1 max = 3 }
+		class = random_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+	}
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+		change_orbit = @base_moon_distance
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	planet = {
+		count = 1
+		name = "Banik'ra"
+		orbit_distance = 20
+		home_planet = yes
+		class = "pc_gaia"
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 18 max = 22 }
 		tile_blockers = none

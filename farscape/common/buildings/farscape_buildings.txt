@@ -86,7 +86,7 @@ building_malsonic_labor_stockade = {
 	}
 }
 
-building_pk_maximum_security_prison = {
+building_pk_prison = {
 	base_buildtime = 360
 	planet_unique = yes
 	
@@ -105,6 +105,16 @@ building_pk_maximum_security_prison = {
 		
 	}
 	
+	potential = {
+		custom_tooltip = {
+			text = "peacekeeper prison camp"
+			country = 
+					{
+					has_country_flag = "peacekeepers" 
+					}
+		}
+	}	
+	
 	planet_modifier = {
 		pop_environment_tolerance = 0.10
 		pop_xenophobia = -0.20
@@ -112,34 +122,12 @@ building_pk_maximum_security_prison = {
 		slave_food_output = 0.1
 	}
 	
-	allow = {
-		custom_tooltip = {
-			text = "requires_building_capital_1"
-			planet = {
-				OR = {
-					has_building = "building_capital_1"
-					has_building = "building_capital_2"
-					has_building = "building_capital_3"
-				}
-			}
-		}
-	}
-	
-	prerequisites = {
-					country = 
-					{
-					has_country_flag = "peacekeepers" 
-					}
-	}
-	
-	ai_special_building = yes
-	
 	ai_weight = {
 		weight = 1000
 		modifier = {
 			weight = 0
 			from = {
-				NOT = { has_building = building_pk_maximum_security_prison }
+				NOT = { has_building = building_pk_prison }
 			}
 		}	
 	}

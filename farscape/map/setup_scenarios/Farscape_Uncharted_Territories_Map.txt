@@ -3,11 +3,11 @@ static_galaxy_scenario = {
     name = "Farscape Uncharted Territories"
     priority = 0
     default = yes
-    colonizable_planet_odds = 1.0
-    num_empires = { min = 1 max = 40 }
-    num_empire_default = 40
+    colonizable_planet_odds = 2.0
+    num_empires = { min = 1 max = 30 }
+    num_empire_default = 20
     advanced_empire_default = 0
-    core_radius = 0
+    core_radius = 10
     random_hyperlanes = yes
 
     system = {
@@ -4385,7 +4385,7 @@ static_galaxy_scenario = {
             x = 32.90296
             y = -166.8349
         }
-        initializer = sys_547_init
+        initializer = scarran_homeworld spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = scarran_imperium } }
     }
 
     system = {

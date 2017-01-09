@@ -59,6 +59,66 @@ peacekeepers = {
 }
 
 
+scarran_imperium ={
+	key="Scarran Imperium"
+	name_list="REP3"
+	ship_prefix=""
+	species_name="Scarran"
+	species_plural="Scarrans"
+	species_class="REP"
+	species_adjective="Scarran"
+	species_bio=""
+	portrait="scarran1"
+	name="Scarran Imperium"
+	adjective="Scarran"
+	government="military_dictatorship"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Katratzi"
+	planet_class="pc_desert"
+	system_name="Trelast"
+	initializer=""
+	graphical_culture="reptilian_01"
+	city_graphical_culture="reptilian_01"
+	flags = { 
+				scarran_imperium 
+			}		
+	empire_flag={
+		icon={
+			category="farscape_flags"
+			file="scarran.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Staleek"
+		portrait="scarran1"
+		ruler_title="Emperor"
+		ruler_title_female="Emperor"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled = always
+	ethic="ethic_collectivist"
+	ethic="ethic_militarist"
+	ethic="ethic_materialist"
+	trait="trait_very_strong"
+	trait="trait_enduring"
+	trait="trait_repugnant"
+	trait="trait_decadent"
+	trait="trait_slow_learners"
+}
+
 breakaway_colonies = {
 	key="breakaway_colonies"
 	flags = { 
@@ -120,67 +180,6 @@ breakaway_colonies = {
 	ethic="ethic_xenophile"
 	ethic="ethic_fanatic_pacifist"	
  	}
-
-scarran_imperium ={
-	key="Scarran Imperium"
-	name_list="REP3"
-	ship_prefix=""
-	species_name="Scarran"
-	species_plural="Scarrans"
-	species_class="REP"
-	species_adjective="Scarran"
-	species_bio=""
-	portrait="scarran1"
-	name="Scarran Imperium"
-	adjective="Scarran"
-	government="military_dictatorship"
-	ftl=warp
-	weapon="tech_lasers_1"
-	planet_name="Katratzi"
-	planet_class="pc_desert"
-	system_name="Trelast"
-	initializer=""
-	graphical_culture="reptilian_01"
-	city_graphical_culture="reptilian_01"
-	flags = { 
-				scarran_imperium 
-			}		
-	empire_flag={
-		icon={
-			category="farscape_flags"
-			file="scarran.dds"
-		}
-		background={
-			category="backgrounds"
-			file="00_solid.dds"
-		}
-		colors={
-			"black"
-			"black"
-			"null"
-			"null"
-		}
-	}
-	ruler={
-		gender=male
-		name="Staleek"
-		portrait="scarran1"
-		ruler_title="Emperor"
-		ruler_title_female="Emperor"
-	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	spawn_enabled = always
-	ethic="ethic_collectivist"
-	ethic="ethic_militarist"
-	ethic="ethic_materialist"
-	trait="trait_very_strong"
-	trait="trait_enduring"
-	trait="trait_repugnant"
-	trait="trait_decadent"
-	trait="trait_slow_learners"
-}
-
 
 hynerian_empire={
 	key="Hynerian Empire"
@@ -724,7 +723,7 @@ luxan_shanska={
 	ftl=warp
 	weapon="tech_lasers_1"
 	planet_name="Trao"
-	planet_class="pc_ocean"
+	planet_class="pc_arctic"
 	system_name="Trao"
 	initializer=""
 	graphical_culture="molluscoid_01"
@@ -1054,7 +1053,7 @@ luxan_shanska={
 	ftl=warp
 	weapon="tech_lasers_1"
 	planet_name="Coree"
-	planet_class="pc_tropical"
+	planet_class="pc_tundra"
 	system_name="Coree"
 	initializer=""
 	graphical_culture="fungoid_01"
@@ -1145,8 +1144,9 @@ luxan_shanska={
 	ethic="ethic_xenophobe"
 	ethic="ethic_militarist"
 	ethic="ethic_spiritualist"
-	trait="trait_venerable"
+	trait="trait_agrarian"
 	trait="trait_nonadaptive"
+	trait="trait_enduring"
 }
 
 "Donari Consortium"
@@ -1166,7 +1166,7 @@ luxan_shanska={
 	ftl=warp
 	weapon="tech_lasers_1"
 	planet_name="Donar"
-	planet_class="pc_continental"
+	planet_class="pc_arctic"
 	system_name="Donar"
 	initializer=""
 	graphical_culture="molluscoid_01"
@@ -1481,5 +1481,120 @@ luxan_shanska={
 	ethic="ethic_collectivist"
 	ethic="ethic_xenophile"
 	ethic="ethic_pacifist"
+}
+"Delvian Seek"
+={
+	key="Delvian Seek"
+	name_list="PLANT4"
+	ship_prefix="DLV"
+	species_name="Delvian"
+	species_plural="Delvians"
+	species_class="HUM"
+	species_adjective="Delvian"
+	species_bio=""
+	portrait="humanoid_03"
+	name="Delvian Seek"
+	adjective="Delvian"
+	government="divine_mandate"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Delvia"
+	planet_class="pc_continental"
+	system_name="Delvia"
+	initializer=""
+	graphical_culture="plantoid_01"
+	city_graphical_culture="plantoid_01"
+	empire_flag={
+		icon={
+			category="ornate"
+			file="flag_ornate_6.dds"
+		}
+		background={
+			category="backgrounds"
+			file="horizontal.dds"
+		}
+		colors={
+			"blue"
+			"dark_green"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Rizta ka Pruina"
+		portrait="humanoid_03_female_01"
+		texture=2
+		hair=0
+		clothes=2
+		ruler_title_female="Pao"
+		heir_title_female="Pao"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_pacifist"
+	ethic="ethic_fanatic_spiritualist"
+	trait="trait_agrarian"
+	trait="trait_nonadaptive"
+	trait="trait_enduring"
+}
+"Vocarian Packs"
+={
+	key="Vocarian Packs"
+	name_list="REP2"
+	ship_prefix=""
+	species_name="Vorcarian"
+	species_plural="Vorcarians"
+	species_class="HUM"
+	species_adjective="Vorcarian"
+	species_bio=""
+	portrait="humanoid_02"
+	name="Vocarian Packs"
+	adjective="Vocarian"
+	government="despotic_empire"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Nora"
+	planet_class="pc_tropical"
+	system_name="Karas"
+	initializer=""
+	graphical_culture="avian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="spherical"
+			file="flag_spherical_1.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"orange"
+			"brown"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Zidlaxi"
+		portrait="humanoid_02_male_01"
+		texture=1
+		hair=2
+		clothes=1
+		ruler_title="Chief of Chiefs"
+		heir_title="Chief"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=always
+	ethic="ethic_collectivist"
+	ethic="ethic_militarist"
+	trait="trait_communal"
+	trait="trait_resilient"
+	trait="trait_nomadic"
+	trait="trait_repugnant"
 }
 
